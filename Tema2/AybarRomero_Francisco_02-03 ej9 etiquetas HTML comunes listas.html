@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería interactiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .galeria img {
+            width: 120px;
+            height: 80px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        dialog img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .cerrar {
+            margin-top: 15px;
+            border: none;
+            background-color: #d9534f;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .cerrar:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galería interactiva</h1>
+    <p>Haz clic en una imagen para ver más detalles.</p>
+
+    <div class="galeria">
+        <img src="img/a.jpg" alt="Montaña" id="img1">
+        <img src="img/b.webp" alt="Perro" id="img2">
+        <img src="img/c.jpg" alt="Bosque" id="img3">
+        <img src="img/d.webp" alt="Bosque" id="img4">
+        <img src="img/e.jpg" alt="Bosque" id="img5">
+    </div>
+
+    <!-- Cuadro de diálogo -->
+    <dialog id="miDialogo">
+        <img id="imagenGrande" src="" alt="Imagen ampliada">
+        <details>
+            <summary>Descripción</summary>
+            <p id="descripcion"></p>
+        </details>
+        <button class="cerrar" id="cerrarDialogo">Cerrar</button>
+    </dialog>
+
+    <script>
+        let imagenGrande = document.getElementById("imagenGrande");
+        let imagenDescripcion = document.getElementById("descripcion");
+        let dialogo = document.getElementById("miDialogo");
+        let botonCerrar = document.getElementById("cerrarDialogo");
+        botonCerrar.addEventListener("click", () => 
+        {
+            dialogo.close();
+        })
+        
+        // Copiando y pegando
+        /* var imagenSmall = document.getElementById("img1");
+        imagenSmall.addEventListener("click", () => 
+        {
+            imagenGrande.src="./img/a.jpg";
+            imagenDescripcion.innerHTML="Montaña";
+            dialogo.showModal();
+        })
+
+        var imagenSmall = document.getElementById("img2");
+        imagenSmall.addEventListener("click", () => 
+        {
+            imagenGrande.src="./img/b.webp";
+            imagenDescripcion.innerHTML="Chico";
+            dialogo.showModal();
+        })
+
+        var imagenSmall = document.getElementById("img3");
+        imagenSmall.addEventListener("click", () => 
+        {
+            imagenGrande.src="./img/c.jpg";
+            imagenDescripcion.innerHTML="Negro";
+            dialogo.showModal();
+        })
+
+        var imagenSmall = document.getElementById("img4");
+        imagenSmall.addEventListener("click", () => 
+        {
+            imagenGrande.src="./img/d.webp";
+            imagenDescripcion.innerHTML="Foto";
+            dialogo.showModal();
+        })
+
+        var imagenSmall = document.getElementById("img5");
+        imagenSmall.addEventListener("click", () => 
+        {
+            imagenGrande.src="./img/e.jpg";
+            imagenDescripcion.innerHTML="Bolsa en cabeza";
+            dialogo.showModal();
+        }) */
+
+
+
+
+
+
+
+        // Utilizando un bucle
+        let nombreFicheros = ["a.jpg", "b.webp", "c.jpg", "d.webp", "e.jpg"];
+        let descripcionFicheros = ["Montaña", "Chico", "Negro", "Foto", "Bolsa en cabeza"];
+
+        for (let i = 0; i < nombreFicheros.length; i++)
+        {
+            var imagenSmall = document.getElementById("img" + (i+1));
+            imagenSmall.addEventListener("click", () => 
+            {
+                imagenGrande.src="./img/" + nombreFicheros[i];
+                imagenDescripcion.innerHTML = "La descripción de la imagen es: " + descripcionFicheros[i] + " <br>El nombre del archivo es: " + nombreFicheros[i];
+                dialogo.showModal();
+            })
+        }
+
+    </script>
+</body>
+</html>
