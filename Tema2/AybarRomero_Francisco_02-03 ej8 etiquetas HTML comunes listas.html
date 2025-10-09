@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de ayuda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 350px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <p>
+        Tienes dudas, abre el centro de ayuda.
+    </p>
+    <button id="abrir">
+        Abrir centro de ayuda
+    </button>
+
+    <dialog id="centroAyuda">
+        <h1>Centro de ayuda</h1>
+        <details>
+            <summary>
+                ¿Qué es este sitio
+            </summary>
+            <p>
+                Esto es un dialogo, con 3 summary y un botón de cerrar.
+            </p>
+        </details>
+        <details>
+            <summary>
+                ¿Cómo cierro este cuadro?
+            </summary>
+            <p>
+                Debes pulsar el botón "cerrar".
+            </p>
+        </details>
+        <details>
+            <summary>
+                ¿Qué tecnologías se usan?
+            </summary>
+            <p>
+                HTML5, CSS y un poco de JavaScript para la interactividad.
+            </p>
+        </details>
+        <button id="cerrar">Cerrar</button>
+    </dialog>
+
+
+    <script>
+        var dialogo = document.getElementById("centroAyuda");
+        var botonAbrir = document.getElementById("abrir");
+        var botonCerrar = document.getElementById("cerrar");
+        botonCerrar.addEventListener("click", () => 
+        {
+            dialogo.close();
+        })
+
+        var ayuda = document.getElementById("abrir");
+        ayuda.addEventListener("click", () => 
+        {
+            dialogo.showModal();
+        })
+    </script>
+</body>
+</html>
