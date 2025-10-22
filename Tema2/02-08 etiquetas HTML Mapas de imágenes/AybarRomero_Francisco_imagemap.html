@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>AybarRomero_Francisco_02-08 etiquetas HTML Mapas de imagenes</title>
+    <meta charset="UTF-8">
+    <style>
+        .img1 {
+            width: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Image map</h1>
+    </header>
+
+
+    <!-- EJERCICIO 1 -->
+    <img src="imagemap_cuadrado.jpg" usemap="#cuadrado" />
+    <map name="cuadrado">
+        <area shape="RECT" coords="19,30,330,120" alt="Hardware" href="#hardware" title="Hardware">
+        <area shape="RECT" coords="382,42,670,104" alt="Super Mini" href="#SuperMini" title="Super Mini">
+        <area shape="RECT" coords="24,174,318,271" alt="HM VERY DIRTY" href="#HM_VERY_DIRTY" title="HM VERY DIRTY">
+        <area shape="RECT" coords="374,171,676,275" alt="Digg This!" href="#Digg_This!" title="Digg This!">
+        <area shape="RECT" coords="24,326,318,421" alt="Text Only!" href="#Text_Only!" title="Text Only!">
+        <area shape="RECT" coords="378,327,673,424" alt="Comments" href="#Comments" title="Comments">
+    </map>
+    <script>$(document).ready(function(e){$("cuadrado").imageMapResize();});</script>
+
+
+    <br>
+
+    <!-- EJERCICIO 2 -->
+    <img src="imagen_circulos.jpg" usemap="#circulo" />
+    <map name="circulo">
+        <area shape="circle" coords="143,102,25" alt="Botón Rojo" href="#Botón_Rojo" title="Botón Rojo">
+        <area shape="circle" coords="230,102,25" alt="Botón Azul" href="#Botón_Azul" title="Botón Azul">
+        <area shape="circle" coords="318,102,25" alt="Botón Verde" href="#Botón_Verde" title="Botón Verde">
+        <area shape="circle" coords="405,102,25" alt="Botón Amarillo" href="#Botón_Amarillo" title="Botón Amarillo">
+    </map>
+    <script>$(document).ready(function(e){$("circulo").imageMapResize();});</script>
+    
+    <br>
+
+
+    <!-- EJERCICIO 3 -->
+    <img src="imagemap_poly.jpg" usemap="#poly" />
+    <map name="poly">
+        <area shape="poly" coords="416,115,564,190,527,221,394,232,411,184,377,158" alt="Axarquia" href="#Axarquia" title="Axarquia">
+        <area shape="poly" coords="410,117,374,10,147,116,162,152,219,178,253,173,272,149,317,163,377,154" alt="Antequera" href="#Antequera" title="Antequera">
+        <area shape="poly" coords="303,160,377,155,409,182,394,230,309,267,298,262,298,240,316,230" alt="Málaga" href="#Málaga" title="Málaga">
+        <area shape="poly" coords="302,160,311,198,316,228,296,262,221,268,178,243,222,206,222,181,253,173,266,149" alt="Valle del Guadalhorce" href="#ValleDelGuadalhorce" title="Valle del Guadalhorce">
+        <area shape="poly" coords="344,254,284,311,216,306,110,375,79,332,182,249,241,274" alt="Costa Occiedental" href="#CostaOcciedental" title="Costa Occiedental">
+        <area shape="poly" coords="77,328,144,294,188,221,224,206,213,168,163,150,143,181,107,161,87,182,101,202,80,248,2,281,2,299,30,303,45,291,60,269" alt="Ronda" href="#Ronda" title="Ronda">
+    </map>
+    <script>$(document).ready(function(e){$("poly").imageMapResize();});</script>
+
+
+    <br>
+
+
+    <!-- EJERCICIO 4 -->
+    <img src="europa.jpg" id="map-image" style="width: 454px; max-width: 100%; height: auto;" alt="" usemap="#map" />
+    <map name="map">
+        <area shape="poly" coords="169, 229, 202, 235, 207, 225, 202, 209, 215, 202, 213, 179, 204, 173, 189, 167, 177, 176, 174, 189, 170, 191, 167, 210, 174, 219" alt="Alemania" href="#Alemania" title="Alemania"/>
+        <area shape="poly" coords="103, 191, 139, 191, 145, 180, 134, 139, 141, 131, 139, 119, 124, 113, 116, 127, 93, 144, 83, 165" alt="Gran Bretaña" href="#GranBretaña" title="Gran Bretaña"/>
+        <area shape="poly" coords="166, 261, 177, 263, 185, 278, 196, 289, 207, 299, 213, 309, 211, 321, 194, 319, 191, 322, 210, 334, 214, 326, 223, 314, 223, 302, 229, 307, 231, 302, 205, 283, 204, 275, 195, 262, 197, 254, 203, 253, 203, 247, 197, 241, 189, 241, 184, 243, 175, 243, 165, 243" alt="Italia" href="#Italia" title="Italia"/>
+        <area shape="poly" coords="133, 275, 139, 261, 155, 269, 166, 263, 163, 239, 170, 229, 175, 219, 149, 194, 131, 203, 119, 197, 119, 206, 102, 202, 108, 215, 114, 227, 106, 254" alt="Francia" href="#Francia" title="Francia"/>
+        <area shape="poly" coords="41, 295, 57, 254, 72, 260, 53, 295" alt="Portugal" href="#Portugal" title="Portugal"/>
+        <area shape="poly" coords="63, 310, 72, 308, 85, 312, 98, 305, 106, 298, 109, 288, 121, 281, 133, 275, 106, 253, 69, 239, 59, 239, 59, 251, 73, 259, 54, 295" alt="España" href="#España" title="España"/>
+    </map>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="imageMapResizer.min.js"></script>
+    <script>$(document).ready(function(e){$("map").imageMapResize();});</script>
+
+</body>
+
+</html>
