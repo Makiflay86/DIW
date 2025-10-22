@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AybarRomero_Francisco_02-09a etiquetas HTML5 formularios form e input</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        
+        <section class="bg-primary bg-opacity-50 mt-2 p-5 rounded shadow">
+            <h1 class="text-center">
+                1º Escribe en un documento html con el titulo &lt;h1&gt; formularios &lt;/h1&gt; 
+                y con tus palabras en que consiste el Funcionamiento de los formularios
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <h1>Formularios</h1>
+                <p>
+                    Es un elemento que recoge información del usuario. Este lo hace
+                    mediante unos input donde escribes y le da a un botón con el type
+                    submit normalmente pone Enviar y recoge lo que haya puesto y lo envía
+                    al servidor.
+                </p>
+            </article>
+        </section>
+
+
+        
+        <section class="bg-info bg-opacity-50 mt-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                2º Escribe en un documento html con el titulo &lt;h1&gt; GET/POST 
+                &lt;/h1&gt; y con tus palabras en que consiste el paso de datos 
+                mediante GET y post y las ventajas de cada uno
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <h1>GET/POST</h1>
+                <p>
+                    Es la forma que se envían los datos al servidor, el get envía
+                    los datos en la URL mientras el post lo hace en el cuerpo
+                    de la solicitud HTTP.
+                </p>
+                <br>
+
+                <h2>Ventajas</h2>
+                <p>
+                    <li>GET almacena en cache los datos, pero todo el mundo lo puede ver.</li>
+                    <li>POST los datos que se envían no es visible ya que se envía por HTTP.</li>
+                </p>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 mt-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Escribe en un documento html con el  titulo &lt;h1&gt; Atributos
+                &lt;/h1&gt; una lista de definición que explique cada atributo.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <h1>Atributos</h1>
+
+                <ul>
+                    <li><strong>accept-charset: </strong> Codificación de caracteres que se utilizará para pasar los contenidos del formulario.</li>
+                    <li><strong>autocomplete: </strong> El navegador automáticamente completará los datos del formulario basándose en los valores para esos mismos controles que el usuario haya rellenado en otros formularios.</li>
+                    <li><strong>enctype: </strong> Solo es válido para el método POST. Indica el formato en el que los datos del formulario son enviados.</li>
+                    <li><strong>novalidate: </strong> No validara datos.</li>
+                    <li><strong>target: </strong> Muestra la respuesta del formulario dependiendo de como termina, si pone _blank se abrirá en otra pestaña.</li>
+                </ul>
+            </article>
+        </section>
+
+
+
+        <section class="bg-info bg-opacity-50 mt-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Escribe en un documento html con el  caption &lt;h1&gt; 
+                    Atributos text &lt;/h1&gt; una tabla de ordenada que explique 
+                    cada atributo del en 3/4 palabras
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <table class="table table-striped table-white table-hover">
+                    <caption class="caption-top text-center text-danger fs-1">Atributos text</caption>
+                    <thead class="table-warning">
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Significado</th>
+                            <th>Atributo</th>
+                            <th>Significado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th>type</th>
+                            <td>Indica el tipo de control</td>
+                            <th>form</th>
+                            <td>Identifica el formulario al que pertence</td>
+                        </tr>
+                        <tr>
+                            <th>name</th>
+                            <td>Dar un nombre al control</td>
+                            <th>formnovalidate</th>
+                            <td>No valida los datos.</td>
+                        </tr>
+                        <tr>
+                            <th>size</th>
+                            <td>Tamaño máximo de carácteres</td>
+                            <th>maxlength</th>
+                            <td>Tamaño máximo de carácteres</td>
+                        </tr>
+                        <tr>
+                            <th>value</th>
+                            <td>Dar un valor al elemento</td>
+                            <th>id</th>
+                            <td>Identificador único de la etiqueta</td>
+                        </tr>
+                        <tr>
+                            <th>disabled</th>
+                            <td>Aparecereá deshabilitado</td>
+                            <th>readonly</th>
+                            <td>Dice que es solo lectura</td>
+                        </tr>
+                        <tr>
+                            <th>autocomplete</th>
+                            <td>Autocompletar el contenido</td>
+                            <th>required</th>
+                            <td>Obligatorio de rellenar</td>
+                        </tr>
+                        <tr>
+                            <th>autofocus</th>
+                            <td>Al cargar la página tendrá el foco en el elemento</td>
+                            <th>pattern</th>
+                            <td>Expecifica la patrón que deberán introducir</td>
+                        </tr>
+                        <tr>
+                            <th>disabled</th>
+                            <td>Aprecerá deshabilitado</td>
+                            <th>placeholder</th>
+                            <td>Texto de ayuda para rellenar un cuadro</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 mt-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                5º Escribe en un documento htm con el titulo &lt;h1&gt; 
+                    formulario &lt;/h1&gt; . Crea un form con get e introduce 
+                    los siguientes controles. El id debe tener el mismo 
+                    nombre que el label que contenga
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <h1>Formulario</h1>
+                <form action="" id="form1" method="get">
+                    <div class="mb-3">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="nombre" id="nombre" required autofocus pattern="[A-Z]{1}[a-z]">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos">Apellidos</label><br>
+                        <input type="text" name="apellidos" id="apellidos" required pattern="[A-Z]{1}[a-z][A-Z]{1}[a-z]">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edad">Edad</label><br>
+                        <input type="number" name="edad" id="edad" required pattern="[0-9]">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Contraseña</label><br>
+                        <input type="password" name="password" id="password" max="5">
+                    </div>
+                </form>
+                
+            </article>
+        </section>
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
