@@ -265,7 +265,31 @@
 
 
 
-
+        <section class="bg-primary bg-opacity-50 my-4 p-5 rounded shadow">
+            <h1 class="text-center">
+                7º Crea una imagen con 4 diferentes srcset que permita modificar su tamaño
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row text-center">
+                    <div class="col-12 py-5">
+                        <figure>
+                            <img src="./material/github-1200.png"
+                                srcset="./material/github-480.png.jpg 480w,
+                                        ./material/github-800.png 800w,
+                                        ./material/github-1200.png 1200w,
+                                        ./material/github-1800.png 1600w"
+                                sizes="(max-width: 600px) 480px,
+                                        (max-width: 1000px) 800px,
+                                        (max-width: 1400px) 1200px,
+                                        1600px"
+                                alt="imagen svg"
+                                title="octogato"
+                                loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </article>
+        </section>
 
 
     </div>
