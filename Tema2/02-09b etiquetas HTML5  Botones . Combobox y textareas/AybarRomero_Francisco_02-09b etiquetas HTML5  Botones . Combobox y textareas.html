@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AybarRomero_Francisco_02-09b etiquetas HTML5  Botones . Combobox y textareas.html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                1º Crea  un botón moderno Con un texto que diga "Gracias por pulsarme" 
+                con este evento  onclick="alert(' Gracias por pulsarme');"
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <input class="btn btn-outline-danger " type="button" name="boton1" id="boton1" onclick="alert('Gracias por pulsarme')" value="Púlsame">
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                2º Crea  un botón moderno con una imagen png  ojo para que quede 
+                asi debes modificar la propiedad css de alineación del texto 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="btn  btn-light text-black" id="boton1" onclick="alert('Gracias por pulsarme')">
+                    <label for="boton1">Pulsa Aquí</label>
+                    <img src="./material/diana.png" alt="Una díana" width="50px" height="50px">
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Crea un cuadro combinado como los de la imagen
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <fieldset class="border border-primary p-3 col-12 col-lg-4 text-center">
+                    <form>
+                        <label for="pueblo" id="pueblo"><b>Seleccione su Pueblo<br> Blanco de Málaga</b></label><br>
+                        <select name="pueblo" class="rounded">
+                            <option value="benaojan">Benaoján</option>
+                            <option value="montejaque">Montejaque</option>
+                            <option value="atajate">Atajate</option>
+                            <option value="jimeraDeLibar">Jimera de Líbar</option>
+                            <option value="benadalid">Benadalid</option>
+                            <option value="algatocin">Algatocín</option>
+                            <option value="gaucin">Gaucín</option>
+                            <option value="zamora">Zamora</option>
+                        </select>
+                        <input type="submit" value="enviar" class="rounded">
+                    </form>
+                </fieldset>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Crea un cuadro combinado como los de la imagen
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <fieldset class="border border-primary p-3 col-12 col-lg-4 text-center">
+                    <form>
+                        <label for="pueblo" id="pueblo"><b>Seleccione su Pueblo<br> Blanco de Málaga o Cádiz</b></label><br>
+                        <select name="pueblo" class="rounded">
+                            <optgroup label="Málaga">
+                                <option value="benaojan">Benaoján</option>
+                                <option value="montejaque">Montejaque</option>
+                                <option value="atajate">Atajate</option>
+                                <option value="jimeraDeLibar">Jimera de Líbar</option>
+                                <option value="benadalid">Benadalid</option>
+                                <option value="algatocin">Algatocín</option>
+                                <option value="gaucin">Gaucín</option>
+                                <option value="zamora">Zamora</option>
+                            </optgroup>
+                            <optgroup label="Cádiz">
+                                <option value="arcosDeLaFrontera">Arcos de la Frontera</option>
+                                <option value="bornos">Bornos</option>
+                                <option value="algodonales">Algodonales</option>
+                                <option value="villamartin">Villamartín</option>
+                                <option value="olvera">Olvera</option>
+                            </optgroup>
+                        </select>
+                        <input type="submit" value="enviar" class="rounded">
+                    </form>
+                </fieldset>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                5º Crea un  Cuadro de texto multilínea con estas características : 
+                El cuadro debe adquirir el foco en cuanto carga la página. Con un 
+                tamaño maximo de 50 caracteres y anchura 10 columnas y 5 filas Debe 
+                tener de placeholder la cadena "Escribe tus impresiones" y debe ser 
+                obligatorios
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <form>
+                    <textarea autofocus rows="5" cols="10" maxlength="50" name="texto" placeholder="Escribe tus impresiones" required></textarea><br>
+                    <input type="submit" value="enviar"><br>
+                </form>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                6º Todo junto crea un formulario con este aspecto con estas especificaciones
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <form>
+                    <h4>Botones</h4>
+                    <button type="submit" autofocus>Submit</button>
+                    <button type="reset" disabled>Reset</button>
+                    <button type="button">Button</button>
+                    <br><br>
+                </form>
+
+                    <h4>Progress</h4>
+                    <progress max="100" value="35">35%</progress>
+                    <br><br>
+
+                    <h4>Meter</h4>
+                    <meter value="138" min="1" max="200" high="150" low="60" >138</meter>
+                    <br><br>
+
+                    <h4>Fieldset</h4>
+                    <input type="radio" name="sexo" value="hombre" id="hombre" checked="checked">
+                    <label for="hombre"> Hombre</label><br>
+                    <input type="radio" name="sexo" value="mujer" id="mujer">
+                    <label for="mujer"> Mujer</label><br>
+                    <label for="estadocivil">
+                    Estado civil: Casado</label>
+                    <input type="checkbox" name="estadocivil" id="estadocivil" value="casado">
+                    <br><br>
+
+                    <h4>Datalist</h4>
+                    <label for="gustos">
+                    Escribe en qué te gusta pasar tu tiempo de ocio
+                    </label><br>
+                    <input type="text" id="gustos" name="gustos" list="listaGustos">
+                    <datalist id="listaGustos">
+                        <option label="deportes" value="Deportes" >
+                        <option label="teatro" value="Teatro">
+                        <option label="cine" value="Cine">
+                        <option label="leer" value="Leer">
+                    </datalist>
+                    <br><br>
+
+                    <h4>TextArea</h4><!-- atributos maxlength, rows, cols, placeholder, wrap. -->
+                    <textarea name="textarea" id="textarea" maxlength="33" rows="2" cols="50" placeholder="Escribe un nombre de pueblo" wrap="hard"></textarea>
+                    <br><br>
+
+                    <h4>Select</h4>
+                    <label for="pueblo" id="pueblo"><b>Seleccione su Pueblo<br> Blanco de Málaga o Cádiz</b></label><br>
+                    <select name="pueblo" class="rounded">
+                        <optgroup label="Málaga">
+                            <option value="benaojan">Benaoján</option>
+                            <option value="montejaque">Montejaque</option>
+                            <option value="atajate">Atajate</option>
+                            <option value="jimeraDeLibar">Jimera de Líbar</option>
+                            <option value="benadalid">Benadalid</option>
+                            <option value="algatocin">Algatocín</option>
+                            <option value="gaucin">Gaucín</option>
+                            <option value="zamora">Zamora</option>
+                        </optgroup>
+                        <optgroup label="Cádiz">
+                            <option value="arcosDeLaFrontera">Arcos de la Frontera</option>
+                            <option value="bornos">Bornos</option>
+                            <option value="algodonales">Algodonales</option>
+                            <option selected value="villamartin">Villamartín</option>
+                            <option value="olvera">Olvera</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+                    <select name="listaGustos" multiple>
+                        <option value="deportes">Deportes</option>
+                        <option value="teatro">Teatro</option>
+                        <option value="cine">Cine</option>
+                        <option value="leer">Leer</option>
+                    </select>
+                    <br><br>
+
+                    <h4>Output</h4>
+                    <input type="number" id="n1" name="n1" value="0">
+                    + <input type="number" id="n2" name="n2" value="0">
+                    = <output name="total" for="n1 n2" id="total"></output>
+                    
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
