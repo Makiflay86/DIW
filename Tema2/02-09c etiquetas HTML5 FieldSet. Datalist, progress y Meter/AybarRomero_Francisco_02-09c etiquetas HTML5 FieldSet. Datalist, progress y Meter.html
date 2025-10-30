@@ -135,8 +135,8 @@
                     <fieldset>
                         <legend>Genera tu personaje para el juego</legend>
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre: </label>
-                            <input type="text" class="form-control" id="nombre" name="nombre">
+                            <label for="nombreP" class="form-label">Nombre: </label>
+                            <input type="text" class="form-control" id="nombreP" name="nombreP">
                         </div>
 
                         <div class="mb-3">
@@ -151,7 +151,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <input type="button" id="spawn" value="Generar Personaje">
+                            <input onclick="cambio()" type="button" id="spawn" value="Generar Personaje">
                         </div>
                     </fieldset>
                     
@@ -161,31 +161,124 @@
                         <legend>Datos del personaje</legend>
 
                         <div class="mb-3">
-                            <label for="fuerza" class="form-label">Fuerza</label>
-                            <progress value="9" max="10" id="fuerza"></progress>
+                            <label for="fuerza" class="form-label">Fuerza</label><br>
+                            <span> 1 </span><progress max="10" id="fuerza"></progress><span> 10 </span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="velocidad" class="form-label">Velocidad</label>
-                            <progress  max="10" id="velocidad"></progress>
+                            <label for="velocidad" class="form-label">Velocidad</label><br>
+                            <span> 1 </span><progress max="10" id="velocidad"></progress><span> 10 </span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="persuacion" class="form-label">Persuación</label>
-                            <progress  max="10" id="persuacion"></progress>
+                            <label for="persuacion" class="form-label">Persuación</label><br>
+                            <span> 1 </span><progress max="10" id="persuacion"></progress><span> 10 </span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="espionaje" class="form-label">Espionaje</label>
-                            <progress  max="10" id="espionaje"></progress>
+                            <label for="espionaje" class="form-label">Espionaje</label><br>
+                            <span> 1 </span><progress max="10" id="espionaje"></progress><span> 10 </span>
                         </div>
                     </fieldset>
                 </form>
+
+                <script> 
+                    var fuerza = document.getElementById("fuerza");
+                    var velocidad = document.getElementById("velocidad");
+                    var persuacion = document.getElementById("persuacion");
+                    var espionaje = document.getElementById("espionaje");
+
+                    function cambio() 
+                    {
+                        fuerza.value = Math.random()*10;
+                        velocidad.value = Math.random()*10;
+                        persuacion.value = Math.random()*10;
+                        espionaje.value = Math.random()*10;
+                    }
+                </script>
             </article>
         </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Modifica el anterior para cambiar los progress por meter
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <h2>Formulario 3</h2>
+                <form class="border border-danger p-3 rounded">
+                    <fieldset>
+                        <legend>Genera tu personaje para el juego</legend>
+                        <div class="mb-3">
+                            <label for="nombreP" class="form-label">Nombre: </label>
+                            <input type="text" class="form-control" id="nombreP" name="nombreP">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputEspecializacion" class="form-label">Especialización: </label>
+                            <input type="text" id="inputEspecializacion" name="inputEspecializacion" list="especializacion">
+                            <datalist id="especializacion">
+                                <option value="Guerrero"></option>
+                                <option value="Mago"></option>
+                                <option value="Ladrón"></option>
+                                <option value="Paladín"></option>
+                            </datalist>
+                        </div>
+
+                        <div class="mb-3">
+                            <input onclick="cambio2()" type="button" id="spawn2" value="Generar Personaje">
+                        </div>
+                    </fieldset>
+                    
+                    <hr class="my-2">
+                
+                    <fieldset>
+                        <legend>Datos del personaje</legend>
+
+                        <div class="mb-3">
+                            <label for="fuerza2" class="form-label">Fuerza</label><br>
+                            <span> 1 </span><meter max="10" id="fuerza22"></meter><span> 10 </span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="velocidad2" class="form-label">Velocidad</label><br>
+                            <span> 1 </span><meter max="10" id="velocidad2"></meter><span> 10 </span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="persuacion2" class="form-label">Persuación</label><br>
+                            <span> 1 </span><meter max="10" id="persuacion2"></meter><span> 10 </span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="espionaje2" class="form-label">Espionaje</label><br>
+                            <span> 1 </span><meter max="10" id="espionaje2"></meter><span> 10 </span>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <script> 
+                    var fuerza2 = document.getElementById("fuerza2");
+                    var velocidad2 = document.getElementById("velocidad2");
+                    var persuacion2 = document.getElementById("persuacion2");
+                    var espionaje2 = document.getElementById("espionaje2");
+
+                    function cambio2() 
+                    {
+                        fuerza2.value = Math.random()*10;
+                        velocidad2.value = Math.random()*10;
+                        persuacion2.value = Math.random()*10;
+                        espionaje2.value = Math.random()*10;
+                    }
+                </script>
+            </article>
+        </section>
+
+
+
     </div>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
