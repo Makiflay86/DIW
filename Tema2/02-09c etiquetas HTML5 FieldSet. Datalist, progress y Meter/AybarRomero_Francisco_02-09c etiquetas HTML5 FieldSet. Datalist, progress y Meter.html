@@ -78,10 +78,6 @@
                             <label for="satisfaccion" class="form-label">Seleccione tu satisfacción con el concierto: </label>
                             <input type="range" class="form-range" id="satisfaccion" name="satisfaccion" min="0" max="10">
                         </div>
-
-                        <div class="mb-3">
-                            <input type="submit" value="Gracias por tu opinión">
-                        </div>
                     </fieldset>
                     
                     <hr class="my-5">
@@ -92,15 +88,16 @@
                             <label for="concierto">Concierto al que asististe: </label>
                             <input type="text" id="concierto" name="concierto" list="conciertoAsist">
                             <datalist id="conciertoAsist">
-                                <option value="Plaza Mayor"></option>
-                                <option value="2"></option>
-                                <option value="3"></option>
-                                <option value="4"></option>
-                                <option value="5"></option>
+                                <option value="Malu"></option>
+                                <option value="Omar Montes"></option>
+                                <option value="Los Mojinos"></option>
+                                <option value="Medina Azahara"></option>
+                                <option value="Julio Iglesias"></option>
                             </datalist>
                         </div>
 
                         <div class="mb-3">
+                            <label for="texto" class="form-label">¿Qué te parpeció el concierto?</label><br>
                             <textarea name="texto" id="texto" cols="50" rows="4" maxlength="256"></textarea>
                         </div>
 
@@ -117,14 +114,75 @@
                         </div>
                     </fieldset>
                 
-                
+                    <div class="mb-3">
+                        <br><input type="submit" value="Gracias por tu opinión">
+                    </div>
                 </form>
-
-
-
             </article>
         </section>
 
+
+
+        <section class="bg-primary bg-opacity-50 my-3 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Crear un formulario como este usando datalist y la etiqueta 
+                progress. Añade un javascript para que cuando pulse genera aleatorio 
+                ponga datos aleatorios en los valores del progress
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <h2>Formulario 3</h2>
+                <form class="border border-danger p-3 rounded">
+                    <fieldset>
+                        <legend>Genera tu personaje para el juego</legend>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre: </label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputEspecializacion" class="form-label">Especialización: </label>
+                            <input type="text" id="inputEspecializacion" name="inputEspecializacion" list="especializacion">
+                            <datalist id="especializacion">
+                                <option value="Guerrero"></option>
+                                <option value="Mago"></option>
+                                <option value="Ladrón"></option>
+                                <option value="Paladín"></option>
+                            </datalist>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="button" id="spawn" value="Generar Personaje">
+                        </div>
+                    </fieldset>
+                    
+                    <hr class="my-2">
+                
+                    <fieldset>
+                        <legend>Datos del personaje</legend>
+
+                        <div class="mb-3">
+                            <label for="fuerza" class="form-label">Fuerza</label>
+                            <progress value="9" max="10" id="fuerza"></progress>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="velocidad" class="form-label">Velocidad</label>
+                            <progress  max="10" id="velocidad"></progress>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="persuacion" class="form-label">Persuación</label>
+                            <progress  max="10" id="persuacion"></progress>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="espionaje" class="form-label">Espionaje</label>
+                            <progress  max="10" id="espionaje"></progress>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
     </div>
 
     
