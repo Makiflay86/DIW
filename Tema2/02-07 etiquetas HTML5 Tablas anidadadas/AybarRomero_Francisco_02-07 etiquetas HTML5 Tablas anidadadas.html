@@ -13,7 +13,7 @@
         </h1>
 
 
-        <section class="bg-info bg-opacity-50 mt-5 p-5 rounded shadow">
+        <section class="bg-info bg-opacity-50 my-5 p-5 rounded shadow">
             <h1>
                 1º Fusión de celdas: rowspan y colspan
             </h1>
@@ -46,7 +46,7 @@
                </table>
 
                <h4>c)</h4>
-               <table class="table table-success text-center">
+               <table class="table text-center table-success">
                     <tr>
                         <th colspan="2">Linea1Linea2</th>
                     </tr>
@@ -64,21 +64,185 @@
                </table>
 
                <h4>d)</h4>
-               <table class="table text-center">
-                    <tr>
-                        <th rowspan="2">Linea1</th>
-                        <th rowspan="2">Linea2</th>
-                    </tr>
-                    <tr>
-                        <th rowspan="3">Linea3</th>
-                        <th rowspan="3">Linea4<br>Linea6</th>
-                    </tr>
-                    <tr>
-                        <th rowspan="3">Linea5<br>Linea7</th>
-                        <th rowspan="3">Linea8</th>
-                    </tr>
-                    
-               </table>
+               <table class="table text-center border border-white">
+                <tr>
+                    <td style="background-color: lightgreen;">Linea1<br>&nbsp;</td>
+                    <td style="background-color: yellow;">Linea2<br>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="background-color: green;"><br>Linea3<br>&nbsp;<br>&nbsp;</td>
+                    <td rowspan="2" style="background-color: limegreen;">Linea4<br>&nbsp;<br>Linea6<br>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="background-color: lavender;">Linea5<br>&nbsp;<br>Linea7<br>&nbsp;<br>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="background-color: lightyellow;">Linea8<br>&nbsp;<br>&nbsp;<br>&nbsp;</td>
+                </tr>
+            </table>
+
+            <h4>e)</h4>
+            <table class="table text-center">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td rowspan="3">C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                </tr>
+            </table>
+            <table class="table text-center">
+                <tr>
+                    <td colspan="2">A</td>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td colspan="3">E</td>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                </tr>
+            </table>
+            </article>
+        </section>
+
+
+
+        <section class="bg-info bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1>
+                2º Crea una tabla con este diseño usando los siguientes 
+                estilos css en
+            </h1>
+
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <table class="table">
+                    <thead>
+                        <tr class="table-info">
+                            <th class="p-4"><img src="./material/logo-classroom.png" alt="Logo de clasroom" height="50px" width="80px"></th>
+                            <th class="pb-4 fs-3">Cabecera</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <th class="fs-4">Contenido</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="p-5">
+                                <a href="">Enlace1<br></a>
+                                <a href="">Enlace2<br></a>
+                                <a href="">Enlace3<br></a>
+                                <a href="">Enlace4<br></a>
+                                <a href="">Enlace5<br></a>
+                                <a href="">Enlace6<br></a>
+                                <a href="">Enlace7<br></a>
+                                <a href="">Enlace8<br></a>
+                            </td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nisi veniam natus facilis unde eos dolorem eveniet facere maiores quasi, labore fugit porro autem blanditiis ratione hic, accusamus, rem odit?</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatibus vitae quo itaque recusandae neque voluptas, nisi, expedita perspiciatis similique quia fugit, labore reprehenderit praesentium inventore molestiae saepe laboriosam facere?</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi sit vel nemo recusandae aut perferendis quia inventore optio? Vitae ipsam quisquam, earum doloribus illo in rem adipisci hic minima quas!</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot class="table-danger">
+                        <tr>
+                            <th colspan="2">Pies</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>        
+            
+
+
+        <section class="bg-info bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1>
+                3º Crea esta tablas anidadas insertando unas dentro de otras 
+                y alineando las en su orden correcto
+            </h1>
+
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-center">Climas de América del Sur</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>
+                                Parte de arriba de América del Sur. Países como:
+                                <table class="table table-secondary w-25">
+                                    <tr>
+                                        <td>Venezuela</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colombia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ecuador</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Perú</td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <th>
+                                Parte de abajo de América del Sur. Países como:
+                                <table class="table table-secondary w-25">
+                                    <tr>
+                                        <td>Argentina</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uruguay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paraguay</td>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li><strong>Bosque tropical,</strong></li>
+                                    <li>clima de sabana,</li>
+                                    <li>clima marítimo con inviernos secos.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Climas marítimos con veranos secos,</li>
+                                    <li>climas frios,</li>
+                                    <li>clima de estepa,</li>
+                                    <li>clima desértico.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
         </section>
 
