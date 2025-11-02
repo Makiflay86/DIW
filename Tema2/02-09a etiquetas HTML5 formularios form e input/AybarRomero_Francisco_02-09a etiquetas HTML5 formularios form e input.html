@@ -228,16 +228,256 @@
                 <h1>Atributos button</h1>
 
                 <ol>
-                    <li><strong>Formaction</strong>: </li>
-                    <li><strong>Formethod</strong>: </li>
-                    <li><strong>Formenctype</strong>: </li>
-                    <li><strong>Formnovalidate</strong>: </li>
-                    <li><strong>Formtarget</strong>: </li>
+                    <li><strong>Formaction</strong>: Especifica la URL a la que se envían los datos del formulario al hacer clic en el botón, anulando el atributo "action" del elemento "&lt;form&gt;" padre.</li>
+                    <li><strong>Formethod</strong>: Define el método HTTP (como "GET" o "POST") a utilizar para enviar los datos del formulario, anulando el atributo "method" del elemento "&lt;form&gt;" padre.</li>
+                    <li><strong>Formenctype</strong>: Determina cómo se deben codificar los datos del formulario antes de enviarlos al servidor (por ejemplo, "application/x-www-form-urlencoded" o "multipart/form-data"), anulando el atributo "enctype" del elemento "&lt;form&gt;" padre, y solo es relevante para el método "POST".</li>
+                    <li><strong>Formnovalidate</strong>: Es un atributo booleano que, si está presente, indica que los datos del formulario no deben validarse al ser enviados, anulando la validación del elemento "&lt;form&gt;" padre.</li>
+                    <li><strong>Formtarget</strong>: Especifica el contexto de navegación (una ventana, pestaña o iframe) donde se mostrará la respuesta del servidor después de enviar el formulario (valores comunes son "_self", "_blank", "_parent", "_top"), anulando el atributo "target" del elemento "&lt;form&gt;" padre.</li>
                 </ol>
             </article>
         </section>
 
 
+
+        <section class="bg-primary bg-opacity-50 mt-5 p-5 rounded shadow">
+        <h1 class="text-center">
+            7º Crea un formulario get que incluya los siguientes componentes 
+        </h1>
+        <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+            <h1>Formulario GET con Controles</h1>
+
+            <form method="get">
+                <div class="mb-3">
+                    <label for="comentario" class="form-label">Escribe un comentario: </label>
+                    <input type="text" id="comentario" name="comentario" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label d-block">Nivel de Satisfacción: </label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="satisfaccion" id="sat_bajo" value="bajo" checked>
+                        <label class="form-check-label" for="sat_bajo">Bajo</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="satisfaccion" id="sat_medio" value="medio">
+                        <label class="form-check-label" for="sat_medio">Medio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="satisfaccion" id="sat_alto" value="alto">
+                        <label class="form-check-label" for="sat_alto">Alto</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="satisfaccion" id="sat_maximo" value="maximo">
+                        <label class="form-check-label" for="sat_maximo">Máximo</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label d-block">Opciones: </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="acepto" id="acepto_terminos" name="terminos">
+                        <label class="form-check-label" for="acepto_terminos">Acepto los términos</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="enviar" id="enviar_info" name="noticias">
+                        <label class="form-check-label" for="enviar_info">Quiero recibir información</label>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="archivo_adjunto" class="form-label">Seleccionar Archivo: </label>
+                    <input class="form-control" type="file" id="archivo_adjunto" name="archivo_adjunto">
+                </div>
+
+                <button type="submit" class="btn btn-outline-warning text-dark">Enviar Formulario GET</button>
+            </form>
+        </article>
+    </section>
+
+
+
+    <section class="bg-info bg-opacity-50 my-5 p-5 rounded shadow">
+        <h1 class="text-center">
+            8º Crea un formulario dentro de una tabla
+        </h1>
+        <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+            
+            <table style="width: 80%; margin-left: auto; margin-right: auto; border: red 1px solid;" class="p-3">
+                <tr>
+                    <td>
+                        <form method="get" class="p-4">
+                            <h1>Formulario en Tabla</h1>
+                            <div class="mb-3">
+                                <label for="nombre">Escriba su nombre</label><br>
+                                <input type="text" id="nombre" name="nombre" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="apellidos">Escriba sus apellidos</label><br>
+                                <input type="text" id="apellidos" name="apellidos" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="d-block">Escriba su sexo:</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="hombre" value="Hombre" checked>
+                                    <label class="form-check-label" for="hombre">Hombre</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="mujer" value="Mujer">
+                                    <label class="form-check-label" for="mujer">Mujer</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+
+
+    <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+        <h1 class="text-center">
+            9º Formulario GET de Reserva
+        </h1>
+        <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+            <h1>Formulario de Reserva</h1>
+            <form method="get">
+                
+                <div class="mb-3">
+                    <label for="nombre_completo" class="form-label">Nombre Completo de la Persona que Reserva</label>
+                    <input type="text" id="nombre_completo" name="nombre_completo" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="num_personas" class="form-label">Número de Personas</label>
+                    <input type="number" id="num_personas" name="num_personas" class="form-control" min="1" max="10" value="2" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-control" pattern="[0-9]{9}" placeholder="Ej: 600123456" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="fecha_reserva" class="form-label">Fecha de la Reserva</label>
+                    <input type="date" id="fecha_reserva" name="fecha_reserva" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="hora_reserva" class="form-label">Hora de la Reserva</label>
+                    <input type="time" id="hora_reserva" name="hora_reserva" class="form-control" required>
+                </div>
+
+                <button type="submit" class="btn btn-success">Realizar Reserva</button>
+            </form>
+        </article>
+    </section>
+
+
+
+    <section class="bg-info bg-opacity-50 my-5 p-5 rounded shadow">
+        <h1 class="text-center">
+            10º Formulario GET de Ajuste de Color
+        </h1>
+        <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+            <h1>Ajuste de Color</h1>
+            <form method="get">
+                
+                <div class="mb-3">
+                    <label for="tematica" class="form-label">Temática o Nombre del Diseño</label>
+                    <input type="text" id="tematica" name="tematica" class="form-control" placeholder="Ej: Atardecer en la Playa" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="color_base" class="form-label">Color Base</label>
+                    <input type="color" id="color_base" name="color_base" class="form-control form-control-color" value="#4CAF50" title="Selecciona tu color base">
+                </div>
+
+                <div class="mb-3">
+                    <label for="contraste" class="form-label">Contraste: <span id="valor_contraste">100</span>%</label>
+                    <input type="range" id="contraste" name="contraste" class="form-range" min="50" max="200" value="100" oninput="document.getElementById('valor_contraste').textContent=this.value">
+                </div>
+
+                <div class="mb-3">
+                    <label for="brillo" class="form-label">Brillo: <span id="valor_brillo">100</span>%</label>
+                    <input type="range" id="brillo" name="brillo" class="form-range" min="0" max="200" value="100" oninput="document.getElementById('valor_brillo').textContent=this.value">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Aplicar Ajustes</button>
+            </form>
+        </article>
+    </section>
+        
+
+
+    <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+        <h1 class="text-center">
+            11º Formulario POST para Submisión en Tabla
+        </h1>
+        <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+            <h1>Submisión Web a Buscador</h1>
+            
+            <table style="width: 80%; margin-left: auto; margin-right: auto; border: red 1px solid;">
+                <thead>
+                    <tr>
+                        <td colspan="3" style="border: red 1px solid; text-align: center;" class="p-2 fs-4">
+                            Escoge el sistema de envío
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <form method="get">
+                                
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <tr>
+                                        <td style="border: red 1px solid; text-align: center; width: 33%;">
+                                            <div class="p-2">
+                                                <label for="web_buscar" class="visually-hidden">Buscar Archivo</label>
+                                                <input type="search" id="web_buscar" name="web_buscar" placeholder="Buscar Archivo">
+                                            </div>
+                                            <div class="p-2">
+                                                <label for="tematica_web" class="visually-hidden">Web a Buscar</label>
+                                                <input type="text" id="tematica_web" name="tematica_web" placeholder="Web a Buscar">
+                                            </div>
+                                        </td>
+
+                                        <td style="border: blue 1px solid; text-align: center; width: 34%;">
+                                            <div class="p-2">
+                                                <label for="fichero_subir" class="d-block mb-1">Subir fichero</label>
+                                                <input type="file" id="fichero_subir" name="fichero_subir" class="form-control-sm">
+                                            </div>
+                                        </td>
+
+                                        <td style="border: red 1px solid; text-align: center; width: 33%;">
+                                            <div class="p-2">
+                                                <label for="url_web" class="d-block mb-1">Escoger web</label>
+                                                <input type="url" id="url_web" name="url_web" class="form-control" placeholder="Escriba una url correcta">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                <div class="p-2">
+                                    <button type="submit" class="btn btn-sm btn-dark">Enviar</button>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
 
 
 
