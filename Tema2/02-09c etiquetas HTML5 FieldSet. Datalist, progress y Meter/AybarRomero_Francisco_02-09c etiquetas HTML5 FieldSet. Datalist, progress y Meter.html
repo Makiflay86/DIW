@@ -206,77 +206,92 @@
                 4º Modifica el anterior para cambiar los progress por meter
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
-                <h2>Formulario 3</h2>
+                <h2>Formulario 3 - Personaje</h2>
                 <form class="border border-danger p-3 rounded">
                     <fieldset>
                         <legend>Genera tu personaje para el juego</legend>
                         <div class="mb-3">
-                            <label for="nombreP" class="form-label">Nombre: </label>
-                            <input type="text" class="form-control" id="nombreP" name="nombreP">
+                            <label for="pj_nombre" class="form-label">Nombre: </label>
+                            <input type="text" class="form-control" id="pj_nombre" name="nombreP">
                         </div>
 
                         <div class="mb-3">
-                            <label for="inputEspecializacion" class="form-label">Especialización: </label>
-                            <input type="text" id="inputEspecializacion" name="inputEspecializacion" list="especializacion">
-                            <datalist id="especializacion">
+                            <label for="pj_especializacion" class="form-label">Especialización: </label>
+                            <input type="text" id="pj_especializacion" name="inputEspecializacion" list="datalist_especializacion" onchange="actualizarStatsPersonaje()">
+                            <datalist id="datalist_especializacion">
                                 <option value="Guerrero"></option>
                                 <option value="Mago"></option>
                                 <option value="Ladrón"></option>
                                 <option value="Paladín"></option>
                             </datalist>
                         </div>
-
-                        <div class="mb-3">
-                            <input onclick="cambio2()" type="button" id="spawn2" value="Generar Personaje">
-                        </div>
                     </fieldset>
                     
                     <hr class="my-2">
-                
+
                     <fieldset>
                         <legend>Datos del personaje</legend>
 
                         <div class="mb-3">
-                            <label for="fuerza2" class="form-label">Fuerza</label><br>
-                            <span> 1 </span><meter max="10" id="fuerza22"></meter><span> 10 </span>
+                            <label for="pjStats_fuerza" class="form-label">Fuerza</label><br>
+                            <span> 1 </span><meter max="10" low="4" high="6" optimum="10" id="pjStats_fuerza"></meter><span> 10 </span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="velocidad2" class="form-label">Velocidad</label><br>
-                            <span> 1 </span><meter max="10" id="velocidad2"></meter><span> 10 </span>
+                            <label for="pjStats_velocidad" class="form-label">Velocidad</label><br>
+                            <span> 1 </span><meter max="10" low="4" high="6" optimum="10" id="pjStats_velocidad"></meter><span> 10 </span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="persuacion2" class="form-label">Persuación</label><br>
-                            <span> 1 </span><meter max="10" id="persuacion2"></meter><span> 10 </span>
+                            <label for="pjStats_persuasion" class="form-label">Persuasión</label><br>
+                            <span> 1 </span><meter max="10" low="4" high="6" optimum="10" id="pjStats_persuasion"></meter><span> 10 </span>
                         </div>
 
                         <div class="mb-3">
-                            <label for="espionaje2" class="form-label">Espionaje</label><br>
-                            <span> 1 </span><meter max="10" id="espionaje2"></meter><span> 10 </span>
+                            <label for="pjStats_espionaje" class="form-label">Espionaje</label><br>
+                            <span> 1 </span><meter max="10" low="4" high="6" optimum="10" id="pjStats_espionaje"></meter><span> 10 </span>
                         </div>
                     </fieldset>
                 </form>
-
+                
                 <script> 
-                    var fuerza2 = document.getElementById("fuerza2");
-                    var velocidad2 = document.getElementById("velocidad2");
-                    var persuacion2 = document.getElementById("persuacion2");
-                    var espionaje2 = document.getElementById("espionaje2");
+                    var inputEspecializacion = document.getElementById("pj_especializacion");
+                    var fuerzaMeter = document.getElementById("pjStats_fuerza");
+                    var velocidadMeter = document.getElementById("pjStats_velocidad");
+                    var persuacionMeter = document.getElementById("pjStats_persuasion");
+                    var espionajeMeter = document.getElementById("pjStats_espionaje");
 
-                    function cambio2() 
+                    const estadisticasPersonaje = 
                     {
-                        fuerza2.value = Math.random()*10;
-                        velocidad2.value = Math.random()*10;
-                        persuacion2.value = Math.random()*10;
-                        espionaje2.value = Math.random()*10;
+                        "Guerrero": {f: 10, v: 4, p: 6, e: 3},
+                        "Mago": {f: 6, v: 7, p: 9, e: 4}, 
+                        "Ladrón": {f: 2, v: 10, p: 5, e: 10},
+                        "Paladín": {f: 8, v: 6, p: 4, e: 6}
                     }
+
+                    function actualizarStatsPersonaje() 
+                    {
+                        const especializacion = inputEspecializacion.value.trim();
+                        
+                        const stats = estadisticasPersonaje[especializacion] ||
+                        {
+                            f: 0, v: 0, p: 0, e: 0
+                        };
+
+                        fuerzaMeter.value = stats.f;
+                        velocidadMeter.value = stats.v;
+                        persuacionMeter.value = stats.p;
+                        espionajeMeter.value = stats.e;
+                    }
+                    actualizarStatsPersonaje();
                 </script>
             </article>
         </section>
 
 
 
+
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
