@@ -13,7 +13,7 @@
                 1º Crea cada uno de los ejemplos que aparecen en la práctica.
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
-                <div class="row g-12 justify-content-center"> <!-- esto para centrarlo -->
+                <div class="row g-12 justify-content-center">
                     <div class="col-auto pb-5">
                         <h4 class="text-center">Ejemplo1</h4>
                         <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -223,9 +223,368 @@
                 color verde
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
-                
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
+                            <defs>
+                                <style>
+                                    #ej_2_circle:hover
+                                    {
+                                        fill: green;
+                                    }
+
+                                    #ej_2_rect:hover
+                                    {
+                                        fill: green;
+                                    }
+
+                                    #ej_2_polygon:hover
+                                    {
+                                        fill: green;
+                                    }
+                                </style>
+                            </defs>
+                            <circle id="ej_2_circle" cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1"/>
+                            <rect id="ej_2_rect" x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1"/>
+                            <polygon id="ej_2_polygon" points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1"/>
+                        </svg>
+                    </div>
+                </div>
             </article>
         </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Modifica el anterior ejercicio con esta forma para que 
+                al pasar el ratón encima de cada forma se ponga en el color 
+                que tiene cada forma pero en claro.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
+                            <defs>
+                                <style>
+                                    #ej_3_circle:hover
+                                    {
+                                        fill: lightcoral;
+                                    }
+
+                                    #ej_3_rect:hover
+                                    {
+                                        fill: #95b3d3;
+                                    }
+
+                                    #ej_3_polygon:hover
+                                    {
+                                        fill: lightsalmon;
+                                    }
+                                </style>
+                            </defs>
+                            <circle id="ej_3_circle" cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1"/>
+                            <rect id="ej_3_rect" x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1"/>
+                            <polygon id="ej_3_polygon" points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1"/>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Crea un texto que tenga como estilo fuente georgia y 
+                tamaño 25 que diga "IESPLAYAMAR"
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <svg viewBox="0 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <style>
+                                    #ej_4
+                                    {
+                                        fill: Lime;
+                                        font: 25 Georgia;
+                                    }
+                                </style>
+                            </defs>
+                            <text id="ej_4">IESPLAYAMAR</text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                5º Modifica el ejemplo 12 añadiendo nuevos circulos 
+                y gradientes para obtener esto
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 200 200" width="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <linearGradient id="ej_5_1" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="gold" />
+                                    <stop offset="95%" stop-color="red" />
+                                </linearGradient>
+                                <linearGradient id="ej_5_2" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="red" />
+                                    <stop offset="95%" stop-color="gold" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="75" fill="url('#ej_5_1')" />
+                            <circle cx="100" cy="100" r="50" fill="url('#ej_5_2')" />
+                            <circle cx="100" cy="100" r="30" fill="url('#ej_5_1')" />
+                            <circle cx="100" cy="100" r="15" fill="url('#ej_5_2')" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                6º Crea un texto que tenga como estilo fuente georgia y 
+                tamaño 25 que diga "FRANCIA" y tenga los colores asi 
+                Rojo: #DC2432 Azul: #0f2493 . Debes jugar con tspan
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-35 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <style>
+                                    #ej_6_rojo
+                                    {
+                                        fill: #DC2432;
+                                    }
+
+                                    #ej_6_gris
+                                    {
+                                        fill: grey;
+                                    }
+
+                                    #ej_6_azul
+                                    {
+                                        fill: #0f2493;
+                                    }
+                                </style>
+                            </defs>
+                            <text><tspan id="ej_6_rojo">FR</tspan><tspan id="ej_6_gris">AN</tspan><tspan id="ej_6_azul">CIA</tspan></text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                7º Ha como el anterior para que al pasar sobre el ratón 
+                se agrande el tamaño de cada letra. Debes jugar con tspan 
+                y hover.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-35 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <style>
+                                    #ej_7_1:hover
+                                    {
+                                        fill: red;
+                                        font: 50px Georgia;
+                                    }
+
+                                    #ej_7_2:hover
+                                    {
+                                        fill: yellow;
+                                        font: 50px Georgia;
+                                    }
+
+                                    #ej_7_3:hover
+                                    {
+                                        fill: red;
+                                        font: 50px Georgia;
+                                    }
+                                </style>
+                            </defs>
+                            <text><tspan id="ej_7_1">ES</tspan><tspan id="ej_7_2">PA</tspan><tspan id="ej_7_3">ÑA</tspan></text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                8º Crea un texto que tenga como estilo fuente Georgia y 
+                tamaño 25 que diga “IESPLAYAMAR” usando un path curvo 
+                que crees con la herramienta https://yqnn.github.io/svg-path-editor/
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 -20 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <style>
+                                    #ej_8
+                                    {
+                                        fill: red;
+                                        font: 25px Georgia;
+                                    }
+                                </style>
+                            </defs>
+                            
+                            <path id="ej_8_path" d="M 0 0 A 1 1 0 0 0 200 0" fill="transparent" />
+                            <text id="ej_8">
+                                <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ej_8_path" startOffset="50%" text-anchor="middle" >
+                                    IESPLAYAMAR
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                9º A partir del ejemplo intenta sacar los siguientes degradados
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <linearGradient id="ej_9_1" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="red" />
+                                    <stop offset="15%" stop-color="orange" />
+                                    <stop offset="30%" stop-color="yellow" />
+                                    <stop offset="45%" stop-color="green" />
+                                    <stop offset="60%" stop-color="cyan" />
+                                    <stop offset="75%" stop-color="blue" />
+                                    <stop offset="100%" stop-color="magenta" />
+                                </linearGradient>
+
+                                <linearGradient id="ej_9_21" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="blue" />
+                                    <stop offset="95%" stop-color="green" />
+                                </linearGradient>
+                                <linearGradient id="ej_9_22" gradientTransform="rotate(0)">
+                                    <stop offset="5%" stop-color="green" />
+                                    <stop offset="95%" stop-color="blue" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <circle cx="50" cy="100" r="50" fill="url('#ej_9_1')" />
+
+                            <circle cx="150" cy="100" r="50" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="45" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="40" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="35" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="30" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="25" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="20" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="15" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="10" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="5" fill="url('#ej_9_22')" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                10º Modifica los textos de viva torremolinos para 
+                sacar algo parecido a esto
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 -20 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <style>
+                                    #ej_10
+                                    {
+                                        fill: red;
+                                        font: 25px Georgia;
+                                    }
+                                </style>
+                                <linearGradient id="ej_10" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="red" />
+                                    <stop offset="15%" stop-color="orange" />
+                                    <stop offset="30%" stop-color="yellow" />
+                                    <stop offset="45%" stop-color="green" />
+                                    <stop offset="60%" stop-color="cyan" />
+                                    <stop offset="75%" stop-color="blue" />
+                                    <stop offset="100%" stop-color="magenta" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <path id="ej_10_path" d="M 0 0 A 1 1 0 0 0 200 0" fill="transparent" />
+                            <text id="ej_10">
+                                <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ej_10_path" startOffset="50%" text-anchor="middle" fill="url('#ej_10')" >
+                                    Viva Torremolinos
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                11º Utiliza el ejemplo Ejemplo 9b , este path y 
+                esta poesia para crear este diseño.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-45 -20 50 50" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <style>
+                                    #ej_11
+                                    {
+                                        fill: red;
+                                        font: 5px Georgia;
+                                    }
+                                </style>
+                            </defs>
+                        
+                            <path id="ej_11_path" d="M 0 0 A 1 1 0 0 0 -20 0 A 1 1 0 0 0 -40 0 C -41 10 -26.6667 15.3333 -20 23 C -13.3333 15.3333 1 10 0 0" fill="transparent"/>
+                            <text id="ej_11">
+                                <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ej_11_path" startOffset="50%" text-anchor="middle" >
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
