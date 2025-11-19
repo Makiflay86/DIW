@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AybarRomero_Francisco_03-09b etiquetas HTML svg filtros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+</head>
+<body class="container-fluid w-75">  
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                1º Crea todos los ejemplos que se encuentran en el documento
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-9 justify-content-center">
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo1</h4>
+                        <svg
+                            width="230"
+                            height="120"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <filter id="blurMe">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                            </filter>
+
+                            <circle cx="60" cy="60" r="50" fill="green" />
+                            <circle cx="170" cy="60" r="50" fill="green" filter="url(#blurMe)" />
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo2</h4>
+                        <svg width="120"
+                            height="120"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <filter id="dropShadow">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                                <feOffset dx="2" dy="4" />
+                                <feMerge>
+                                    <feMergeNode />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+
+                            <circle cx="60" cy="60" r="50" fill="green" filter="url(#dropShadow)" />
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo3</h4>
+                        <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="200"
+                            height="200">
+                            <defs>
+                                <filter id="image">
+                                    <feImage href="playa.png" />
+                                </filter>
+                            </defs>
+
+                            <rect x="10%" y="10%" width="80%" height="80%" style="filter:url(#image);" >
+                                <animate attributeName="width" from="10%" to="80%" dur="1s" begin="0" end="1" > </animate> 
+                                <animate attributeName="width" from="80%" to="10%" dur="1s" begin="1" end="2" > </animate>
+                            </rect> 
+                            <text x="50" y="180" font-size="20"> Esto es un Svg</text>
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo4</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="200" height="200" >
+
+                            <filter id="feOffset" x="-40" y="-20" width="100" height="200">
+                                <feOffset in="SourceGraphic" dx="60" dy="60" />	
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur2" />
+
+                                <feMerge>
+                                    <feMergeNode in="blur2" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <rect x="40" y="40" width="100" height="100" style="stroke: #000000; fill: green; filter: url(#feOffset);" />
+                            <rect  x="40" y="40" width="100" height="100" style="stroke: #000000; fill: green;" />
+                        </svg>
+                    </div>
+                    
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo5</h4>
+                        <svg width="200" height="200" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                            <filter id="displacementFilter">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.05"
+                                    numOctaves="2" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="50" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+
+                            <circle cx="100" cy="100" r="100" style="filter: url(#displacementFilter)" />
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo6</h4>
+                        <svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialGradient id="star_grad">
+                                    <stop offset="0%" style="stop-color: #dffda5;"/>
+                                    <stop offset="50%" style="stop-color: orange;"/>
+                                    <stop offset="100%" style="stop-color: #eddfa6;"/>
+                                </radialGradient>
+                                <filter id="star_filter" x="0" y="0" width="100%" height="100%">
+                                    <feTurbulence id="color2" baseFrequency="0.03, 0.02" seed="2" numOctaves="4" type="fractalNoise" stitchTiles="noStitch" result="ripples" />
+                                    <feComposite result="comp" id="feComposite_def" in = "SourceGraphic" in2 = "ripples" operator="out"/>
+                                </filter>
+                            </defs>
+
+                            <rect id="feConvolveMatrix_image" x="1" y="1" width="200" height="200" fill="white" />
+                            <circle cx="50%" cy="50%" r="35%" fill="url(#star_grad)" style="filter: url(#star_filter);" />  
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo7</h4>
+                        <svg viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <filter id="shadow"> <feDropShadow dx="0.2" dy="0.4" stdDeviation="0.2" /> </filter>
+                                <filter id="shadow2"> <feDropShadow dx="0" dy="0" stdDeviation="0.5" flood-color="green" /> </filter>
+                                <filter id="shadow3">
+                                    <feDropShadow dx="-0.8"  dy="-0.8"  stdDeviation="0"  
+                                        flood-color="green"  flood-opacity="0.5" />
+                                </filter>
+                            </defs>
+                            <circle cx="5" cy="50%" r="4" style="fill:green; filter:url(#shadow);" />
+                            <circle cx="15" cy="50%" r="4" style="fill:green; filter:url(#shadow2);" />
+                            <circle cx="25" cy="50%" r="4" style="fill:green; filter:url(#shadow3);" />
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo8</h4>
+                        <svg  width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <filter id="spotlight">    
+                                    <feSpecularLighting result="spotlight" specularConstant="1.5" specularExponent="80" lighting-color="white">
+                                        <fePointLight x="50" y="50" z="220" />
+                                    </feSpecularLighting>
+
+                                    <feComposite in="SourceGraphic" in2="spotlight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
+                                </filter>
+                            </defs>
+
+                            <image  href="playa.png" x="10%" y="10%" width="80%" height="80%"
+                            style="filter:url(#spotlight);" />
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo9</h4>
+                        <svg
+                            width="200" height="200" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <defs>
+                                <filter id="filtroverde">
+                                    
+                                        <feFlood
+                                            result="floodFill"    x="0"    y="0"
+                                            width="100%"    height="100%"
+                                            flood-color="blue"
+                                            flood-opacity="1" />
+                                    
+                                        <feBlend in="SourceGraphic" in2="floodFill" mode="multiply" />
+                                </filter>
+                            </defs>
+
+                            <image   href="playa.png"   x="10%"   y="10%"  width="80%"   height="80%"
+                            style="filter:url(#filtroverde);" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                2º Modifica el ejemplo 1 para hacer un blur sobre una 
+                elipse roja irregular con desviación 10
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg
+                            width="230"
+                            height="120"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <filter id="ej_2_blurMe">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                            </filter>
+
+                            <circle cx="60" cy="60" r="50" fill="red" />
+                            <circle cx="170" cy="60" r="50" fill="red" filter="url(#ej_2_blurMe)" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Modifica el ejemplo 2 para aplicar el mismo ejemplo de 
+                la una sombra blur sobre una rectángulo rojo.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg width="120"
+                            height="120"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <filter id="ej_3_dropShadow">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+                                <feOffset dx="5" dy="5" />
+                                <feMerge>
+                                    <feMergeNode />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+
+                            <rect x="10" y="10" width="100" height="100" fill="red" filter="url(#ej_3_dropShadow)" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Modifica el ejemplo 3 para insertar una imagen de superman 
+                que vuele de izquierda a derecha
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                         <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="800"
+                            height="200">
+                            <defs>
+                                <filter id="ej_4_image">
+                                    <feImage href="superman.png" />
+                                </filter>
+                            </defs>
+
+                            <rect x="-200" y="35" width="150" height="150" style="filter:url(#ej_4_image);" >
+                                <animate attributeName="x" from="-200" to="200" dur="1s" begin="0" end="1"></animate> 
+                            </rect> 
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                5º Modifica varios ejemplos del ejemplo 5 para variar 
+                el tipo de turbulencias.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                         <svg width="600" height="200" viewBox="0 0 750 220" xmlns="http://www.w3.org/2000/svg">
+                            <filter id="ej_5_displacementFilter1">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.05"
+                                    numOctaves="2" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="50" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+                            <filter id="ej_5_displacementFilter2">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.1"
+                                    numOctaves="2" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="50" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+                            <filter id="ej_5_displacementFilter3">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.125"
+                                    numOctaves="5" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="50" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+
+                            <circle cx="100" cy="100" r="100" style="filter: url(#ej_5_displacementFilter1)" />
+                            <circle cx="350" cy="100" r="100" style="filter: url(#ej_5_displacementFilter2)" />
+                            <circle cx="600" cy="100" r="100" style="filter: url(#ej_5_displacementFilter3)" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                6º Modifica el ejemplo 4 para insertar los filtros del 
+                ejemplo 2 y el  ejemplo 5 a la vez
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="600" height="200" >
+                           
+                            <!-- Ej4 -->
+                            <filter id="ej_6_feOffset">
+                                <feOffset in="SourceGraphic" dx="60" dy="60" />	
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur2" />
+                                <feMerge>
+                                    <feMergeNode in="blur2" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <rect x="40" y="40" width="100" height="100" style="stroke: #000000; fill: red; filter: url(#ej_6_feOffset);" />
+                            <rect  x="40" y="40" width="100" height="100" style="stroke: #000000; fill: green;" />
+
+                            <!-- Ej2 -->
+                            <filter id="ej_6_dropShadow">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur2" />
+                                <feOffset dx="5" dy="5" />
+                                <feMerge>
+                                    <feMergeNode in="blur2"/>
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+
+                            <circle cx="290" cy="90" r="45" fill="cyan" filter="url(#ej_6_dropShadow)" />
+                            <circle cx="290" cy="90" r="45" fill="magenta" />
+
+                            <!-- Ej5 -->
+                            <filter id="ej_6_displacementFilter">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.05"
+                                    numOctaves="2" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="20" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+
+                            <circle cx="490" cy="90" r="45" style="filter: url(#ej_6_displacementFilter)" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                7º Modifica el ejemplo 7 sobre sombras para que quede así
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                         <svg width="500" viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <filter id="ej_7_shadow"> 
+                                    <feDropShadow dx="0.2" dy="0.4" stdDeviation="0.2" />
+                                    <feDropShadow dx="-0.2" dy="-0.4" stdDeviation="0.2" />
+                                </filter>
+                                <filter id="ej_7_shadow2"> <feDropShadow dx="0" dy="0" stdDeviation="0.5" flood-color="yellow" /></filter>
+                                <filter id="ej_7_shadow3">
+                                    <feDropShadow dx="0.2" dy="0.4" stdDeviation="0.2" flood-color="red" flood-opacity="0.5" />
+                                </filter>
+                            </defs>
+
+                            <circle cx="5" cy="50%" r="4" style="fill:blue; filter:url(#ej_7_shadow);" />
+                            <circle cx="15" cy="50%" r="4" style="fill:yellow; filter:url(#ej_7_shadow2);" />
+                            <circle cx="25" cy="50%" r="4" style="fill:red; filter:url(#ej_7_shadow3);" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
