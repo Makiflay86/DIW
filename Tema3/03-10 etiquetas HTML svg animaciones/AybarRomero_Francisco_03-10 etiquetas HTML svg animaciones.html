@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AybarRomero_Francisco_03-10 etiquetas HTML svg animaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+</head>
+<body class="container-fluid w-75">  
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                1º Crea cada uno de los ejemplos que aparecen en la practica
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo1</h4>
+                        <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="10" height="10">
+                                <animate
+                                attributeName="rx"
+                                values="0;5;0"
+                                dur="10s"
+                                repeatCount="indefinite" />
+                            </rect>
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo2</h4>
+                        <svg viewBox="0 0 220 150" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="0" width="100" height="100">
+                                <animate
+                                attributeType="XML"
+                                attributeName="y"
+                                from="0"
+                                to="50"
+                                dur="1s"
+                                repeatCount="indefinite" />
+                            </rect>
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo3</h4>
+                        <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" stroke="grey" d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />  
+                            <circle r="5" fill="red">
+                            <animateMotion
+                                dur="10s" repeatCount="indefinite"
+                                path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                            </circle>
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo4</h4>
+                         <svg viewBox="-3 -100 216 150" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" stroke="grey" d="M 0 0 C 53 -89 98 -101 210 -44z" /> 
+                            <circle r="5" fill="red">
+                                <animateMotion          
+                                    dur="2s"
+                                    repeatCount="indefinite"
+                                    path="M 0 0 C 53 -89 98 -101 210 -44z" />
+                            </circle>
+                        </svg>
+                    </div>
+                    
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo5</h4>
+                        <svg
+                            width="120"
+                            height="120"
+                            viewBox="0 0 120 120"
+                            xmlns="http://www.w3.org/2000/svg">
+                            
+                            <polygon points="60,30 90,90 30,90">
+                                <animateTransform
+                                    attributeName="transform"
+                                    attributeType="XML"
+                                    type="rotate"
+
+                                    from="0 60 70"
+                                    to="360 60 70"
+                                    dur="10s"
+                                    
+                                    repeatCount="indefinite" />
+                            </polygon>
+                            </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                2º Crea la figura de la izquierda (hecha en la practica 
+                anterior)  y Modifica lo para que se muevan unos a izquierda 
+                y otros a derecha
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <circle cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1">
+                                <animate
+                                    attributeName="cy"
+                                    values="0;50;0"
+                                    dur="1s"
+                                    repeatCount="indefinite" 
+                                />
+                            </circle>
+                            <rect x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1">
+                                <animate
+                                    attributeName="x"
+                                    values="-50;-150;-50"
+                                    dur="1s"
+                                    repeatCount="indefinite" 
+                                />
+                            </rect>
+                            <polygon points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1">
+                                <animateTransform
+                                    attributeName="transform"
+                                    type="rotate"
+                                    //values="80;360;80"
+                                    dur="5s"
+                                    repeatCount="indefinite" 
+                                />
+                            </polygon>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Crea la figura de la izquierda (hecha en la practica 
+                anterior)  y Modifica lo para que Cambien de color
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
+                            <circle cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1">
+                                <animate
+                                    attributeName="fill"
+                                    values="red;green;blue"
+                                    dur="5s"
+                                    repeatCount="indefinite" 
+                                />
+                            </circle>
+                            <rect x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1">
+                                <animate
+                                    attributeName="fill"
+                                    values="red;yellow;red"
+                                    dur="5s"
+                                    repeatCount="indefinite" 
+                                />
+                            </rect>
+                            <polygon points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1">
+                                <animate
+                                    attributeName="fill"
+                                    values="black;red;white"
+                                    dur="5s"
+                                    repeatCount="indefinite" 
+                                />
+                            </polygon>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Usa el ejemplo de animateMotion para crear un path 
+                que lo sigan varias 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg width="500" viewBox="-100 -200 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" stroke="grey" path d="M0 0C16.6667 16.6667-10 40 50 50 130 50 140-10 150 30 170 120 270-50 210-30 100-40-110-180 110-160 270-130-180-100-70-30Z" />  
+                            <circle r="7" fill="red">
+                                <animateMotion
+                                    dur="5s" 
+                                    repeatCount="indefinite"
+                                    path="M0 0C16.6667 16.6667-10 40 50 50 130 50 140-10 150 30 170 120 270-50 210-30 100-40-110-180 110-160 270-130-180-100-70-30Z"
+                                />
+                            </circle>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                5º Modifica el siguiente ejemplo para que se muevan 
+                a la izquierda todas las letras (animateTransform)
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg width="400" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+                            <style>
+                                .small { font: italic 13px sans-serif; }
+                                .heavy { font: bold 30px sans-serif; }          
+                                .Rrrrr { font: italic 40px serif; fill: red; }
+                            </style>
+                        
+                            <text x="20" y="35" class="small">El  </text>	
+                            <text x="40" y="35" class="heavy">IES  Playamar</text>
+                            <text x="55" y="55" class="small">es</text>
+                            <text x="65" y="55" class="Rrrrr">Genial!</text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
