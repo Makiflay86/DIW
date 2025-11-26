@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AybarRomero_Francisco_03-10 etiquetas HTML svg animaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+</head>
+<body class="container-fluid w-75">  
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                1º Crea cada uno de los ejemplos que aparecen en la práctica
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo1</h4>
+                        <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg"
+                            width="200" height="200" >
+
+                            <path
+                            fill="none"
+                            stroke="lightgrey"
+                            d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+
+                            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">   
+                            <circle r="5" fill="red">
+                                <animateMotion
+                                dur="10s"
+                                repeatCount="indefinite"
+                                path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                            </circle>
+                            </a>
+                        </svg>
+
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo2</h4>
+                        
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo3</h4>
+                        
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo4</h4>
+                         
+                    </div>
+                    
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo5</h4>
+                        
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                2º Crea un svg con 1 ellipse con los mismos focos  que 
+                cuando se pulsen en ellas cree una animación que intercambie 
+                el rx y el ry 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <ellipse id="ell1" cx="150" cy="150" rx="25" ry="50">
+                                <animate id="r4" attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="click" />
+                                <animate id="r5" attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="click" />
+                            </ellipse>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <ellipse id="ell2" cx="150" cy="150" rx="25" ry="50">
+                                <!-- <animate id="r4" attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="click" />
+                                <animate id="r5" attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="click" /> -->
+                            </ellipse>
+
+                            <script>
+                                let ell2 = document.getElementById("ell2");
+                                let grow = true;
+                                let intervalrxy2 = setInterval( () => {
+                                    let rxell2 = ell2.rx.baseVal.value;
+                                    let ryell2 = ell2.ry.baseVal.value;
+                                    if (grow)
+                                    {
+                                        rxy++;
+                                    } else 
+                                    {
+                                        rxy--;
+                                    }
+
+                                    if (rxell2 > 50)
+                                    {
+                                        grow = false;
+                                    }
+
+                                    if (rxell2 < 50)
+                                    {
+                                        grow = true;
+                                    }
+
+                                    ell2.rx.baseVal.value = rxell1+rxy;
+                                    ell2.ry.baseVal.value = rxell1+rxy;
+                                }, 40);
+                            </script>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <ellipse cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="70;45;70" dur="2s" begin="mouseover" />
+                            </ellipse>
+                            
+                            <ellipse cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="mouseover" />
+                            </ellipse>
+
+                            <ellipse cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="mouseover" />
+                            </ellipse>
+                            <!-- Hasta 5 ellipse -->
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <ellipse cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="mouseout" />
+                                <animate attributeType="XML" attributeName="cy" values="70;45;70" dur="2s" begin="mouseout" />
+                            </ellipse>
+                            
+                            <ellipse cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="mouseover" />
+                            </ellipse>
+
+                            <ellipse cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="mouseover" />
+                            </ellipse>
+                            <!-- Hasta 5 ellipse -->
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
