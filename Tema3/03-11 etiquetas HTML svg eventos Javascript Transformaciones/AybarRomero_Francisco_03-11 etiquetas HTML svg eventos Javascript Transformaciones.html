@@ -10,21 +10,19 @@
 <body class="container-fluid w-75">  
         <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
             <h1 class="text-center">
-                1º Crea cada uno de los ejemplos que aparecen en la práctica
+                1º Crea cada uno de los ejemplos que aparecen en la practica
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
-                <div class="row g-5 justify-content-center">
+                <div class="row g-11 justify-content-center">
                     <div class="col-auto pb-5">
                         <h4 class="text-center">Ejemplo1</h4>
                         <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg"
                             width="200" height="200" >
-
                             <path
                             fill="none"
                             stroke="lightgrey"
                             d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
-
-                            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">   
+                            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">
                             <circle r="5" fill="red">
                                 <animateMotion
                                 dur="10s"
@@ -33,27 +31,211 @@
                             </circle>
                             </a>
                         </svg>
-
                     </div>
 
                     <div class="col-auto pb-5">
                         <h4 class="text-center">Ejemplo2</h4>
-                        
+                        <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <rect x="10" y="35" height="15" width="0">
+                                <animate attributeType="XML" attributeName="width" id="rectangulo1"
+                                to="100" dur="8s" fill="freeze" begin="2s"/>
+                            </rect>
+                            <rect x="35" y="60" height="15" width="0">
+                                <animate attributeType="XML" attributeName="width" id="rectangulo2"
+                                to="75" dur="6s" fill="freeze"
+                                begin="rectangulo1.end" />
+                            </rect>
+                            <rect x="60" y="85" height="15" width="0">
+                                <animate attributeType="XML" attributeName="width" id="rectangulo3"
+                                to="50" dur="4s" fill="freeze"
+                                begin="rectangulo2.end" />
+                            </rect>
+                        </svg>
                     </div>
 
                     <div class="col-auto pb-5">
                         <h4 class="text-center">Ejemplo3</h4>
-                        
+                        <svg width="120" height="120" viewBox="0 0 120 120"
+                            xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect x="10" y="35" height="15" width="0">
+                                <animate attributeType="XML" attributeName="width"
+                                from="0" to="100" dur="8s" fill="freeze"
+                                begin="startButton.click" />
+                            </rect>
+                            <rect id="startButton" style="cursor:pointer;" x="19.5" y="62.5" rx="5"
+                            height="25" width="80"
+                            fill="#EFEFEF" stroke="black" stroke-width="1" />
+                            <text x="60" y="80" text-anchor="middle" style="pointer-events:none;"> Click me. </text>
+                        </svg>
                     </div>
 
                     <div class="col-auto pb-5">
                         <h4 class="text-center">Ejemplo4</h4>
-                         
+                         <svg width="270" height="290">
+                            <rect x=10 y=10 width=80 height=60
+                                fill="yellow" stroke="navy" stroke-width="3">
+                                <animate id="r1" attributeType="XML" attributeName="x"
+                                values="10;170;10" dur="2s" begin="0s;r4.end+2s"/>
+                            </rect>
+                            <rect x=10 y=80 width=80 height=60
+                                fill="red" stroke="navy" stroke-width="3">
+                                <animate id="r2" attributeType="XML" attributeName="x"
+                                values="10;170;10" dur="2s" begin="r1.end"/>
+                            </rect>
+                            <rect x=10 y=150 width=80 height=60
+                                fill="green" stroke="navy" stroke-width="3">
+                                <animate id="r3" attributeType="XML" attributeName="x"
+                                values="10;170;10" dur="2s" begin="r2.end"/>
+                            </rect>
+                            <rect x=10 y=220 width=80 height=60
+                                fill="blue" stroke="navy" stroke-width="3">
+                                <animate id="r4" attributeType="XML" attributeName="x"
+                                values="10;170;10" dur="2s" begin="r3.end"/>
+                            </rect>
+                        </svg>
                     </div>
                     
                     <div class="col-auto pb-5">
                         <h4 class="text-center">Ejemplo5</h4>
-                        
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="100"
+                            onclick="alert('You have clicked the circle.')" />
+                        </svg>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo6</h4>
+                        <svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='200' width='220'></svg>
+                        <script>
+                            function changerect(evt) {
+                            var svgobj=evt.target;
+                            svgobj.style.opacity= 0.3;
+                            svgobj.setAttribute ('x', 300);
+                            }
+                        </script>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo7</h4>
+                        <svg width="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <circle id="ejemplo_7_c1" cx="80" cy="100" r="40" fill="tomato" />
+                            <rect id="ejemplo_7_r1" x="150" y="60" width="80" height="80" fill="steelblue" />
+                            <script>
+                                // Esperar a que exista el DOM del SVG
+                                window.addEventListener("load", () => {
+                                const ejemplo_7_circle = document.getElementById("ejemplo_7_c1");
+                                const ejemplo_7_rect = document.getElementById("ejemplo_7_r1");
+                                
+                                // Cambiar color al hacer click
+                                ejemplo_7_circle.addEventListener("click", () => {
+                                ejemplo_7_circle.setAttribute("fill", "gold"); });
+
+                                // Mover rectángulo al acercar el mouse
+                                ejemplo_7_rect.addEventListener("mouseover", () => {
+                                ejemplo_7_rect.setAttribute("x", parseInt(ejemplo_7_rect.getAttribute("x")) + 10); });
+
+                                // Animación sencilla usando propiedades del SVG DOM
+                                let ejemplo_7_grow = true;
+                                setInterval(() => {
+                                let ejemplo_7_r = ejemplo_7_circle.r.baseVal.value;
+                                if (ejemplo_7_grow) ejemplo_7_r++; else ejemplo_7_r--;
+                                if (ejemplo_7_r > 50) ejemplo_7_grow = false;
+                                if (ejemplo_7_r < 30) ejemplo_7_grow = true;
+                                ejemplo_7_circle.r.baseVal.value = ejemplo_7_r;
+                                }, 30); });
+                            </script>
+                        </svg>
+                    </div>
+                    
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo8</h4>
+                        <svg viewBox="0 0 100 100" height="300" style="background:grey">
+                            <rect id="ejemplo_8_rect" x="0" y="0" width="50" height="50" fill="indigo" transform="translate(50 50)">
+                        </svg>
+                        <p>Valor de <code>X</code>: <input id="ejemplo_8_x" type="range" min="-25" max="75" value="50"></p>
+                        <p>Valor de <code>Y</code>: <input id="ejemplo_8_y" type="range" min="-25" max="75" value="50"></p>
+                        <output id="ejemplo_8_output"></output>
+                        <script>
+                            const ejemplo_8_x = document.getElementById("ejemplo_8_x");
+                            const ejemplo_8_y = document.getElementById("ejemplo_8_y");
+                            const ejemplo_8_rect = document.getElementById("ejemplo_8_rect");
+                            const ejemplo_8_output = document.getElementById("ejemplo_8_output");
+                            const ejemplo_8_update = () => {
+                            ejemplo_8_output.value = `${ejemplo_8_x.value} ${ejemplo_8_y.value}`;
+                            ejemplo_8_rect.setAttribute("transform", `translate(${ejemplo_8_x.value} ${ejemplo_8_y.value})`);
+                            }
+
+                            ejemplo_8_x.addEventListener("input", () => ejemplo_8_update());
+                            ejemplo_8_y.addEventListener("input", () => ejemplo_8_update());
+                        </script>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo9</h4>
+                        <svg viewBox="0 0 100 100" height="300" style="background:grey">
+                            <rect id="ejemplo_9_rect" x="0" y="0" width="50" height="50" fill="indigo" transform="rotate(45 50 50)">
+                        </svg>
+                        <p>Angulo de rotación:
+                        <input id="ejemplo_9_a" type="range" min="0" max="360" value="20"></p>
+                        <p>Valor de <code>X</code>: <input id="ejemplo_9_x" type="range" min="0" max="50" value="50"></p>
+                        <p>Valor de <code>Y</code>: <input id="ejemplo_9_y" type="range" min="0" max="50" value="50"></p>
+                        <output id="ejemplo_9_output"> </output>
+                        <script>
+                            let ejemplo_9_a = document.getElementById("ejemplo_9_a");
+                            let ejemplo_9_x = document.getElementById("ejemplo_9_x");
+                            let ejemplo_9_y = document.getElementById("ejemplo_9_y");
+                            const ejemplo_9_rect = document.getElementById("ejemplo_9_rect");
+                            const ejemplo_9_output = document.getElementById("ejemplo_9_output");
+                            const ejemplo_9_update = () => {
+                            ejemplo_9_output.value = `${ejemplo_9_a.value} ${ejemplo_9_x.value} ${ejemplo_9_y.value}`;
+                            ejemplo_9_rect.setAttribute("transform", `rotate(${ejemplo_9_a.value} ${ejemplo_9_x.value} ${ejemplo_9_y.value})`);
+                            }
+                            ejemplo_9_a.addEventListener("input", () => ejemplo_9_update());
+                            ejemplo_9_x.addEventListener("input", () => ejemplo_9_update());
+                            ejemplo_9_y.addEventListener("input", () => ejemplo_9_update());
+                        </script>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo10</h4>
+                        <svg viewBox="0 0 100 100" height="300" style="background:grey">
+                            <rect id="ejemplo_10_rect2" x="0" y="0" width="50" height="50" fill="indigo" transform="scale(1)">
+                        </svg>
+                        <p>Escala: <input id="ejemplo_10_s" type="range" min="0" max="2" step="0.1" value="1"></p>
+                        <output id="ejemplo_10_o2"> </output>
+                        <script>
+                            const ejemplo_10_s = document.getElementById("ejemplo_10_s");
+                            const ejemplo_10_rect2 = document.getElementById("ejemplo_10_rect2");;
+                            const ejemplo_10_output2 = document.getElementById("ejemplo_10_o2");
+                            const ejemplo_10_update2 = () => {
+                            ejemplo_10_output2.value = `${ejemplo_10_s.value}`;
+                            ejemplo_10_rect2.setAttribute("transform", `scale(${ejemplo_10_s.value})`);
+                            }
+                            ejemplo_10_s.addEventListener("input", () => ejemplo_10_update2());
+                        </script>
+                    </div>
+
+                    <div class="col-auto pb-5">
+                        <h4 class="text-center">Ejemplo11</h4>
+                        <svg viewBox="0 0 300 300" height="300" style="background:grey">
+                            <rect id="ejemplo_11_srect" x="50" y="50" width="150" height="150" fill="indigo" >
+                        </svg>
+                        <p>Valor de <code> SkewX</code>: <input id="ejemplo_11_sx" type="range" min="0" max="50" value="0"></p>
+                        <p>Valor de <code>SkewY</code>: <input id="ejemplo_11_sy" type="range" min="0" max="50" value="0"></p>
+                        <output id="ejemplo_11_sout"> </output>
+                        <script>
+                            let ejemplo_11_sx = document.getElementById("ejemplo_11_sx");
+                            let ejemplo_11_sy = document.getElementById("ejemplo_11_sy");
+                            let ejemplo_11_srect = document.getElementById("ejemplo_11_srect");
+                            let ejemplo_11_soutput = document.getElementById("ejemplo_11_sout");
+                            ejemplo_11_soutput.value = `${ejemplo_11_sx.value} ${ejemplo_11_sy.value}`;
+                            const ejemplo_11_update4 = () => {
+                            ejemplo_11_soutput.value = `${ejemplo_11_sx.value} ${ejemplo_11_sy.value}`;
+                            ejemplo_11_srect.setAttribute("transform", `skewX(${ejemplo_11_sx.value}) skewY(${ejemplo_11_sy.value})`);
+                            }
+                            ejemplo_11_sx.addEventListener("input", () => ejemplo_11_update4());
+                            ejemplo_11_sy.addEventListener("input", () => ejemplo_11_update4());
+                        </script>
                     </div>
                 </div>
             </article>
@@ -86,26 +268,130 @@
         
         <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
             <h1 class="text-center">
-                3º 
+                2bisº Crea un svg con 5 ellipses con los mismos focos que cuando 
+                se pulsen en ellas crezcan de manera diferente. animate + radios
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center"> 
                     <div class="col-auto">
                         <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
-                            <ellipse id="ell2" cx="150" cy="150" rx="25" ry="50">
-                                <!-- <animate id="r4" attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="click" />
-                                <animate id="r5" attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="click" /> -->
+                            <ellipse id="ej_2bis_el1" cx="150" cy="150" rx="65" ry="90" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="65;90;65" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="90;65;90" dur="2s" begin="ej_2bis_el5.click" />
                             </ellipse>
 
+                            <ellipse id="ej_2bis_el2" cx="150" cy="150" rx="55" ry="80" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="55;80;55" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="80;55;80" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_2bis_el3" cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="70;45;70" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+                            
+                            <ellipse id="ej_2bis_el4" cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_2bis_el5" cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Modifica el anterior svg para que al pasar el ratón 
+                encima de cada forma se mueva hacia la izquierda
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <ellipse id="ej_3_el1" cx="150" cy="150" rx="65" ry="90" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="65;90;65" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="90;65;90" dur="2s" begin="mouseover" />
+                            </ellipse>
+
+                            <ellipse id="ej_3_el2" cx="150" cy="150" rx="55" ry="80" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="55;80;55" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="80;55;80" dur="2s" begin="mouseover" />
+                            </ellipse>
+
+                            <ellipse id="ej_3_el3" cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="70;45;70" dur="2s" begin="mouseover" />
+                            </ellipse>
+                            
+                            <ellipse id="ej_3_el4" cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="mouseover" />
+                            </ellipse>
+
+                            <ellipse id="ej_3_el5" cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="mouseover" />
+                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="mouseover" />
+                            </ellipse>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Modifica el anterior svg para que al hacerle click cada 
+                forma rote sobre si misma
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <ellipse id="ej_4_el1" cx="150" cy="150" rx="65" ry="90" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="65;90;65" dur="2s" begin="ej_4_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="90;65;90" dur="2s" begin="ej_4_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_4_el2" cx="150" cy="150" rx="55" ry="80" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="55;80;55" dur="2s" begin="ej_4_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="80;55;80" dur="2s" begin="ej_4_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_4_el3" cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="ej_4_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="70;45;70" dur="2s" begin="ej_4_el5.click" />
+                            </ellipse>
+                            
+                            <ellipse id="ej_4_el4" cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="ej_4_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="ej_4_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_4_el5" cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="ej_4_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="ej_4_el5.click" />
+                            </ellipse>
                             <script>
-                                let ell2 = document.getElementById("ell2");
+                                let ell2 = document.getElementById("ej_4_el5");
                                 let grow = true;
                                 let intervalrxy2 = setInterval( () => {
                                     let rxell2 = ell2.rx.baseVal.value;
                                     let ryell2 = ell2.ry.baseVal.value;
+                                    let rxy = 0;
                                     if (grow)
                                     {
                                         rxy++;
+
                                     } else 
                                     {
                                         rxy--;
@@ -135,38 +421,9 @@
 
         <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
             <h1 class="text-center">
-                3º 
-            </h1>
-            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
-                <div class="row g-1 justify-content-center"> 
-                    <div class="col-auto">
-                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
-                            <ellipse cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="mouseover" />
-                                <animate attributeType="XML" attributeName="ry" values="70;45;70" dur="2s" begin="mouseover" />
-                            </ellipse>
-                            
-                            <ellipse cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="mouseover" />
-                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="mouseover" />
-                            </ellipse>
-
-                            <ellipse cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="mouseover" />
-                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="mouseover" />
-                            </ellipse>
-                            <!-- Hasta 5 ellipse -->
-                        </svg>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-
-
-        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
-            <h1 class="text-center">
-                4º 
+                5º crea 4 círculos que se empiecen a mover en los tiempos 
+                0,2s, 4s, 6s solo se deben estar moviendo cada uno de ellos 
+                por lo que debes usar end y begin
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center"> 
@@ -186,7 +443,6 @@
                                 <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="mouseover" />
                                 <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="mouseover" />
                             </ellipse>
-                            <!-- Hasta 5 ellipse -->
                         </svg>
                     </div>
                 </div>
