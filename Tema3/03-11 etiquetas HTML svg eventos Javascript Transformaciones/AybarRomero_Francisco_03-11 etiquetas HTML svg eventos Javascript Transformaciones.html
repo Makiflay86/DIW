@@ -252,7 +252,7 @@
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center"> 
                     <div class="col-auto">
-                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" >
                             <ellipse id="ell1" cx="150" cy="150" rx="25" ry="50">
                                 <animate id="r4" attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="click" />
                                 <animate id="r5" attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="click" />
@@ -274,7 +274,7 @@
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center"> 
                     <div class="col-auto">
-                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" >
                             <ellipse id="ej_2bis_el1" cx="150" cy="150" rx="65" ry="90" fill="transparent" stroke="orange" stroke-width="3">
                                 <animate attributeType="XML" attributeName="rx" values="65;90;65" dur="2s" begin="ej_2bis_el5.click" />
                                 <animate attributeType="XML" attributeName="ry" values="90;65;90" dur="2s" begin="ej_2bis_el5.click" />
@@ -315,7 +315,7 @@
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center"> 
                     <div class="col-auto">
-                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" >
                             <ellipse id="ej_3_el1" cx="150" cy="150" rx="65" ry="90" fill="transparent" stroke="orange" stroke-width="3">
                                 <animate attributeType="XML" attributeName="rx" values="65;90;65" dur="2s" begin="mouseover" />
                                 <animate attributeType="XML" attributeName="ry" values="90;65;90" dur="2s" begin="mouseover" />
@@ -356,61 +356,26 @@
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center"> 
                     <div class="col-auto">
-                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" >
                             <ellipse id="ej_4_el1" cx="150" cy="150" rx="65" ry="90" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="65;90;65" dur="2s" begin="ej_4_el5.click" />
-                                <animate attributeType="XML" attributeName="ry" values="90;65;90" dur="2s" begin="ej_4_el5.click" />
+                                <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="2s" begin="ej_4_el5.click" fill="freeze"/>
                             </ellipse>
 
                             <ellipse id="ej_4_el2" cx="150" cy="150" rx="55" ry="80" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="55;80;55" dur="2s" begin="ej_4_el5.click" />
-                                <animate attributeType="XML" attributeName="ry" values="80;55;80" dur="2s" begin="ej_4_el5.click" />
+                                <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="2s" begin="ej_4_el5.click" fill="freeze"/>
                             </ellipse>
 
                             <ellipse id="ej_4_el3" cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="ej_4_el5.click" />
-                                <animate attributeType="XML" attributeName="ry" values="70;45;70" dur="2s" begin="ej_4_el5.click" />
+                                <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="2s" begin="ej_4_el5.click" fill="freeze"/>
                             </ellipse>
                             
                             <ellipse id="ej_4_el4" cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="ej_4_el5.click" />
-                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="ej_4_el5.click" />
+                                <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="2s" begin="ej_4_el5.click" fill="freeze"/>
                             </ellipse>
 
                             <ellipse id="ej_4_el5" cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="ej_4_el5.click" />
-                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="ej_4_el5.click" />
+                                <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="2s" begin="ej_4_el5.click" fill="freeze"/>
                             </ellipse>
-                            <script>
-                                let ell2 = document.getElementById("ej_4_el5");
-                                let grow = true;
-                                let intervalrxy2 = setInterval( () => {
-                                    let rxell2 = ell2.rx.baseVal.value;
-                                    let ryell2 = ell2.ry.baseVal.value;
-                                    let rxy = 0;
-                                    if (grow)
-                                    {
-                                        rxy++;
-
-                                    } else 
-                                    {
-                                        rxy--;
-                                    }
-
-                                    if (rxell2 > 50)
-                                    {
-                                        grow = false;
-                                    }
-
-                                    if (rxell2 < 50)
-                                    {
-                                        grow = true;
-                                    }
-
-                                    ell2.rx.baseVal.value = rxell1+rxy;
-                                    ell2.ry.baseVal.value = rxell1+rxy;
-                                }, 40);
-                            </script>
                         </svg>
                     </div>
                 </div>
@@ -422,27 +387,36 @@
         <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
             <h1 class="text-center">
                 5º crea 4 círculos que se empiecen a mover en los tiempos 
-                0,2s, 4s, 6s solo se deben estar moviendo cada uno de ellos 
+                0, 2s, 4s, 6s solo se deben estar moviendo cada uno de ellos 
                 por lo que debes usar end y begin
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center"> 
                     <div class="col-auto">
-                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
-                            <ellipse cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="mouseout" />
-                                <animate attributeType="XML" attributeName="cy" values="70;45;70" dur="2s" begin="mouseout" />
-                            </ellipse>
-                            
-                            <ellipse cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="mouseover" />
-                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="mouseover" />
-                            </ellipse>
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" >
+                            <circle id="circulo1" cx="50" cy="50" r="20" fill="red">
+                                <animate attributeName="cx" values="50; 250; 50" dur="2s" begin="0s" end="2s" fill="freeze" />
+                                <animate attributeName="cy" values="50; 250; 50" dur="2s" begin="0s" end="2s" fill="freeze" />
+                                <set attributeName="visibility" to="hidden" begin="4s"/> 
+                            </circle>
 
-                            <ellipse cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
-                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="mouseover" />
-                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="mouseover" />
-                            </ellipse>
+                            <circle id="circulo2" cx="50" cy="150" r="20" fill="blue">
+                                <animate attributeName="cx" values="50; 250; 50" dur="2s" begin="2s" end="4s" fill="freeze" />
+                                <animate attributeName="cy" values="150; 150; 150" dur="2s" begin="2s" end="4s" fill="freeze" />
+                                <set attributeName="visibility" to="hidden" begin="6s"/>
+                            </circle>
+
+                            <circle id="circulo3" cx="50" cy="250" r="20" fill="green">
+                                <animate attributeName="cx" values="50; 250; 50" dur="2s" begin="4s" end="6s" fill="freeze" />
+                                <animate attributeName="cy" values="250; 50; 250" dur="2s" begin="4s" end="6s" fill="freeze" />
+                                <set attributeName="visibility" to="hidden" begin="8s"/>
+                            </circle>
+
+                            <circle id="circulo4" cx="150" cy="150" r="20" fill="purple">
+                                <animate attributeName="cx" values="150; 50; 150" dur="2s" begin="6s" end="8s" fill="freeze" />
+                                <animate attributeName="cy" values="150; 250; 150" dur="2s" begin="6s" end="8s" fill="freeze" />
+                                <set attributeName="visibility" to="hidden" begin="10s"/>
+                            </circle>
                         </svg>
                     </div>
                 </div>
@@ -451,6 +425,194 @@
 
 
 
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                6º Crea un rectángulo con un javascript asociado a el que 
+                cuando se pulse se ponga medio transparente y salte un alert.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="400" >
+                            <rect id="rect_ej6" x="50" y="50" width="200" height="200" fill="teal" opacity="1" stroke="black" stroke-width="3" onclick="hacerTransparenteYAlert()" />
+
+                            <script>
+                                function hacerTransparenteYAlert() 
+                                {
+                                    let rectangulo = document.getElementById("rect_ej6");
+                                    rectangulo.setAttribute("opacity", "0.5");
+                                    alert("¡Rectángulo pulsado!");
+                                }
+                            </script>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                7º Crea dos rectangulos verdes y morados y un texto en 
+                enmedio que al pulsar sobre el se mueva girando sobre el mismo
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <rect x="0" y="0" width="400" height="100" fill="purple" /> 
+
+                            <rect x="0" y="100" width="400" height="100" fill="green" /> 
+
+                            <text id="texto_ej7" x="200" y="105" font-family="Times New Roman, serif" font-size="40" text-anchor="middle" fill="#00FFFF" transform="rotate(-15 200 105)" style="cursor: pointer; user-select: none;">
+                                Málaga!
+                                <animateTransform attributeName="transform" type="rotate" from="-15 200 105" to="345 200 105" dur="1s" begin="click" fill="freeze" additive="sum" />
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                8º Usa https://yqnn.github.io/svg-path-editor/ para generar 
+                una ruta chula y modifica el ejemplo de la pelota para que la 
+                siga Se debe iniciar al hacer click y parar al hacer doble clik.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-20 -20 320 320" xmlns="http://www.w3.org/2000/svg" width="400" >
+                            <path id="rutaChula" d="M 50 150 c 10 -20 60 -40 90 -10 c 30 30 0 60 -100 20 c -120 -60 10 -80 40 -110 c 130 -60 150 20 210 120" fill="none" stroke="lightgray" stroke-width="2"/>
+
+                            <circle id="pelota" cx="0" cy="0" r="10" fill="red">
+                                <animateMotion id="animacionPelota" dur="5s" repeatCount="indefinite" begin="indefinite" fill="freeze">
+                                    <mpath xlink:href="#rutaChula"/>
+                                </animateMotion>
+                            </circle>
+
+                            <rect x="0" y="0" width="300" height="300" fill="transparent" 
+                                onclick="iniciarAnimacion()" ondblclick="pararAnimacion()"/>
+
+                            <script>
+                                let animacion = document.getElementById("animacionPelota");
+                                let estaAnimando = false;
+
+                                function iniciarAnimacion() 
+                                {
+                                    if (!estaAnimando) 
+                                    {
+                                        animacion.beginElement();
+                                        estaAnimando = true;
+                                        console.log("Animación iniciada.");
+                                    }
+                                }
+
+                                function pararAnimacion() 
+                                {
+                                    if (estaAnimando) 
+                                    {
+                                        animacion.endElement();
+                                        estaAnimando = false;
+                                        console.log("Animación parada.");
+                                    }
+                                }
+                            </script>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                9º Modifica los ejemplos 9,10 y 11 y para tener todos 
+                los controles (rotate, transform, skew) de la caja en 
+                un mismo ejemplo
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                
+                <div class="row g-3 justify-content-center">
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div id="controles" class="bg-white p-3 rounded shadow-sm">
+                            <h3>Controles</h3>
+                            <div class="mb-3">
+                                <p><strong>Translate</strong></p>
+                                Valor de x: <input type="range" id="tx" min="-100" max="100" value="0" oninput="updateTransform()"><br>
+                                Valor de y: <input type="range" id="ty" min="-100" max="100" value="0" oninput="updateTransform()"><br>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-3">
+                                <p><strong>Rotate</strong></p>
+                                Ángulo de rotación: <input type="range" id="rotAng" min="-180" max="180" value="0" oninput="updateTransform()"><br>
+                                Valor de x (Centro): <input type="range" id="rotX" min="100" max="300" value="200" oninput="updateTransform()"><br>
+                                Valor de y (Centro): <input type="range" id="rotY" min="100" max="300" value="200" oninput="updateTransform()"><br>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-3">
+                                <p><strong>Scale</strong></p>
+                                Escala: <input type="range" id="sVal" min="0.1" max="3" step="0.1" value="1" oninput="updateTransform()"><br>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-3">
+                                <p><strong>Skew</strong></p>
+                                Valor de skewX: <input type="range" id="skX" min="-60" max="60" value="0" oninput="updateTransform()"><br>
+                                Valor de skewY: <input type="range" id="skY" min="-60" max="60" value="0" oninput="updateTransform()"><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-8">
+                        <div class="bg-light p-3 rounded shadow-sm">
+                            <div style="max-width: 400px;" class="mx-auto"> 
+                                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                                    <rect x="0" y="0" width="400" height="400" fill="grey"/>
+                                    <rect x="100" y="100" width="200" height="200" fill="purple" opacity="0.3"/> 
+                                    <rect id="cajaTransformable" x="100" y="100" width="200" height="200" fill="purple" transform="translate(0, 0) rotate(0, 200, 200) scale(1) skewX(0) skewY(0)"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        function updateTransform() 
+                        {
+                            const tx = document.getElementById('tx').value;
+                            const ty = document.getElementById('ty').value;
+                            const rotAng = document.getElementById('rotAng').value;
+                            const rotX = document.getElementById('rotX').value;
+                            const rotY = document.getElementById('rotY').value;
+                            const sVal = document.getElementById('sVal').value;
+                            const skX = document.getElementById('skX').value;
+                            const skY = document.getElementById('skY').value;
+
+                            const transformString = 
+                                `translate(${tx}, ${ty}) ` +
+                                `rotate(${rotAng}, ${rotX}, ${rotY}) ` +
+                                `scale(${sVal}) ` +
+                                `skewX(${skX}) ` +
+                                `skewY(${skY})`;
+
+                            const caja = document.getElementById('cajaTransformable');
+                            caja.setAttribute('transform', transformString);
+                        }
+                    </script>
+                </div>
+            </article>
+        </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
