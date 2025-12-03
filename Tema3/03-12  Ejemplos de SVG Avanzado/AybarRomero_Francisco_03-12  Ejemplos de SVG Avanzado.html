@@ -400,8 +400,42 @@
             </h1>
             <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
                 <div class="row g-1 justify-content-center">                     
-                    <div class="col-auto">
-                        
+                    <div class="col-auto" id="ej_5">
+                        <video autoplay playsinline muted loop preload id="ej_5_estrellas">
+                            <source src="./src/estrellas.mp4" type="video/mp4">
+                        </video>
+
+                        <svg id="ej_5_svg-estrellas" viewBox="0 0 800 200">
+                            <defs>
+                                <mask id="ej_5_text-mask" x="0" y="0" width="100%" height="100%">
+                                    <text x="50%" y="50%" text-anchor="middle" dy=".35em" font-size="120" fill="white" font-weight="bold">
+                                        Francisco
+                                    </text>
+                                </mask>
+                            </defs>
+
+                            <rect width="100%" height="100%" fill="white" mask="url(#ej_5_text-mask)"/>
+                        </svg>
+
+                        <style>
+                            #ej_5 {
+                                position: relative;
+                                width: 800px;
+                                height: 200px;
+                                overflow: hidden;
+                            }
+
+                            #ej_5_estrellas {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                -webkit-mask: url(#ej_5_text-mask);
+                                mask: url(#ej_5_text-mask);
+                            }
+                        </style>
                     </div>
                 </div>
             </article>
@@ -409,6 +443,108 @@
 
 
 
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                6º Modifica este cambiado el texto y la imagen de fondo 
+                así como que en vez de salir un circulo salga un rectángulo.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">
+                <div class="row g-1 justify-content-center">                     
+                    <div class="col-auto">
+                        <div id="ej_6_body6">
+                            <h1 id="ej_6_h16">Haz hover por la pantalla...</h1>
+                            <img id="ej_6_img6" src="https://images6.alphacoders.com/925/925904.jpg" alt="Buscando a wally" />
+
+                            <svg width="0" height="0" aria-hidden="true" focusable="false">
+                                <defs>
+                                    <clipPath id="ej_6_clipping" clipPathUnits="userSpaceOnUse">
+                                        <rect id="ej_6_target" x="0" y="0" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <style>
+                                #ej_6_body6 {
+                                    box-sizing: border-box;
+                                    min-height: 60vh;
+                                    display: flex;
+                                    align-content: center;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: black;
+                                    position: relative;
+                                    overflow: hidden;
+                                    padding: 16px;
+                                }
+
+                                #ej_6_body6 #ej_6_img6 {
+                                    width: 100%;
+                                    height: auto;
+                                    max-height: 75vh;
+                                    display: block;
+                                    clip-path: url(#ej_6_clipping);
+                                    -webkit-clip-path: url(#ej_6_clipping);
+                                }
+
+                                #ej_6_body6 #ej_6_h16 {
+                                    position: absolute;
+                                    top: 16px;
+                                    left: 16px;
+                                    margin: 0;
+                                    font-family: "IBM Plex Mono", monospace;
+                                    color: #f1afd0;
+                                    z-index: 1;
+                                    pointer-events: none;
+                                }
+
+                                #ej_6_body6 #ej_6_target {
+                                    transition: r 0.2s ease;
+                                }
+                            </style>
+
+                            <script>
+                                (function () {
+                                    const ej_6_body = document.getElementById("ej_6_body6");
+                                    const ej_6_img = document.getElementById("ej_6_img6");
+                                    const ej_6_target = document.getElementById("ej_6_target");
+
+                                    const EJ_6_W = 350;
+                                    const EJ_6_H = 300;
+                                    
+
+
+                                    function ej_6_updateCircleFromEvent(e) {
+                                    const ej_6_rect = ej_6_img.getBoundingClientRect();
+                                    const ej_6_x = e.clientX - ej_6_rect.left;
+                                    const ej_6_y = e.clientY - ej_6_rect.top;
+
+                                    if (ej_6_x >= 0 && ej_6_x <= ej_6_rect.width && ej_6_y >= 0 && ej_6_y <= ej_6_rect.height) {
+                                        ej_6_target.setAttribute("x", ej_6_x);
+                                        ej_6_target.setAttribute("y", ej_6_y);
+                                        ej_6_target.setAttribute("width", EJ_6_W);
+                                        ej_6_target.setAttribute("height", EJ_6_H);
+                                    } else {
+                                        ej_6_target.setAttribute("width", "0");
+                                        ej_6_target.setAttribute("height", "0");
+                                    }
+                                    }
+
+                                    ej_6_body.addEventListener("mousemove", ej_6_updateCircleFromEvent);
+                                    ej_6_body.addEventListener("mouseleave", () => {
+                                    ej_6_target.setAttribute("width", "0");
+                                    ej_6_target.setAttribute("height", "0");
+                                    });
+
+                                    ej_6_body.addEventListener("mouseenter", (e) => {
+                                    ej_6_updateCircleFromEvent(e);
+                                    });
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
 
 
