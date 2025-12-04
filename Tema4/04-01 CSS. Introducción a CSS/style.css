@@ -1,0 +1,43 @@
+/* Por último la prioridad acabaría aquí - 1 */
+#ej-4-h3
+{
+    color: red;
+    text-align: center;
+}
+
+#ej-4-span
+{
+    font-style: italic;
+    color: blue;
+}
+
+#ej-4-p
+{
+    font-style: italic;
+}
+
+#ej-4-h3, #ej-4-span
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+div.nueve 
+{
+    border: 7px ;        
+    border-style:  inset;        
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF ;
+}
+
+div.diez
+{
+    border: 10px ;        
+    border-style:  groove;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF ;
+}
