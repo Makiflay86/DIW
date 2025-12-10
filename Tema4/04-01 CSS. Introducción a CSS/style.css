@@ -21,8 +21,68 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+div.uno
+{
+    border: 7px ;        
+    border-style:  solid;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
 
+div.dos
+{
+    border: 7px ;        
+    border-style:  solid;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
 
+div.tres
+{
+    border: 7px ;        
+    border-style:  dashed;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
+
+div.cuatro
+{
+    border: 7px ;        
+    border-style:  ridge;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
+
+div.seis
+{
+    border: 7px ;        
+    border-style:  dotted;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
+
+div.siete
+{
+    border: 7px ;        
+    border-style:  dashed;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
+
+div.ocho 
+{
+    border: 7px ;        
+    border-style:  outset;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+}
 
 div.nueve 
 {
@@ -41,3 +101,112 @@ div.diez
     background-color: #ffffff;
     color: #0000FF ;
 }
+
+
+
+
+div.ej_7_1
+{
+    border: 7px ;        
+    border-style:  solid;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+
+    text-align: center;
+}
+
+div.ej_7_2
+{
+    border: 7px ;        
+    border-style:  solid;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+
+    text-align: right;
+}
+
+div.ej_7_3
+{
+    border: 7px ;        
+    border-style:  dashed;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+
+    text-align: left;
+}
+
+div.ej_7_4
+{
+    border: 7px ;        
+    border-style:  ridge;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+
+    margin-left: 100px;
+}
+
+
+
+
+div.ej_8_6
+{
+    border: 7px ;        
+    border-style:  dotted;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+    
+    padding: 40px 100px;
+}
+
+div.ej_8_7
+{
+    border: 7px ;        
+    border-style:  dashed;
+    border-color: #FfFF00 #FF00fF #00fFff forestgreen;
+    background-color: #ffffff;
+    color: #0000FF;
+    
+    padding: 10px 20px 30px 40px;
+}
+
+
+
+
+
+@import url(http://estilos/miestilo.css);
+
+/* En pantalla */
+@media screen 
+{
+    #ej_9_1
+    {
+        color: green;
+    }
+}
+
+/* En móvil */ /* No funciona */
+@media handheld
+{
+    #ej_9_3
+    {
+        color: red;   
+    }
+}
+
+/* En print, impresora */
+@media print 
+{
+    #ej_9_3
+    {
+        color: blue;
+    }
+}
+
+
+
+
