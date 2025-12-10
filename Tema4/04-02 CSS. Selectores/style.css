@@ -1,0 +1,233 @@
+.pink
+{
+    color: rgb(244, 148, 164);
+}
+
+.green
+{
+    color: green;
+}
+
+.blue
+{
+    color: blue;
+}
+
+.greenyellow
+{
+    color: greenyellow;
+}
+
+.magenta
+{
+    color: magenta;
+}
+
+.red
+{
+    color: red;
+}
+
+
+
+/* Todos los elementos grises */
+.ej-2 > *
+{
+    color: gray;
+}
+
+
+
+/* El p de color verde y fuente Georgia */
+.ej-3 > p
+{
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* Todo lo que hay dentro de la table con bordes rojos y amarillos */
+.ej-4 > *
+{
+    border-color: red yellow;
+}
+
+
+
+/* El p inmediatamente color blue y fuente Arial */
+.ej-5 + p
+{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Los strong descendiente de una lista son azules */
+li > strong
+{
+    color: blue;
+}
+
+
+
+
+/* Cualquier inmediato se pinta magenta */
+.ej-7 > div > *
+{
+    color: magenta;
+}
+
+
+
+/* El primer a no esta subrayado */
+.ej-8 > div > a:first-child  
+{ 
+    text-decoration:none
+}
+
+
+
+/* El primer strong subrayado */
+.ej-9 > h1 > strong 
+{ 
+    text-decoration:underline
+}
+
+
+
+/* Todos los p adyacente al h3 son rojos */
+.ej-10 > h3 + p
+{
+    color: red;
+}
+
+
+
+/* Lo del id ponerlo rojo */
+#ejercicio10
+{
+    color: red;
+}
+
+
+
+/* Lo de la clases ponerlo azul */
+.ejercicio11
+{
+    color: blue;
+}
+
+
+
+/* Lo de dentro de la clase azul menos el h2 verde y el h3 amarillo */
+.ejercicio12
+{
+    color: blue;
+}
+
+.ejercicio12 > h2
+{
+    color: green;
+}
+
+.ejercicio12 > h3
+{
+    color: yellow;
+}
+
+
+
+
+/* LVHA, L:Verde, V:Verde Oliva, H:Rojo, A:Azul */
+.ejercicio13:link
+{
+    color: green;
+}
+.ejercicio13:visited
+{
+    color: rgb(161, 203, 99);
+}
+.ejercicio13:hover
+{
+    color: red;
+}
+.ejercicio13:active
+{
+    color: blue;
+}
+
+
+
+/* Todos los p sean azules  */
+.ej-15 > p
+{
+    color: blue !important;
+}
+/* Todos los p dentro de la clase ejercicio14 son verdes */
+.ej-15 > .ejercicio14 > p
+{
+    color: green;
+}
+
+
+
+/* Todos los p sean azules  */
+.ej-16 > p
+{
+    color: blue !important;
+}
+
+
+
+/* Debes usar (:first-line) (:first-letter) (:before)  (:after). */
+/* 
+    Regla1 -> Primera linea azul
+    Regla2 -> Primera letra de los p en rojo y tamaño 15
+    Regla3 -> Los elementos que siguen al texto hola dentro de un p sean verde
+    Regla4 -> Los elementos que siguen al texto adios dentro de un p sean amarillo
+*/
+.ejercicio16 p:first-line 
+{ 
+    color: blue; 
+}
+.ejercicio16 p:first-letter 
+{ 
+    color: red; font-size: 15px; 
+}
+.ejercicio16 p.hola::before 
+{
+  content: " hola ";
+  color: green;
+}
+.ejercicio16 p.adios::after 
+{
+  content: " adios ";
+  color: yellow;
+}
+
+
+
+/* Al facer focus, es decir clickar en el input del form hacer lo siguiente */
+input:focus 
+{
+    background-color: magenta !important;
+    color: white !important;
+}
+
+
+
+/* ul li:first-child {font-weight: bold;} */
+.ej-19 > ul li:first-child
+{
+    font-weight: bold;
+}
+
+
+
+/* Aplicar el estilo si el idioma es ingles */
+.ej-20 > p:lang(en)
+{
+    color: red;
+}
