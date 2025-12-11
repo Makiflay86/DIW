@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <title>svg</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body class="bg-primary-subtle">
+        
+        <div class="container-fluid w-50 py-3">
+
+            <hr>
+
+            <h1 class="text-center">circle</h1>
+            <div class="row g-1 justify-content-center">
+                <div class="col-auto">
+                    <svg class="rounded" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        width="800" viewBox="-100 -100 500 350">
+                        
+                        <circle cx="-50" cy="100" r="40" stroke="darkred" fill="red" stroke-width="1"/>
+                        
+                        <!-- Cyan -->
+                        <circle cx="225" cy="15" r="15" fill="#005555" />
+                        <circle cx="200" cy="30" r="20" fill="#008888" />
+                        <circle cx="175" cy="45" r="25" fill="#00AAAA" />
+                        <circle cx="150" cy="60" r="30" fill="#00CCCC" />
+                        <circle cx="125" cy="75" r="35" fill="#00FFFF" />
+
+                        <!-- Amarillo -->
+                        <circle cx="25" cy="15" r="15" fill="#555500" />
+                        <circle cx="50" cy="30" r="20" fill="#878800" />
+                        <circle cx="75" cy="45" r="25" fill="#a9aa00" />
+                        <circle cx="100" cy="60" r="30" fill="#cbcc00" />
+                        <circle cx="125" cy="75" r="35" fill="#dfdf00" />
+                        
+                        <!-- Magenta -->
+                        <circle cx="125" cy="175" r="15" fill="#780178" />
+                        <circle cx="125" cy="150" r="20" fill="#940194" />
+                        <circle cx="125" cy="125" r="25" fill="#b501b5" />
+                        <circle cx="125" cy="100" r="30" fill="#d103d1" />
+                        <circle cx="125" cy="75" r="35" fill="#ff00ff" />
+                    </svg>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="text-center">rect</h1>
+            <div class="row g-1 justify-content-center">
+                <div class="col-auto">
+                    <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
+                        <!-- <circle cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1"/> -->
+                        <rect x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1"/>
+                        <!-- <polygon points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1"/> -->
+                    </svg>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="text-center">polygon</h1>
+            <div class="row g-1 justify-content-center">
+                <div class="col-auto">
+                    <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
+                        <!-- <circle cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1"/> -->
+                        <!-- <rect x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1"/> -->
+                        <polygon points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1"/>
+                    </svg>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="text-center">line</h1>
+            <div class="row g-1 justify-content-center">
+                <div class="col-auto">
+                    <svg viewBox="-150 -150 300 300" xmlns="http://www.w3.org/2000/svg"
+                        width="300" height="300" >
+                        <line x1="-150" y1="-50" x2="150" y2="-50" stroke="blue" stroke-width="5"/>
+                        <line x1="-150" y1="50" x2="150" y2="50" stroke="red" stroke-width="5"/>
+                    </svg>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="text-center">ellipse</h1>
+            <div class="row g-1 justify-content-center">
+                <div class="col-auto">
+                    <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
+                        <ellipse cx="75" cy="75" rx="10" ry="50" stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="20" ry="40" stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="30" ry="30" stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="40" ry="10" stroke="orange" fill="transparent" stroke-width="3"/>
+                        <ellipse cx="75" cy="75" rx="50" ry="0" stroke="orange" fill="transparent" stroke-width="3"/>
+                    </svg>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="text-center">estilo :hover</h1>
+            <div class="row g-1 justify-content-center"> 
+                <div class="col-auto">
+                    <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="300" height="300" >
+                        <defs>
+                            <style>
+                                #ej_2_circle:hover
+                                {
+                                    fill: green;
+                                }
+
+                                #ej_2_rect:hover
+                                {
+                                    fill: green;
+                                }
+
+                                #ej_2_polygon:hover
+                                {
+                                    fill: green;
+                                }
+                            </style>
+                        </defs>
+                        <circle id="ej_2_circle" cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1"/>
+                        <rect id="ej_2_rect" x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1"/>
+                        <polygon id="ej_2_polygon" points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1"/>
+                    </svg>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="text-center">estilo texto</h1>
+            <div class="row g-1 justify-content-center">
+                <div class="col-auto">
+                    <svg viewBox="-50 -30 200 50" xmlns="http://www.w3.org/2000/svg" width="800">
+                        <defs>
+                            <style>
+                                #ej_4
+                                {
+                                    fill: Lime;
+                                    font: 25 Georgia;
+                                }
+                            </style>
+                        </defs>
+                        <text id="ej_4">IESPLAYAMAR</text>
+                    </svg>
+                </div>
+            </div>
+
+            <hr>
+
+            <h1 class="text-center">linearGradient 1</h1>
+            <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 200 200" width="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <linearGradient id="ej_5_1" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="gold" />
+                                    <stop offset="95%" stop-color="red" />
+                                </linearGradient>
+                                <linearGradient id="ej_5_2" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="red" />
+                                    <stop offset="95%" stop-color="gold" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="75" fill="url('#ej_5_1')" />
+                            <circle cx="100" cy="100" r="50" fill="url('#ej_5_2')" />
+                            <circle cx="100" cy="100" r="30" fill="url('#ej_5_1')" />
+                            <circle cx="100" cy="100" r="15" fill="url('#ej_5_2')" />
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">linearGradient 2</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <linearGradient id="ej_9_1" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="red" />
+                                    <stop offset="15%" stop-color="orange" />
+                                    <stop offset="30%" stop-color="yellow" />
+                                    <stop offset="45%" stop-color="green" />
+                                    <stop offset="60%" stop-color="cyan" />
+                                    <stop offset="75%" stop-color="blue" />
+                                    <stop offset="100%" stop-color="magenta" />
+                                </linearGradient>
+
+                                <linearGradient id="ej_9_21" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="blue" />
+                                    <stop offset="95%" stop-color="green" />
+                                </linearGradient>
+                                <linearGradient id="ej_9_22" gradientTransform="rotate(0)">
+                                    <stop offset="5%" stop-color="green" />
+                                    <stop offset="95%" stop-color="blue" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <circle cx="50" cy="100" r="50" fill="url('#ej_9_1')" />
+
+                            <circle cx="150" cy="100" r="50" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="45" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="40" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="35" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="30" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="25" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="20" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="15" fill="url('#ej_9_22')" />
+                            <circle cx="150" cy="100" r="10" fill="url('#ej_9_21')" />
+                            <circle cx="150" cy="100" r="5" fill="url('#ej_9_22')" />
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">tspan</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-20 -20 100 40" xmlns="http://www.w3.org/2000/svg" width="800">
+                            <defs>
+                                <style>
+                                    #ej_6_rojo
+                                    {
+                                        fill: #DC2432;
+                                    }
+
+                                    #ej_6_gris
+                                    {
+                                        fill: grey;
+                                    }
+
+                                    #ej_6_azul
+                                    {
+                                        fill: #0f2493;
+                                    }
+                                </style>
+                            </defs>
+                            <text><tspan id="ej_6_rojo">FR</tspan><tspan id="ej_6_gris">AN</tspan><tspan id="ej_6_azul">CIA</tspan></text>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">tspan :hover</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-60 -50 170 100" xmlns="http://www.w3.org/2000/svg" width="800">
+                            <defs>
+                                <style>
+                                    #ej_7_1:hover
+                                    {
+                                        fill: red;
+                                        font: 50px Georgia;
+                                    }
+
+                                    #ej_7_2:hover
+                                    {
+                                        fill: yellow;
+                                        font: 50px Georgia;
+                                    }
+
+                                    #ej_7_3:hover
+                                    {
+                                        fill: red;
+                                        font: 50px Georgia;
+                                    }
+                                </style>
+                            </defs>
+                            <text><tspan id="ej_7_1">ES</tspan><tspan id="ej_7_2">PA</tspan><tspan id="ej_7_3">ÑA</tspan></text>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">text con linearGradient</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 -20 200 200" xmlns="http://www.w3.org/2000/svg" width="400">
+                            <defs>
+                                <style>
+                                    #ej_10
+                                    {
+                                        fill: red;
+                                        font: 25px Georgia;
+                                    }
+                                </style>
+                                <linearGradient id="ej_10" gradientTransform="rotate(90)">
+                                    <stop offset="5%" stop-color="red" />
+                                    <stop offset="15%" stop-color="orange" />
+                                    <stop offset="30%" stop-color="yellow" />
+                                    <stop offset="45%" stop-color="green" />
+                                    <stop offset="60%" stop-color="cyan" />
+                                    <stop offset="75%" stop-color="blue" />
+                                    <stop offset="100%" stop-color="magenta" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <path id="ej_10_path" d="M 0 0 A 1 1 0 0 0 200 0" fill="transparent" />
+                            <text id="ej_10">
+                                <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ej_10_path" startOffset="50%" text-anchor="middle" fill="url('#ej_10')" >
+                                    Viva Torremolinos
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">filter -> feGaussianBlur</h1>
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto pb-5">
+                        <svg
+                            width="230"
+                            height="120"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <filter id="blurMe">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                            </filter>
+
+                            <circle cx="60" cy="60" r="50" fill="green" />
+                            <circle cx="170" cy="60" r="50" fill="green" filter="url(#blurMe)" />
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">filter -> feGaussianBlur, feOffset, feMergeNode</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg width="120"
+                            height="120"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <filter id="ej_3_dropShadow">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+                                <feOffset dx="5" dy="5" />
+                                <feMerge>
+                                    <feMergeNode />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+
+                            <rect x="10" y="10" width="100" height="100" fill="red" filter="url(#ej_3_dropShadow)" />
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">animación superman</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                         <svg
+                            viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="800"
+                            height="200">
+                            <defs>
+                                <filter id="ej_4_image">
+                                    <feImage href="./src/superman.png" />
+                                </filter>
+                            </defs>
+
+                            <rect x="-200" y="35" width="150" height="150" style="filter:url(#ej_4_image);" >
+                                <animate attributeName="x" from="-200" to="200" dur="1s" begin="0" end="1"></animate> 
+                            </rect> 
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">turbulencias filter -> feTurbulence, feDisplacementMap</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                         <svg width="600" height="200" viewBox="0 0 750 220" xmlns="http://www.w3.org/2000/svg">
+                            <filter id="ej_5_displacementFilter1">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.05"
+                                    numOctaves="2" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="50" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+                            <filter id="ej_5_displacementFilter2">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.1"
+                                    numOctaves="2" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="50" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+                            <filter id="ej_5_displacementFilter3">
+                                <feTurbulence
+                                    type="turbulence" baseFrequency="0.125"
+                                    numOctaves="5" result="turbulence" />
+
+                                <feDisplacementMap
+                                    in2="turbulence" in="SourceGraphic"
+                                    scale="50" 	  xChannelSelector="R"
+                                    yChannelSelector="G" />
+                            </filter>
+
+                            <circle cx="100" cy="100" r="100" style="filter: url(#ej_5_displacementFilter1)" />
+                            <circle cx="350" cy="100" r="100" style="filter: url(#ej_5_displacementFilter2)" />
+                            <circle cx="600" cy="100" r="100" style="filter: url(#ej_5_displacementFilter3)" />
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">animate</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" width="600" height="300" >
+                            <circle cx="50" cy="50" r="40" stroke="darkred" fill="red" stroke-width="1">
+                                <animate
+                                    attributeName="cy"
+                                    values="0;50;0"
+                                    dur="1s"
+                                    repeatCount="indefinite" 
+                                />
+                            </circle>
+                            <rect x="-80" y="-30" width="70" height="70" fill="#729fcf" stroke="darkblue" stroke-width="1">
+                                <animate
+                                    attributeName="x"
+                                    values="-50;-150;-50"
+                                    dur="1s"
+                                    repeatCount="indefinite" 
+                                />
+                            </rect>
+                            <polygon points="10,0 80,0 45,-60" fill="orange" stroke="black" stroke-width="1">
+                                <animateTransform
+                                    attributeName="transform"
+                                    type="rotate"
+                                    //values="80;360;80"
+                                    dur="5s"
+                                    repeatCount="indefinite" 
+                                />
+                            </polygon>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">animateMotion path</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg width="500" viewBox="-100 -200 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" stroke="grey" path d="M0 0C16.6667 16.6667-10 40 50 50 130 50 140-10 150 30 170 120 270-50 210-30 100-40-110-180 110-160 270-130-180-100-70-30Z" />  
+                            <circle r="7" fill="red">
+                                <animateMotion
+                                    dur="5s" 
+                                    repeatCount="indefinite"
+                                    path="M0 0C16.6667 16.6667-10 40 50 50 130 50 140-10 150 30 170 120 270-50 210-30 100-40-110-180 110-160 270-130-180-100-70-30Z"
+                                />
+                            </circle>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">animateTransform</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg width="500" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+                            <style>
+                                .small { font: italic 13px sans-serif; }
+                                .heavy { font: bold 30px sans-serif; } 
+                                .Rrrrr { font: italic 40px serif; fill: red; }
+                            </style>
+                            
+                            <g id="animar_texto"> 
+                                <animateTransform attributeName="transform" attributeType="XML" type="translate" from="240 0" to="-200 0" dur="8s" repeatCount="indefinite" />
+                                    
+                                <text x="0" y="35" class="small">El </text>
+                                <text x="20" y="35" class="heavy">IES Playamar</text>
+                                <text x="180" y="55" class="small">es</text>
+                                <text x="200" y="55" class="Rrrrr">Genial!</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">rotate, transform, skew</h1>
+                <div class="row g-3 justify-content-center">
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div id="controles" class="bg-white p-3 rounded shadow-sm">
+                            <h3>Controles</h3>
+                            <div class="mb-3">
+                                <p><strong>Translate</strong></p>
+                                Valor de x: <input type="range" id="tx" min="-100" max="100" value="0" oninput="updateTransform()"><br>
+                                Valor de y: <input type="range" id="ty" min="-100" max="100" value="0" oninput="updateTransform()"><br>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-3">
+                                <p><strong>Rotate</strong></p>
+                                Ángulo de rotación: <input type="range" id="rotAng" min="-180" max="180" value="0" oninput="updateTransform()"><br>
+                                Valor de x (Centro): <input type="range" id="rotX" min="100" max="300" value="200" oninput="updateTransform()"><br>
+                                Valor de y (Centro): <input type="range" id="rotY" min="100" max="300" value="200" oninput="updateTransform()"><br>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-3">
+                                <p><strong>Scale</strong></p>
+                                Escala: <input type="range" id="sVal" min="0.1" max="3" step="0.1" value="1" oninput="updateTransform()"><br>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-3">
+                                <p><strong>Skew</strong></p>
+                                Valor de skewX: <input type="range" id="skX" min="-60" max="60" value="0" oninput="updateTransform()"><br>
+                                Valor de skewY: <input type="range" id="skY" min="-60" max="60" value="0" oninput="updateTransform()"><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-8">
+                        <div class="bg-light p-3 rounded shadow-sm">
+                            <div style="max-width: 400px;" class="mx-auto"> 
+                                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+                                    <rect x="0" y="0" width="400" height="400" fill="grey"/>
+                                    <rect x="100" y="100" width="200" height="200" fill="purple" opacity="0.3"/> 
+                                    <rect id="cajaTransformable" x="100" y="100" width="200" height="200" fill="purple" transform="translate(0, 0) rotate(0, 200, 200) scale(1) skewX(0) skewY(0)"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        function updateTransform() 
+                        {
+                            const tx = document.getElementById('tx').value;
+                            const ty = document.getElementById('ty').value;
+                            const rotAng = document.getElementById('rotAng').value;
+                            const rotX = document.getElementById('rotX').value;
+                            const rotY = document.getElementById('rotY').value;
+                            const sVal = document.getElementById('sVal').value;
+                            const skX = document.getElementById('skX').value;
+                            const skY = document.getElementById('skY').value;
+
+                            const transformString = 
+                                `translate(${tx}, ${ty}) ` +
+                                `rotate(${rotAng}, ${rotX}, ${rotY}) ` +
+                                `scale(${sVal}) ` +
+                                `skewX(${skX}) ` +
+                                `skewY(${skY})`;
+
+                            const caja = document.getElementById('cajaTransformable');
+                            caja.setAttribute('transform', transformString);
+                        }
+                    </script>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">animateMotion con script (iniciarAnimacion() y pararAnimacion())</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="-20 -20 320 320" xmlns="http://www.w3.org/2000/svg" width="400" >
+                            <path id="rutaChula" d="M 50 150 c 10 -20 60 -40 90 -10 c 30 30 0 60 -100 20 c -120 -60 10 -80 40 -110 c 130 -60 150 20 210 120" fill="none" stroke="lightgray" stroke-width="2"/>
+
+                            <circle id="pelota" cx="0" cy="0" r="10" fill="red">
+                                <animateMotion id="animacionPelota" dur="5s" repeatCount="indefinite" begin="indefinite" fill="freeze">
+                                    <mpath xlink:href="#rutaChula"/>
+                                </animateMotion>
+                            </circle>
+
+                            <rect x="0" y="0" width="300" height="300" fill="transparent" 
+                                onclick="iniciarAnimacion()" ondblclick="pararAnimacion()"/>
+
+                            <script>
+                                let animacion = document.getElementById("animacionPelota");
+                                let estaAnimando = false;
+
+                                function iniciarAnimacion() 
+                                {
+                                    if (!estaAnimando) 
+                                    {
+                                        animacion.beginElement();
+                                        estaAnimando = true;
+                                        console.log("Animación iniciada.");
+                                    }
+                                }
+
+                                function pararAnimacion() 
+                                {
+                                    if (estaAnimando) 
+                                    {
+                                        animacion.endElement();
+                                        estaAnimando = false;
+                                        console.log("Animación parada.");
+                                    }
+                                }
+                            </script>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1 class="text-center">animate ellipse</h1>
+                <div class="row g-1 justify-content-center"> 
+                    <div class="col-auto">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="600" >
+                            <ellipse id="ej_2bis_el1" cx="150" cy="150" rx="65" ry="90" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="65;90;65" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="90;65;90" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_2bis_el2" cx="150" cy="150" rx="55" ry="80" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="55;80;55" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="80;55;80" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_2bis_el3" cx="150" cy="150" rx="45" ry="70" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="45;70;45" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="70;45;70" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+                            
+                            <ellipse id="ej_2bis_el4" cx="150" cy="150" rx="35" ry="60" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="35;60;35" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="60;35;60" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+
+                            <ellipse id="ej_2bis_el5" cx="150" cy="150" rx="25" ry="50" fill="transparent" stroke="orange" stroke-width="3">
+                                <animate attributeType="XML" attributeName="rx" values="25;50;25" dur="2s" begin="ej_2bis_el5.click" />
+                                <animate attributeType="XML" attributeName="ry" values="50;25;50" dur="2s" begin="ej_2bis_el5.click" />
+                            </ellipse>
+                        </svg>
+                    </div>
+                </div>
+
+
+
+
+
+
+        </div>
+        
+
+
+
+
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
