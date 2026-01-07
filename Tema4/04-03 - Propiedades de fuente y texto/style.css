@@ -1,0 +1,241 @@
+.smallc {
+    font-variant: small-caps;
+}
+
+.obl {
+    font-style: oblique
+}
+
+.ita {
+    font-style: italic
+}
+
+.upc {
+    text-transform: uppercase;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+.cap2 {
+
+    font: 10vh 10vw Georgia, sans-serif;
+    color: red;
+}
+
+
+
+/* Ejercicio 1 */
+body {
+    font-family: Georgia, sans-serif;
+}
+
+
+
+/* Ejercicio 2 */
+p > .ejercicio2a {
+    font-size: 10em;
+}
+
+p > .ejercicio2b {
+    font-size: 10%;
+}
+
+p > .ejercicio2c {
+    font-size: 10px;
+}
+
+p > .ejercicio2d {
+    font-size: 10mm;
+}
+
+
+
+/* Ejercicio 3 */
+p > .ejercicio3normal {
+    font-weight: normal;
+}
+
+p > .ejercicio3bold {
+    font-weight: bold;
+}
+
+p > .ejercicio3bolder {
+    font-weight: bolder;
+}
+
+p > .ejercicio3lighter {
+    font-weight: lighter;
+}
+
+p > .ejercicio3100 {
+    font-weight: 100;
+}
+
+p > .ejercicio3200 {
+    font-weight: 200;
+}
+
+p > .ejercicio3300 {
+    font-weight: 300;
+}
+
+p > .ejercicio3400 {
+    font-weight: 400;
+}
+
+p > .ejercicio3500 {
+    font-weight: 500;
+}
+
+p > .ejercicio3600 {
+    font-weight: 600;
+}
+
+p > .ejercicio3700 {
+    font-weight: 700;
+}
+
+p > .ejercicio3800 {
+    font-weight: 800;
+}
+
+p > .ejercicio3900 {
+    font-weight: 900;
+}
+
+
+
+/* Ejercicio 4 */
+p > .ejercicio4italic {
+    font-style: italic;
+}
+
+p > .ejercicio4oblique {
+    font-style: oblique;
+}
+
+
+
+/* Ejercicio 5 */
+p > .ejercicio5normal {
+    font-variant: normal;
+}
+
+p > .ejercicio5caps {
+    font-variant: small-caps;
+}
+
+
+
+/* Ejercicio 6 */
+p > .ejercicio6none {
+    text-decoration: none;
+}
+
+p > .ejercicio6underline {
+    text-decoration: underline;
+}
+
+p > .ejercicio6overline {
+    text-decoration: overline;
+}
+
+p > .ejercicio6line-through {
+    text-decoration: line-through;
+}
+
+p > .ejercicio6blink {
+    text-decoration: blink;
+}
+
+p > .ejercicio6inherit {
+    text-decoration: inherit;
+}
+
+
+
+/* Ejercicio 7 */
+p > .ejercicio7none {
+    text-transform: none;
+}
+
+p > .ejercicio7capitalize {
+    text-transform: underline;
+}
+
+p > .ejercicio7uppercase {
+    text-transform: uppercase;
+}
+
+p > .ejercicio7lowercase {
+    text-transform: lowercase;
+}
+
+
+
+/* Ejercicio 8 */
+p > .ejercicio8triple {
+    line-height: 300%;
+    font-size: 300%;
+}
+
+p > .ejercicio810puntos {
+    line-height: 10pt;
+    font-size: 10pt;
+}
+
+p > .ejercicio8150 {
+    line-height: 150%;
+    font-size: 150%;
+}
+
+
+
+/* Ejercicio 9 */
+p > .ejercicio910pxpos {
+    text-indent: 10px;
+}
+
+p > .ejercicio920pxneg {
+    text-indent: -20px;
+}
+
+p > .ejercicio920porcpos {
+    text-indent: 20%;
+}
+
+
+
+/* Ejercicio 10 */
+p > .ejercicio10Regla1 {
+    letter-spacing: 5px;
+}
+
+p > .ejercicio10Regla2 {
+    letter-spacing: 10px;
+}
+
+p > .ejercicio10Regla3 {
+    letter-spacing: -1px;
+}
+
+p > .ejercicio10Regla4 {
+    letter-spacing: -.5px;
+}
+
+
+
+/* Ejercicio 11 */
+p > .ejercicio11Regla1 {
+    white-space: normal;
+}
+
+p > .ejercicio11Regla2 {
+    white-space: pre;
+}
+
+p > .ejercicio11Regla3 {
+    white-space: nowrap;
+}
