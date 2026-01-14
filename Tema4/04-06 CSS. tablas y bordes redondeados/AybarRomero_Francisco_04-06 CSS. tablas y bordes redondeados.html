@@ -22,7 +22,7 @@
 
     <body>
         
-        <div class="container-fluid w-75">
+        <div class="container-fluid w-50">
 
             <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
                 <div class="text-center">
@@ -151,7 +151,7 @@
                                     <td>108 Millones de Kilómetros</td> 
                                     <td><a href="http://es.wikipedia.org/wiki/Venus_(planeta)">Web Venus</a></td> 
                                 </tr>
-                                <tr> 
+                                <tr class="fpar"> 
                                     <td>Saturno</td> 
                                     <td>1.281 Millones de Kilómetros</td> 
                                     <td><a href="http://es.wikipedia.org/wiki/Saturno_(planeta)">Web Saturno</a></td> 
@@ -161,7 +161,7 @@
                                     <td>2.720 Millones de Kilómetros</td> 
                                     <td><a href="http://es.wikipedia.org/wiki/Urano_(planeta)">Web Urano</a></td> 
                                 </tr>
-                                <tr> 
+                                <tr class="fpar"> 
                                     <td>Neptuno</td> 
                                     <td>4.504 Millones de Kilómetros</td> 
                                     <td><a href="http://es.wikipedia.org/wiki/Neptuno_(planeta)">Web Neptuno</a></td>
@@ -180,11 +180,17 @@
                     <hr class="border border-primary w-25 mx-auto">
                 </div>
                 <article class="bg-secondary-subtle p-3 rounded shadow-sm">
-                    <div id="ejercicio3"></div>
-
-                    <script>
-                        
-                    </script>
+                    <div class="contenido">
+                        <div id="c1" onclick="cambio(this)" class="cajaredonda"> 
+                            </br>Caja </br> redonda</br> 50 px </br> 
+                        </div>
+                        <div id="c2" onclick="cambio(this)"  class="cajaporlados" > 
+                            </br>Caja redonda </br> abajo 40px 
+                        </div>
+                        <div id="c3" onclick="cambio(this)"  class="cajaporesquinas"> 
+                            </br> Caja esquinas </br> 30px
+                        </div>     
+                    </div>
                 </article>
             </section>
 
@@ -196,10 +202,64 @@
                     <hr class="border border-primary w-25 mx-auto">
                 </div>
                 <article class="bg-secondary-subtle p-3 rounded shadow-sm">
-                    <div id="ejercicio4"></div>
+                    <div class="contenido">
+                        <div id="c11" onclick="cambio(this)" class="cajaredonda"> 
+                            </br>Caja </br> redonda</br> 50 px </br> 
+                        </div>
+                        <div id="c22" onclick="cambio(this)"  class="cajaporlados" > 
+                            </br>Caja redonda </br> abajo 40px 
+                        </div>
+                        <div id="c33" onclick="cambio(this)"  class="cajaporesquinas"> 
+                            </br> Caja esquinas </br> 30px
+                        </div>
+
+                        <div id="hola">
+                            Hola -> 
+                        </div>
+                        <div id="hola1">
+                            Hola1 -> 
+                        </div>
+                        
+                        <button id="boton1_ejercicio4" type="button" class="btn btn-primary m-5">Cambiar clases</button>
+                    </div>
 
                     <script>
-                        
+                        let boton = document.getElementById("boton1_ejercicio4");
+                        let contador = 0;
+
+                        boton.addEventListener("click", (e) => 
+                        {
+                            cambio(true);
+                        });
+
+                        function cambio(elemento) 
+                        { 
+                            let clases = ["cajaredonda", "cajaporesquinas", "cajaporlados"]
+                            let caja0 = document.getElementById("c11");
+                            let caja1 = document.getElementById("c22");
+                            let caja2 = document.getElementById("c33");
+
+                            for (let i = 0; i < clases.length; i++)
+                            {
+                                let elemento = ("caja"+i);
+
+                                if (contador == 3)
+                                {
+                                    contador = 0;
+                                    elemento.className = clases[i];
+
+                                } else 
+                                {
+                                    elemento.className = clases[i];
+                                }
+
+                                contador++;
+                                document.getElementById("hola").innerHTML += " " + elemento + " ";
+                                document.getElementById("hola1").innerHTML += " " + clases[i] + " ";
+                            }
+
+
+                        }
                     </script>
                 </article>
             </section>
