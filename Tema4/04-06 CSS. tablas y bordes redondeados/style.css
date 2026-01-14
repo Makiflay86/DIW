@@ -1,0 +1,231 @@
+/* --------------------------------------------------- */
+
+
+
+/* Ejercicio 1 */
+.tabla_ej1 table { 
+    border: 1px solid #03476F; 
+    border-collapse: collapse;  
+    font: normal 11px verdana, arial, helvetica, sans-serif;
+    color: #363636; 
+    background: #92C428;
+}
+
+.tabla_ej1 caption { 
+    text-align: center; 
+    font: bold 14px arial, helvetica, sans-serif; 
+    background: transparent; 
+    padding: 6px 4px 8px 0px;
+    color: #03476F; 
+    text-transform: uppercase; 
+}
+
+.tabla_ej1 td, 
+.tabla_ej1 th { 
+    border: 1px dotted #03476F; 
+    padding: .4em; 
+    color: #363636; 
+}
+
+.tabla_ej1 thead th { 
+    font: bold 11px verdana, arial, helvetica, sans-serif; 
+    border: 1px solid #03476F; 
+    text-align: left; 
+    background: #4591AD;
+    color: #FFFFFF;
+    padding-top:3px; 
+}
+
+.tabla_ej1 tfoot td { 
+    border: 1px solid #03476F; 
+    text-align:center; 
+    background: #4591AD; 
+    color: #FFFFFF; 
+    padding-top:3px; 
+}
+
+.tabla_ej1 tbody td { 
+    vertical-align: top; 
+    text-align: left; 
+}
+
+.tabla_ej1 tr.fimpar { 
+    background: #AEE239; 
+} 
+
+.tabla_ej1 tbody tr:hover { 
+    background: #FFD800; 
+    border: 1px solid #03476F; 
+    color: #FFF; 
+}
+
+.tabla_ej1 tbody td a:link, 
+.tabla_ej1 tbody td a:visited { 
+    background: transparent; 
+    text-decoration: none; 
+    color: #363636; 
+}
+
+.tabla_ej1 tbody td a:hover, 
+.tabla_ej1 tbody td a:active { 
+    background: #C2F64D; 
+    color: #363636; 
+}
+
+
+
+/* --------------------------------------------------- */
+
+
+
+/* Ejercicio 2 */
+.tabla_ej2 table { 
+    border: 5px solid blue;
+    border-collapse: collapse;
+    font: normal 11px verdana, arial, helvetica, sans-serif;
+    color: #363636; 
+    background: pink;
+}
+
+.tabla_ej2 caption { 
+    text-align: center; 
+    font: bold 14px arial, helvetica, sans-serif; 
+    background: transparent; 
+    padding: 6px 4px 8px 0px;
+    color: #03476F; 
+    text-transform: uppercase; 
+}
+
+.tabla_ej2 td, 
+.tabla_ej2 th { 
+    border: 5px solid blue; 
+    padding: .4em; 
+    color: #363636; 
+}
+
+.tabla_ej2 thead th { 
+    font: bold 11px verdana, arial, helvetica, sans-serif; 
+    /* border: 1px solid #03476F; */
+    text-align: left; 
+    background: red;
+    color: #FFFFFF;
+    padding-top:3px; 
+    text-align: center;
+}
+
+.tabla_ej2 tfoot td { 
+    /* border: 1px solid #03476F;  */
+    text-align:center; 
+    background: red; 
+    color: #FFFFFF; 
+    padding-top:3px; 
+}
+
+.tabla_ej2 tbody td { 
+    vertical-align: top; 
+    text-align: left; 
+}
+
+.tabla_ej2 tr.fimpar { 
+    background: cyan; 
+} 
+
+.tabla_ej2 tbody tr:hover { 
+    background: #FFD800; 
+    /* border: 1px solid #03476F;  */
+    color: #FFF; 
+}
+
+.tabla_ej2 tbody td a:link, 
+.tabla_ej2 tbody td a:visited { 
+    background: transparent; 
+    text-decoration: none; 
+    color: #363636; 
+}
+
+.tabla_ej2 tbody td a:hover, 
+.tabla_ej2 tbody td a:active { 
+    background: #C2F64D; 
+    color: #363636; 
+}
+
+
+
+/* --------------------------------------------------- */
+
+
+
+/* Ejercicio 2b */
+.tabla_ej2b table { 
+    border: 3px double rgb(0, 0, 150);
+    border-collapse: separate;
+    border-radius: 15px;
+    font: normal 11px verdana, arial, helvetica, sans-serif;
+    color: #363636; 
+    background: blue;
+}
+
+.tabla_ej2b caption { 
+    text-align: center; 
+    font: bold 14px arial, helvetica, sans-serif; 
+    background: transparent; 
+    padding: 6px 4px 8px 0px;
+    color: #03476F; 
+    text-transform: uppercase; 
+}
+
+.tabla_ej2b td, 
+.tabla_ej2b th { 
+    border: 5px solid rgb(0, 0, 150); 
+    padding: .4em; 
+    color: #363636; 
+}
+
+.tabla_ej2b thead th { 
+    font: bold 11px verdana, arial, helvetica, sans-serif; 
+    border: 5px solid rgb(0, 0, 150);
+    border-style: groove;
+    border-radius: 30px;
+    text-align: left; 
+    background: red;
+    color: #FFFFFF;
+    padding-top:3px; 
+    text-align: center;
+}
+
+.tabla_ej2b tfoot td { 
+    /* border: 1px solid #03476F;  */
+    border-radius: 30px;
+    text-align:center; 
+    background: red; 
+    color: #FFFFFF; 
+    padding-top:3px; 
+}
+
+.tabla_ej2b tbody td { 
+    vertical-align: top; 
+    text-align: left; 
+}
+
+.tabla_ej2b tr.fimpar { 
+    background: cyan; 
+} 
+
+.tabla_ej2b tbody tr:hover { 
+    background: #FFD800; 
+    /* border: 1px solid #03476F;  */
+    color: #FFF; 
+}
+
+.tabla_ej2b tbody td a:link, 
+.tabla_ej2b tbody td a:visited { 
+    background: transparent; 
+    text-decoration: none; 
+    color: #363636; 
+}
+
+.tabla_ej2b tbody td a:hover, 
+.tabla_ej2b tbody td a:active { 
+    background: #C2F64D; 
+    color: #363636; 
+}
