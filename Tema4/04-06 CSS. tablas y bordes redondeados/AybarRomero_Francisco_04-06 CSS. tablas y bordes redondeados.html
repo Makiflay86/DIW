@@ -181,13 +181,13 @@
                 </div>
                 <article class="bg-secondary-subtle p-3 rounded shadow-sm">
                     <div class="contenido">
-                        <div id="c1" onclick="cambio(this)" class="cajaredonda"> 
+                        <div id="c1" class="cajaredonda"> 
                             </br>Caja </br> redonda</br> 50 px </br> 
                         </div>
-                        <div id="c2" onclick="cambio(this)"  class="cajaporlados" > 
+                        <div id="c2" class="cajaporlados" > 
                             </br>Caja redonda </br> abajo 40px 
                         </div>
-                        <div id="c3" onclick="cambio(this)"  class="cajaporesquinas"> 
+                        <div id="c3" class="cajaporesquinas"> 
                             </br> Caja esquinas </br> 30px
                         </div>     
                     </div>
@@ -212,53 +212,16 @@
                         <div id="c33" onclick="cambio(this)"  class="cajaporesquinas"> 
                             </br> Caja esquinas </br> 30px
                         </div>
-
-                        <div id="hola">
-                            Hola -> 
-                        </div>
-                        <div id="hola1">
-                            Hola1 -> 
-                        </div>
-                        
-                        <button id="boton1_ejercicio4" type="button" class="btn btn-primary m-5">Cambiar clases</button>
                     </div>
 
                     <script>
-                        let boton = document.getElementById("boton1_ejercicio4");
-                        let contador = 0;
-
-                        boton.addEventListener("click", (e) => 
-                        {
-                            cambio(true);
-                        });
-
                         function cambio(elemento) 
                         { 
-                            let clases = ["cajaredonda", "cajaporesquinas", "cajaporlados"]
-                            let caja0 = document.getElementById("c11");
-                            let caja1 = document.getElementById("c22");
-                            let caja2 = document.getElementById("c33");
+                            let clases = ["cajaredonda", "cajaporesquinas", "cajaporlados"];
+                            let indice_actual = clases.indexOf(elemento.className);
+                            let siguiente = (indice_actual + 1) % clases.length;
 
-                            for (let i = 0; i < clases.length; i++)
-                            {
-                                let elemento = ("caja"+i);
-
-                                if (contador == 3)
-                                {
-                                    contador = 0;
-                                    elemento.className = clases[i];
-
-                                } else 
-                                {
-                                    elemento.className = clases[i];
-                                }
-
-                                contador++;
-                                document.getElementById("hola").innerHTML += " " + elemento + " ";
-                                document.getElementById("hola1").innerHTML += " " + clases[i] + " ";
-                            }
-
-
+                            elemento.className = clases[siguiente];
                         }
                     </script>
                 </article>
