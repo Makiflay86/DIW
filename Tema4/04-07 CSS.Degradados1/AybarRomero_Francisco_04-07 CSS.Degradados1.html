@@ -30,7 +30,138 @@
                     <hr class="border border-primary w-25 mx-auto">
                 </div>
                 <article class="bg-secondary-subtle p-3 rounded shadow-sm">
-                   
+                    
+                    <div class="section_item flex-container rounded color-2"> 
+                        <h1 class="flex-item">!!! Sandia ¡¡¡ </h1> 
+                    </div>
+
+                    <div class="section_item flex-container rounded color-91"> 
+                        <h1 class="flex-item">!!! conico ¡¡¡ </h1> 
+                    </div>
+
+                    <div class="section_item flex-container rounded color-6" id="ellipseAzul"> 
+                        <h1 class="flex-item">EllipseAzul</h1> 
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 2</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div class="section_item flex-container rounded" id="ejemplo1"> 
+                        <h1 class="flex-item">Verde</h1> 
+                    </div>
+
+                    <div class="section_item flex-container rounded" id="ejemplo2"> 
+                        <h1 class="flex-item">Piña</h1> 
+                    </div>
+
+                    <div class="section_item flex-container rounded" id="ejemplo3"> 
+                        <h1 class="flex-item">Atardecer</h1> 
+                    </div>
+
+                    <div class="section_item flex-container rounded" id="ejemplo4"> 
+                        <h1 class="flex-item">Anillo Azul</h1> 
+                    </div>
+
+                    <div class="section_item flex-container rounded" id="ejemplo5"> 
+                        <h1 class="flex-item">EllipseAzul</h1> 
+                    </div>
+
+                    <div class="section_item flex-container rounded" id="ejemplo6"> 
+                        <h1 class="flex-item">conico</h1> 
+                    </div>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 3</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div class="c-article">
+                        <header class="c-article__header">
+                            <h1 class="c-article__title">
+                                What's better than text gradients?
+                                <br>
+                                <span class="u-font-lora">Animated text gradients.</span>
+                            </h1>
+                        </header>
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        <h1 class="linear-wipe">Shine!</h1>
+                    </div>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 4</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div class="section_item flex-container rounded" id="ejercicio4"> 
+                        <h1 class="flex-item">Modelo hue</h1> 
+                    </div>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 5</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <!-- pasar la referencia al objeto del elemento, como parámetro 'this'. -->
+                    <p id="p1" onclick="alterStyle(this)"; class="text-center text-black">
+                        Haz clic aquí!
+                    </p>
+                    
+                    <input type="color" id="idcolor" oninput="alterStyle(this)" value="#ff0000" />
+                    
+                    <!-- pasar el identificador 'pl' de otro elemento a modificar. -->
+                    <button onclick="resetStyle('p1');" class="btn btn-success">
+                        Default
+                    </button>
+
+                    
+                    <script>
+                        function alterStyle(elem) 
+                        {
+                            let color = document.getElementById("idcolor").value;
+                            document.getElementById("p1").style.background = color;
+                        }
+                        
+                        function resetStyle(elemId) 
+                        {
+                            elem = document.getElementById(elemId);
+                            elem.style.background = 'white';
+                        }
+                    </script>
+
                 </article>
             </section>
 

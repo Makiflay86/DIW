@@ -1,0 +1,184 @@
+.section_item 
+{ 
+    height: auto; 
+    max-width: calc(100vw - 30px); 
+    margin: 15px; 
+    padding: 10vw; 
+    z-index: 1; 
+    position: relative; 
+    text-align: center; 
+}
+
+.flex-container 
+{
+    display: -ms-flexbox; display: -webkit-flex; display: flex;
+    -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+    -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap;
+    -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+    -webkit-align-content: space-around; -ms-flex-line-pack: distribute; align-content: space-around;
+    -webkit-align-items: center; -ms-flex-align: center; align-items: center; 
+}
+
+.flex-item 
+{ 
+    -webkit-order: 0; 
+    -ms-flex-order: 0; 
+    order: 0; 
+    -webkit-flex: 0 1 auto; 
+    -ms-flex: 0 1 auto; 
+    flex: 0 1 auto; 
+    -webkit-align-self: auto; 
+    -ms-flex-item-align: auto; 
+    align-self: auto; 
+}
+
+.section_item p 
+{ 
+    font-size: 18px; 
+    font-size: 1rem; 
+    color: #fff;
+    max-width: 700px; 
+    line-height: 1.5; 
+}
+
+/* Background colors */
+.color-2 
+{ 
+    background: linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+}
+
+.color-91 
+{ 
+    background: conic-gradient(from 45deg, orange,yellow,orange);
+}
+
+.color-6 
+{ 
+    background: radial-gradient(circle, rgba(32,69,251,1) 0%, rgba(34,193,195,1) 49%, rgba(32,69,251,1) 100%); 
+}
+
+
+
+/* Ejercicio 2 */
+#ejemplo1
+{ 
+    background: linear-gradient(360deg, 
+    green 0%, 
+    white 100%); 
+}
+
+#ejemplo2
+{ 
+    background: linear-gradient(90deg, 
+    rgb(0, 92, 34) 0%, 
+    rgb(254, 221, 112) 100%); 
+}
+
+#ejemplo3
+{
+    background: linear-gradient(to right,
+    rgb(237, 206, 107) 0%, 
+    rgb(192, 147, 0) 100%); 
+}
+
+#ejemplo4
+{
+    background: linear-gradient(to right,
+    red 20%,
+    orange 20% 40%,
+    yellow 40% 60%,
+    green 60% 80%,
+    blue 80%);
+}
+
+#ejemplo5
+{ 
+    background: radial-gradient(ellipse, 
+    rgba(32,69,251,1) 0%, 
+    rgba(34,193,195,1) 49%, 
+    rgb(0, 42, 255) 100%); 
+}
+
+#ejemplo6
+{ 
+    background: conic-gradient(from 0deg, 
+    orange 0%,     
+    yellow 50%, 
+    orange 100%);
+}
+
+
+
+/* Ejercicio 3 */
+@keyframes animationgradienttitle {
+	 0% {
+		 background-position: 0 1600px;
+	}
+	 100% {
+		 background-position: 1600px 0;
+	}
+}
+ .c-article {
+	 text-align: center;
+}
+ .c-article__header {
+	 position: relative;
+}
+ .c-article__title {
+	 font-family: 'Scope One', serif;
+	 font-size: 3em;
+	 color: #fc3735;
+	 background: -webkit-linear-gradient(left, #f57170, #10ddc2, #f57170);
+	 background-size: 1600px 200px;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 animation-duration: 3s;
+	 animation-name: animationgradienttitle;
+	 animation-iteration-count: infinite;
+	 animation-fill-mode: forwards;
+}
+ .u-font-lora {
+	 font-family: 'Lora', serif;
+	 font-size: 1.5em;
+	 font-weight: 700;
+}
+ 
+
+.linear-wipe {
+  text-align: center;
+  background: linear-gradient(to right, white 20%, green 40%, yellowgreen 60%, white 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+/* Ejercicio 4 */
+#ejercicio4 
+{
+    background-image: radial-gradient(
+    circle at center in hsl shorter hue,
+    red,
+    blue);
+}
+
+
+
+/* Ejercicio 5 */
+#p1 
+{
+    border: solid blue 2px;
+    height: 300px;
+    width:300px;
+    margin: auto;
+}
