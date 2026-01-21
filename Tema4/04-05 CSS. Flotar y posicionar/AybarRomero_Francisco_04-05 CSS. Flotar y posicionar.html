@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <title>AybarRomero_Francisco_04-04 CSS. colores y los fondos</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        
+        <link rel="stylesheet" href="./src/css/style.css">
+    </head>
+
+    <body>
+        
+        <div class="container-fluid w-50">
+
+           <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 1</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div class="mb-4">
+                        <h3>Float: None</h3>
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="img-ejercicio f-none" alt="Homer None">
+                        <p>Este texto se mantiene debajo de la imagen porque no tiene ninguna propiedad de desplazamiento lateral aplicada.</p>
+                    </div>
+
+                    <div class="mb-4" style="clear: both;">
+                        <h3>Float: Left</h3>
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="img-ejercicio f-left" alt="Homer Left">
+                        <p>Al usar float left, la imagen se pega a la izquierda y este texto sube para rodearla por el espacio disponible a la derecha.</p>
+                    </div>
+
+                    <div class="mb-4" style="clear: both;">
+                        <h3>Float: Right</h3>
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="img-ejercicio f-right" alt="Homer Right">
+                        <p>En este caso, la imagen se desplaza al extremo derecho y el flujo del texto se ajusta para aparecer en el lado izquierdo.</p>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 2</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div class="test-box">
+                        <h4>Clear: None</h4>
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="f-left img-small">
+                        <p class="c-none">Este texto tiene <b>clear: none</b>, por lo que fluye al lado de la imagen aprovechando el espacio vacío.</p>
+                    </div>
+
+                    <div class="test-box">
+                        <h4>Clear: Left</h4>
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="f-left img-small">
+                        <p class="c-left">Este texto tiene <b>clear: left</b>, por lo que ignora el espacio lateral y baja hasta limpiar la imagen flotada a la izquierda.</p>
+                    </div>
+
+                    <div class="test-box">
+                        <h4>Clear: Right</h4>
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="f-right img-small">
+                        <p class="c-right">Este texto tiene <b>clear: right</b>. Como la imagen flota a la derecha, el texto baja para empezar debajo de ella.</p>
+                    </div>
+
+                    <div class="test-box">
+                        <h4>Clear: Both</h4>
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="f-left img-small">
+                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="f-right img-small">
+                        <p class="c-both">Este texto tiene <b>clear: both</b>, lo que asegura que se posicione debajo de ambas imágenes, sin importar sus flotaciones.</p>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 3</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <h5>Variante A: Mixta</h5>
+                    <div class="contenedor-ej3 mb-4">
+                        <div id="caja1" class="f-right"> Roja </div>
+                        <div id="caja2" class="f-left"> Verde </div>
+                        <div id="caja3" class="f-none"> Azul </div>
+                    </div>
+
+                    <hr>
+
+                    <h5>Variante B: Todas Left</h5>
+                    <div class="contenedor-ej3 mb-4">
+                        <div id="caja1" class="f-left"> Roja </div>
+                        <div id="caja2" class="f-left"> Verde </div>
+                        <div id="caja3" class="f-left"> Azul </div>
+                    </div>
+
+                    <hr>
+
+                    <h5>Variante C: Left + Clear</h5>
+                    <div class="contenedor-ej3">
+                        <div id="caja1" class="f-left c-left"> Roja </div>
+                        <div id="caja2" class="f-left c-left"> Verde </div>
+                        <div id="caja3" class="f-left c-left"> Azul </div>
+                    </div>
+
+                </article>
+            </section>
+            
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 4</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div id="contenido-ej4">
+                        <div id="caja1-ej4"> Caja 1 </div>
+                        <div id="caja2-ej4"> Caja 2 </div>
+                        <div id="caja3-ej4"> Caja 3 </div>
+                        <div class="clearboth"></div>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 5</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div id="contenido-ej5">
+                        <div id="caja4" class="caja-base f-left c-left"> Caja 4 </div>
+                        <div id="caja1" class="caja-base f-right c-right"> Caja 1 </div>
+                        <div id="caja5" class="caja-base f-left c-left"> Caja 5 </div>
+                        <div id="caja2" class="caja-base f-right c-right"> Caja 2 </div>
+                        <div id="caja6" class="caja-base f-left c-left"> Caja 6 </div>
+                        <div id="caja3" class="caja-base f-right c-right"> Caja 3 </div>
+                        
+                        <div class="clearboth"></div>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 6</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div id="contenido">
+                        <h1>Ejercicio 6</h1>
+                        <div class="ej6-inline"> Esto es un div como linea que no se debe ver </div> 
+                        continuacion de la linea
+                            <p class="ej6-block-right"> Esto es un p como un bloque a la derecha </p> 
+                        continuacion del bloque
+                        <div class="clearboth"></div>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 7</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div id="contenido-ej7">
+                        <div id="caja71"> Caja 71 </div>
+                        <div id="caja72"> Caja 72 </div>
+                        <div id="caja73"> Caja 73 </div>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 8</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div id="contenido-ej8">
+                        
+                        <script>
+                            let valortop = 0;
+
+                            function moverarriba() 
+                            {
+                                valortop -= 20;
+                                actualizarPosicion();
+                            }
+
+                            function moverabajo() 
+                            {
+                                valortop += 20;
+                                actualizarPosicion();
+                            }
+
+                            function actualizarPosicion() 
+                            {
+                                document.getElementById("caja81").style.top = (0 + valortop) + "px";
+                                document.getElementById("caja82").style.top = (-110 + valortop) + "px";
+                                document.getElementById("caja83").style.top = (-250 + valortop) + "px";
+                            }
+                        </script>
+
+                        <div id="caja81" onclick="moverarriba();"> Caja 71 (Click: Subir) </div>
+                        <div id="caja82" onclick="moverabajo();"> Caja 72 (Click: Bajar) </div>
+                        <div id="caja83"> Caja 73 </div>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 9</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div id="contenido-ej9">
+                        <script>
+                            var estado = 0;
+                            
+                            function moverz() 
+                            {
+                                if (estado == 0) 
+                                {
+                                    document.getElementById("caja91").style.zIndex = 1;
+                                    document.getElementById("caja92").style.zIndex = 2;
+                                    document.getElementById("caja93").style.zIndex = 3;
+                                    estado = 1;
+
+                                } else 
+                                {
+                                    document.getElementById("caja91").style.zIndex = 3;
+                                    document.getElementById("caja92").style.zIndex = 2;
+                                    document.getElementById("caja93").style.zIndex = 1;
+                                    estado = 0;
+                                }
+                            }
+                        </script>
+
+                        <div id="caja91" onclick="moverz();"> Caja 91 </div>
+                        <div id="caja92" onclick="moverz();"> Caja 92 </div>
+                        <div id="caja93" onclick="moverz();"> Caja 93 </div>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 10</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div id="contenido-ej10">
+                        <script>
+                            var estado = 0; 
+
+                            function moverz() {
+                                if (estado == 0) {
+                                    // Estado 1: Cambiamos el orden de las tres cajas
+                                    document.getElementById("caja101").style.zIndex = 1;
+                                    document.getElementById("caja102").style.zIndex = 2;
+                                    document.getElementById("caja103").style.zIndex = 3;
+                                    estado = 1;
+                                } else {
+                                    // Estado 0: Volvemos al orden inicial
+                                    document.getElementById("caja101").style.zIndex = 3;
+                                    document.getElementById("caja102").style.zIndex = 2;
+                                    document.getElementById("caja103").style.zIndex = 1;
+                                    estado = 0;
+                                }
+                            }
+                        </script>
+
+                        <div id="caja101" onclick="moverz();"> Caja 101 </div>
+                        <div id="caja102" onclick="moverz();"> Caja 102 </div>
+                        <div id="caja103" onclick="moverz();"> Caja 103 </div>
+                    </div>
+
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 11</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    
+                    <div class="contenido-ej11">
+                        <div id="caja1-11"> Caja 1 </div>
+                        <div id="caja2-11"> Caja 2 </div>
+                        <div id="caja3-11"> Caja 3 </div>
+                        <div id="caja4-11"> Caja 4 (Fija)</div>
+                    </div>
+
+                    <div class="contenido-ej11" id="contadores">
+                        <h1> Contadores MouseOver</h1>
+                        <hr>
+                        <h2>
+                            Contador 1: <span id="c1-val">0</span> <br>
+                            Contador 2: <span id="c2-val">0</span> <br>
+                            Contador 3: <span id="c3-val">0</span> <br>
+                            Contador 4: <span id="c4-val">0</span> <br>
+                        </h2>
+                    </div>
+
+                    <script>
+                        let conteos = [0, 0, 0, 0];
+
+                        function setupTracker(idCaja, idDisplay, index) 
+                        {
+                            let el = document.getElementById(idCaja);
+                            el.addEventListener("mouseover", () => {
+                                conteos[index]++;
+                                document.getElementById(idDisplay).innerHTML = conteos[index];
+                            });
+                        }
+
+                        setupTracker("caja1-11", "c1-val", 0);
+                        setupTracker("caja2-11", "c2-val", 1);
+                        setupTracker("caja3-11", "c3-val", 2);
+                        setupTracker("caja4-11", "c4-val", 3);
+                    </script>
+
+                </article>
+            </section>
+
+
+
+        </div>
+        
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

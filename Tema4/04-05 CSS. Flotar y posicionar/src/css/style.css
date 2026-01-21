@@ -1,0 +1,313 @@
+/* Ejercicio 1 */
+.img-ejercicio 
+{
+    width: 100px;
+    margin: 15px;
+    border: 2px solid #333;
+    display: block; 
+}
+
+.f-none 
+{
+    float: none;
+}
+
+.f-left 
+{
+    float: left;
+}
+
+.f-right 
+{
+    float: right;
+}
+
+
+
+/* Ejercicio 2 */
+.test-box 
+{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.img-small 
+{
+    width: 80px;
+    margin: 5px;
+}
+
+.c-none { clear: none; }
+.c-left { clear: left; }
+.c-right { clear: right; }
+.c-both { clear: both; }
+
+
+
+/* Ejercicio 3 */
+.contenedor-ej3 
+{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border: solid 1px black;
+    background-color: #CCCCCC;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+}
+
+#caja1 { width: 100px; height: 100px; background-color:#FF0000; border: solid 1px black; margin: 10px; }
+#caja2 { width: 130px; height: 130px; background-color:#00FF00; border: solid 1px black; margin: 10px; }
+#caja3 { width: 160px; height: 160px; background-color:#0000FF; border: solid 1px black; margin: 10px; }
+
+
+
+/* Ejercicio 4 */
+#contenido-ej4 
+{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border: solid 1px black;
+    background-color: #CCCCCC;
+    color: tomato;
+    font-weight: bold;
+}
+
+#caja1-ej4 
+{ 
+    width: 130px; height: 130px; background-color:#FFFF00;
+    border: solid 1px black; margin: 10px; float: left; 
+}
+
+#caja2-ej4 
+{ 
+    width: 130px; height: 130px; background-color:#00FF00; 
+    border: solid 1px black; margin: 10px; float: left; 
+}
+
+#caja3-ej4 
+{ 
+    width: 160px; height: 160px; background-color:#0000FF; 
+    border: solid 1px black; margin: 10px; float: left; 
+}
+
+.clearboth 
+{ 
+    clear: both; 
+}
+
+
+
+/* Ejercicio 5 */
+#contenido-ej5 
+{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border: solid 1px black;
+    background-color: #CCCCCC;
+    color: white;
+    font-weight: bold;
+    overflow: hidden; 
+}
+
+.caja-base 
+{
+    border: solid 1px black;
+    margin: 10px;
+}
+
+#caja1, #caja4 { width: 100px; height: 100px; background-color: #FF0000; }
+#caja2, #caja5 { width: 130px; height: 130px; background-color: #00FF00; }
+#caja3, #caja6 { width: 160px; height: 160px; background-color: #0000FF; }
+
+
+
+/* Ejercicio 6 */
+#contenido 
+{
+    background-color: #CCCCCC; 
+    padding: 20px;
+    color: white; 
+    font-family: sans-serif;
+}
+
+.ej6-inline 
+{
+    display: inline;
+}
+
+.ej6-block-right 
+{
+    display: block;
+    float: right;
+    margin: 0;
+    padding-left: 20px;
+}
+
+
+
+/* Ejercicio 7 */
+#contenido-ej7 
+{
+    background-color: #CCCCCC;
+    min-height: 500px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#caja71 
+{ 
+    width: 100px; height: 100px; background-color:#FFFF00; border: solid 1px black; 
+    margin: 10px; position: relative; 
+    left: 0px; 
+    top: 0px;
+}
+
+#caja72 
+{ 
+    width: 130px; height: 130px; background-color:#00FFFF; border: solid 1px black; 
+    margin: 10px; position: relative; 
+    left: 110px; 
+    top: 0px; 
+}
+
+#caja73 
+{ 
+    width: 160px; height: 160px; background-color:#FF00FF; border: solid 1px black; 
+    margin: 10px; position: relative; 
+    left: 250px; 
+    top: 0px; 
+}
+
+
+
+/* Ejercicio 8 */
+#contenido-ej8 {
+    background-color: #CCCCCC;
+    min-height: 650px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+#caja81, #caja82, #caja83 {
+    position: relative;
+    border: solid 1px black;
+    margin: 10px;
+    float: none; 
+    display: block;
+}
+
+/* Estas coordenadas crean la escalera inicial */
+#caja81 { width: 100px; height: 100px; background-color:#FFFF00; left: 0px; top: 0px; cursor:pointer;}
+#caja82 { width: 130px; height: 130px; background-color:#00FFFF; left: 110px; top: -110px; cursor:pointer;}
+#caja83 { width: 160px; height: 160px; background-color:#FF00FF; left: 250px; top: -250px; }
+
+
+
+/* Ejercicio 9 */
+#contenido-ej9 
+{
+    background-color: #CCCCCC;
+    min-height: 450px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#caja91, #caja92, #caja93 
+{
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+#caja91 
+{ 
+    width: 100px; height: 100px; background-color:#FFAAAA; 
+    position: relative; left: 0; top: 0; z-index: 3; 
+}
+
+#caja92 
+{ 
+    width: 130px; height: 130px; background-color:#AAAAFF; 
+    position: relative; left: 40px; top: -50px; z-index: 2; 
+}
+
+#caja93 
+{ 
+    width: 160px; height: 160px; background-color:#AAFFAA; 
+    position: relative; left: 80px; top: -100px; z-index: 1; 
+}
+
+
+
+/* Ejercicio 10 */
+#contenido-ej10 
+{
+    background-color: #CCCCCC;
+    min-height: 400px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#caja101, #caja102, #caja103 
+{
+    position: relative;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+#caja101 
+{ 
+    width: 100px; height: 100px; background-color: #FFAAAA; 
+    left: 0; top: 0; z-index: 3; 
+}
+
+#caja102 
+{ 
+    width: 130px; height: 130px; background-color: #AAAAFF; 
+    left: 40px; top: -60px; z-index: 2; 
+}
+
+#caja103 
+{ 
+    width: 160px; height: 160px; background-color: #AAFFAA; 
+    left: 80px; top: -120px; z-index: 1; 
+}
+
+
+
+/* Ejercicio 11 */
+.contenido-ej11 
+{ 
+    width: 100%; 
+    max-width: 700px; 
+    margin: 20px auto; 
+    min-height: 400px; 
+    border: solid 1px black; 
+    background-color: #CCCCCC; 
+    color: white;
+    font-weight: bold;
+    overflow: hidden; 
+}
+
+#caja1-11 { width: 100px; height: 100px; background-color:#FF0000; border: solid 1px black; margin: 10px; float: left; position:relative; z-index: 2; }
+#caja2-11 { width: 130px; height: 130px; background-color:#00FF00; border: solid 1px black; margin: 10px; float: right; clear: both; }
+#caja3-11 { width: 160px; height: 160px; background-color:#0000FF; border: solid 1px black; margin: 10px; float: right; clear: right;}
+
+#caja4-11 
+{ 
+    width: 170px; height: 160px; background-color:orange; 
+    border: solid 1px black; margin: 10px; 
+    position: relative;  top: 100px; z-index: 10; 
+}
+
+#contadores h1, #contadores h2 { color: #333; padding: 10px; }
