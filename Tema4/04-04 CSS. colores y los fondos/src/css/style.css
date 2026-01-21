@@ -1,0 +1,86 @@
+/* Ejercicio 2 */
+.nombre { background-color: gray !important; }
+.hex1 { background-color: #0000FF !important; }
+.hex2 { background-color: #00F !important; }
+.rgb { background-color: rgb(255, 0, 0) !important; }
+.rgba { background-color: rgba(0, 255, 0, 0.5) !important; }
+.hsl { background-color: hsl(120, 100%, 50%) !important; }
+.hwb { background-color: hwb(190 10% 20%) !important; }
+.lab { background-color: lab(46.27% 67.53 28.18) !important; }
+.oklab { background-color: oklab(0.6 0.2 0.1) !important; }
+.lch { background-color: lch(52.2% 72.2 16.2) !important; }
+
+
+
+/* Ejercicio 6 */
+.ejercicio6 
+{
+    height: 300px;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    background-image: url('../img/homer-simpson-hide-in-shrubs.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.pos-1 { background-position: left bottom; }
+.pos-2 { background-position: left top; }
+.pos-3 { background-position: right center; }
+.pos-4 { background-position: right bottom; }
+.pos-5 { background-position: bottom center; }
+.pos-6 { background-position: 25% 10%; }
+.pos-7 { background-position: 100px 50px; }
+
+
+
+/* Ejercicio 7 */
+.fondo { background: #00f; color: black }
+#saludo { background: white; width: 200px; height: 200px; filter: alpha(opacity=50); -moz-opacity: 0.5; opacity: 0.5; }
+#frase { background: white; width: 200px; height: 200px; filter: alpha(opacity=100); -moz-opacity: 1; opacity: 1; }
+#despedida { background: white; width: 200px; height: 200px; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0; }
+
+
+
+/* Ejercicio 8 */
+.op-25 
+{
+    filter: alpha(opacity=25);
+    -moz-opacity: 0.25;
+    opacity: 0.25;
+}
+
+.op-50 
+{
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.op-75 
+{
+    filter: alpha(opacity=75);
+    -moz-opacity: 0.75;
+    opacity: 0.75;
+}
+
+
+
+/* Ejercicio 9 */
+.imagen-hover 
+{
+    opacity: 1.0;
+    transition: opacity 0.5s ease;
+    width: 250px;
+    cursor: pointer;
+}
+
+.imagen-hover:hover 
+{
+    opacity: 0.5;
+}

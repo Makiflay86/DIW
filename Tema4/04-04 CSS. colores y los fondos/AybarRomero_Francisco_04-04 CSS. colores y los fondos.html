@@ -17,7 +17,7 @@
             crossorigin="anonymous"
         />
         
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./src/css/style.css">
     </head>
 
     <body>
@@ -34,6 +34,8 @@
                     <div class="row">
                         <button id="boton_ejercicio1" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
                     </div>
+
+                    <hr>
 
                     <div id="coloresCss1"></div>
 
@@ -58,31 +60,33 @@
                         
                        let boton = document.getElementById("boton_ejercicio1");
 
-                        boton.addEventListener("click", (e) => 
-                        {
-                            for (let i = 0; i < coloresCss1.length; i++)
+                        boton.addEventListener("click", (e) => {
+                            // Tabla 1
+                            let tabla1 = "<table class='table table-bordered text-center'><tr>";
+                            for (let i = 0; i < coloresCss1.length; i++) 
                             {
-                                for (let j = 0; j < coloresCss1.length; j++)
-                                {
-                                    
-                                }
+                                tabla1 += `<td style="background-color:${coloresCss1[i]}; padding:10px;">${coloresCss1[i]}</td>`;
+                                if ((i + 1) % 4 === 0) tabla1 += "</tr><tr>";
                             }
+                            out_coloresCss1.innerHTML = tabla1 + "</tr></table>";
 
-                            for (let i = 0; i < coloresCss2.length; i++)
+                            // Tabla 2
+                            let tabla2 = "<table class='table table-bordered text-center'><tr>";
+                            for (let i = 0; i < coloresCss2.length; i++) 
                             {
-                                for (let j = 0; j < coloresCss2.length; j++)
-                                {
-                                    
-                                }
+                                tabla2 += `<td style="background-color:${coloresCss2[i]}; padding:10px;">${coloresCss2[i]}</td>`;
+                                if ((i + 1) % 6 === 0) tabla2 += "</tr><tr>"; // Salto de fila cada 6
                             }
+                            out_coloresCss2.innerHTML = tabla2 + "</tr></table>";
 
-                            for (let i = 0; i < coloresCss3.length; i++)
+                            // Tabla 3
+                            let tabla3 = "<table class='table table-bordered text-center'><tr>";
+                            for (let i = 0; i < coloresCss3.length; i++) 
                             {
-                                for (let j = 0; j < coloresCss3.length; j++)
-                                {
-                                    
-                                }
+                                tabla3 += `<td style="background-color:${coloresCss3[i]}; padding:10px;">${coloresCss3[i]}</td>`;
+                                if ((i + 1) % 6 === 0) tabla3 += "</tr><tr>";
                             }
+                            out_coloresCss3.innerHTML = tabla3 + "</tr></table>";
                         });
                     </script>
                     
@@ -91,10 +95,290 @@
 
 
 
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 2</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio2" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+
+                    <div id="ejercicio2"></div>
+
+                    <script>
+                        let boton_ejercicio2 = document.getElementById("boton_ejercicio2");
+
+                        boton_ejercicio2.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio2");
+                            let nombres = ["nombre", "hex1", "hex2", "rgb", "rgba", "hsl", "hwb", "lab", "oklab", "lch"];
+                            let table = `<table class='table table-bordered text-center'>`;
+
+                            for (let i = 0; i < 2; i++)
+                            {
+                                table += `<tr>`;
+                                for (let j = 0; j < 5; j++)
+                                {
+                                    table += `<td class='${nombres[(i * 5) + j]}'>${nombres[(i * 5) + j]}</td>`;
+                                }
+                                table += `</tr>`;
+                            }
+                            table += `</table>`;
+
+                            output.innerHTML = table;
+                        });
+                    </script>
+                    
+                </article>
+            </section>
 
 
 
-            
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 3</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio3" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+                    
+                    <div id="ejercicio3"></div>
+
+                    <script>
+                        let boton_ejercicio3 = document.getElementById("boton_ejercicio3");
+                        
+                        boton_ejercicio3.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio3");
+                            output.innerHTML = `
+                                <div class="row mx-auto" style="width:256px;">
+                                    <img class="col-auto" src="./src/img/homer-simpson-hide-in-shrubs.gif" alt="homer-simpson-hide-in-shrubs">
+                                </div>
+                            `;
+                        });
+                    </script>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 4</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio4" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+                    
+                    <div id="ejercicio4"></div>
+
+                    <script>
+                        let boton_ejercicio4 = document.getElementById("boton_ejercicio4");
+                        boton_ejercicio4.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio4");
+                            output.innerHTML = `
+                                <div class="row">
+                                    <div class="col mx-5" 
+                                        style="background-image: url('./src/img/homer-simpson-hide-in-shrubs.png'); 
+                                                background-repeat: repeat-x; 
+                                                height: 128px; 
+                                                background-size: contain;">
+                                    </div>
+                                </div>
+                            `;
+                        });
+                    </script>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 5</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio5" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+                    
+                    <div id="ejercicio5"></div>
+
+                    <script>
+                        let boton_ejercicio5 = document.getElementById("boton_ejercicio5");
+                        boton_ejercicio5.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio5");
+                            output.innerHTML = `
+                                <div class="row mx-auto" style="width:256px;">
+                                    <img class="col" src="./src/img/homer-simpson-hide-in-shrubs.jpg" alt="homer-simpson-hide-in-shrubs">
+                                </div>
+                            `;
+                        });
+
+                    </script>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 6</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio6" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+                    
+                    <div id="ejercicio6"></div>
+
+                    <script>
+                        let boton_ejercicio6 = document.getElementById("boton_ejercicio6");
+                        boton_ejercicio6.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio6");
+                            output.innerHTML = `
+                                <div class="ejercicio6 pos-1">left bottom</div>
+                                <div class="ejercicio6 pos-2">left top</div>
+                                <div class="ejercicio6 pos-3">right center</div>
+                                <div class="ejercicio6 pos-4">right bottom</div>
+                                <div class="ejercicio6 pos-5">bottom center</div>
+                                <div class="ejercicio6 pos-6">25% 10%</div>
+                                <div class="ejercicio6 pos-7">100px 50px</div>
+                            `;
+                        });
+                    </script>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 7</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio7" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+                    
+                    <div id="ejercicio7"></div>
+
+                    <script>
+                        let boton_ejercicio7 = document.getElementById("boton_ejercicio7");
+                        boton_ejercicio7.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio7");
+                            output.innerHTML = `
+                                <div class="fondo">
+                                    <div id="saludo"><h1>¡Hola!</h1></div>
+                                    <div id="frase">Este es un ejemplo de opacidad</div>
+                                    <div id="despedida"><h2>¡Adiós!></h2></div>
+                                </div>
+                            `;
+                        });
+                    </script>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 8</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio8" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+                    
+                    <div id="ejercicio8"></div>
+
+                    <script>
+                        let boton_ejercicio8 = document.getElementById("boton_ejercicio8");
+                        boton_ejercicio8.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio8");
+                            output.innerHTML = `
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <p>Opacidad 25%</p>
+                                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="op-25" style="width: 150px;">
+                                    </div>
+                                    <div class="col">
+                                        <p>Opacidad 50%</p>
+                                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="op-50" style="width: 150px;">
+                                    </div>
+                                    <div class="col">
+                                        <p>Opacidad 75%</p>
+                                        <img src="./src/img/homer-simpson-hide-in-shrubs.png" class="op-75" style="width: 150px;">
+                                    </div>
+                                </div>
+                            `;
+                        });
+                    </script>
+                    
+                </article>
+            </section>
+
+
+
+            <section class="bg-info-subtle p-3 my-5 rounded shadow border border-info-subtle">
+                <div class="text-center">
+                    <h1>Ejercicio 9</h1>
+                    <hr class="border border-primary w-25 mx-auto">
+                </div>
+                <article class="bg-secondary-subtle p-3 rounded shadow-sm">
+                    <div class="row">
+                        <button id="boton_ejercicio9" type="button" class="btn btn-primary col-2 mx-auto">Mostrar</button>
+                    </div>
+
+                    <hr>
+                    
+                    <div id="ejercicio9"></div>
+
+                    <script>
+                        let boton_ejercicio9 = document.getElementById("boton_ejercicio9");
+                        boton_ejercicio9.addEventListener("click", (e) => {
+                            let output = document.getElementById("ejercicio9");
+                            output.innerHTML = `
+                                <div class="text-center mt-4">
+                                    <img src="./src/img/homer-simpson-hide-in-shrubs.png" 
+                                        alt="Homer Simpson" 
+                                        class="imagen-hover">
+                                    <p>Pasa el ratón sobre Homer</p>
+                                </div>
+                            `;
+                        });
+                    </script>
+                    
+                </article>
+            </section>
+
 
         </div>
         
