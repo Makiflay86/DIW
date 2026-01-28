@@ -1,0 +1,178 @@
+/* Ejercicio 0 - Ejemplo 1 */
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+.caja {
+    animation: mover 2s;
+}
+
+/* Ejercicio 0 - Ejemplo 2 */
+@keyframes parpadeo {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.boton {
+  animation: parpadeo 1s infinite;
+}
+
+/* Ejercicio 0 - Ejemplo 3 */
+@keyframes giroEscala {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.icono {
+    animation: giroEscala 3s ease-in-out;
+}
+
+/* Ejercicio 0 - Ejemplo 4 */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.texto {
+    animation: aparecer 2s forwards;
+}
+
+
+
+/* Ejercicio 1 */
+@keyframes ej1move {
+    from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(300px);
+    }
+}
+
+.ej1 {
+    width: 64px;
+    height: 64px;
+    animation: ej1move 2s;
+}
+
+
+
+/* Ejercicio 2 */
+@keyframes ej2colores {
+    0% {
+    background-color: blue;
+    }
+    50% {
+    background-color: green;
+    }
+    100% {
+    background-color: red;
+    }
+}
+
+.ej2 {
+    width: 64px;
+    height: 64px;
+    animation: ej2colores 3s infinite;
+}
+
+
+
+/* Ejercicio 3 */
+@keyframes ej3aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ej3 {
+    font-size: 24px;
+    opacity: 0;
+    animation: ej3aparecer 2s forwards;
+}
+
+
+
+/* Ejercicio 4 */
+@keyframes ej4girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ej4 {
+    width: 64px;
+    height: 64px;
+    background-color: orange;
+    animation: ej4girar 2s linear infinite;
+}
+
+
+
+/* Ejercicio 5 */
+@keyframes ej5rebote {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ej5 {
+    width: 128px;
+    height: 64px;
+    background-color: mediumseagreen;
+    animation: ej5rebote 1.5s ease-out forwards;
+}
+
+
+
+/* Ejercicio 6 */
+@keyframes ej6deslizar {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+
+.ej6 {
+    width: 64px;
+    height: 64px;
+    background-color: crimson;
+    animation: ej6deslizar 2s ease 1s reverse forwards;
+}
