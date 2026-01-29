@@ -1,0 +1,125 @@
+/* Ejemplo 1 */
+.ejemplo1 
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s;
+}
+
+
+
+/* Ejemplo 2 */
+.ejemplo2 
+{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s;
+}
+
+.ejemplo2:hover 
+{
+  width: 300px;
+}
+
+
+
+/* Ejemplo 3 */
+.ejemplo3 
+{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s, height 4s, background-color 3s;
+}
+
+.ejemplo3:hover 
+{
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+}
+
+
+
+/* Ejemplo 4 */
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;} 
+
+.ejemplo4
+{   
+    width: 100px;   
+    height: 100px;   
+    background: red;  
+    transition: width 2s;
+}
+
+.ejemplo4:hover 
+{
+    width: 300px;
+}
+
+
+
+/* Ejemplo 5 */
+.ejemplo5
+{
+    width: 100px;  
+    height: 100px;   
+    background-color: red;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.ejemplo5:hover 
+{
+    width: 300px;   
+    height: 300px; 
+    background-color: orange;  
+    transform: rotate(180deg);
+}
+
+
+
+/* Ejemplo 6 */
+.ejemplo6
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s linear 1s;
+}
+
+.ejemplo6:hover 
+{   
+    width: 300px; 
+}
+
+
+
+/* Ejemplo 7 */
+.contenedor 
+{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.item 
+{
+    border: 1px solid;
+    height: 200px;
+    background-color: red;
+    transition: filter 1s ease, opacity 1s ease, background-color 1s ease;
+}
+
+.item:not(:hover) 
+{
+    background-color: orange; 
+    opacity: 0.5;
+    filter: blur(3px);
+    transition: filter 1s ease, opacity 1s ease, background-color 1s ease;
+}
