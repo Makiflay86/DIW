@@ -152,25 +152,21 @@
 
 
 /* Ejercicio 6 */
-.ej6cajasombra 
+.cajasombra 
 {  
-    box-shadow: 5px 5px 2px 5px #333; 
+    box-shadow: 5px 5px 2px 5px #333;
     border: solid 1px;
     background-color: #dddddd;
     width: 100px; 
     height: 100px;
 }
 
-.ej6cajasombrachange
+.cajasombra:hover
 {  
-    box-shadow: 5px 5px 2px 5px red; 
-    border: solid 1px;
-    background-color: #dddddd;
-    width: 100px; 
-    height: 100px;
+    box-shadow: 5px 5px 2px 5px red;
 }
 
-.ej6cajasombra2
+.cajasombra2
 {  
     box-shadow: 5px 5px 2px 0px #333; 
     border: solid 1px;
@@ -179,25 +175,19 @@
     height: 100px;
 }
 
-.ej6cajasombra2change
+.cajasombra2:hover
 {  
     box-shadow: 5px 5px 2px 0px green; 
-    border: solid 1px;
-    background-color: #dddddd;
-    width: 100px; 
-    height: 100px;
 }
 
-.ej6cajasombrainterior
+.cajasombrainterior
 {  
     box-shadow: 5px 5px 2px 0px #333 inset; 
     border: solid 1px;
     background-color: #dddddd;
 }
 
-.ej6cajasombrainteriorchange
+.cajasombrainterior:hover
 {  
     box-shadow: 5px 5px 2px 0px blue inset; 
-    border: solid 1px;
-    background-color: #dddddd;
 }
