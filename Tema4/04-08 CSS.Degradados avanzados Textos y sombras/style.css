@@ -124,3 +124,80 @@
 
 
 /* Ejercicio 5 */
+.cajasombra 
+{  
+    box-shadow: 5px 5px 2px 5px #333; 
+    border: solid 1px;
+    background-color: #dddddd;
+    width: 100px; 
+    height: 100px;
+}
+
+.cajasombra2
+{  
+    box-shadow: 5px 5px 2px 0px #333; 
+    border: solid 1px;
+    background-color: #dddddd;
+    width: 100px; 
+    height: 100px;
+}
+
+.cajasombrainterior
+{  
+    box-shadow: 5px 5px 2px 0px #333 inset; 
+    border: solid 1px;
+    background-color: #dddddd;
+}
+
+
+
+/* Ejercicio 6 */
+.ej6cajasombra 
+{  
+    box-shadow: 5px 5px 2px 5px #333; 
+    border: solid 1px;
+    background-color: #dddddd;
+    width: 100px; 
+    height: 100px;
+}
+
+.ej6cajasombrachange
+{  
+    box-shadow: 5px 5px 2px 5px red; 
+    border: solid 1px;
+    background-color: #dddddd;
+    width: 100px; 
+    height: 100px;
+}
+
+.ej6cajasombra2
+{  
+    box-shadow: 5px 5px 2px 0px #333; 
+    border: solid 1px;
+    background-color: #dddddd;
+    width: 100px; 
+    height: 100px;
+}
+
+.ej6cajasombra2change
+{  
+    box-shadow: 5px 5px 2px 0px green; 
+    border: solid 1px;
+    background-color: #dddddd;
+    width: 100px; 
+    height: 100px;
+}
+
+.ej6cajasombrainterior
+{  
+    box-shadow: 5px 5px 2px 0px #333 inset; 
+    border: solid 1px;
+    background-color: #dddddd;
+}
+
+.ej6cajasombrainteriorchange
+{  
+    box-shadow: 5px 5px 2px 0px blue inset; 
+    border: solid 1px;
+    background-color: #dddddd;
+}

@@ -120,7 +120,9 @@
                         </div>
                         <article class="bg-primary-subtle p-5 rounded">
 
-                            
+                            <div class="cajasombra">cajasombra</div> <br><br>
+                            <div class="cajasombra2">cajasombra 2</div> <br><br><br>
+                            <div class="cajasombrainterior">cajasombraInterior</div>
 
                         </article>
                     </section>
@@ -134,7 +136,40 @@
                         </div>
                         <article class="bg-primary-subtle p-5 rounded">
 
-                            
+                            <div class="cajasombra" id="cambiocajasombra">cajasombra</div> <br><br>
+                            <div class="cajasombra2" id="cambiocajasombra2">cajasombra 2</div> <br><br><br>
+                            <div class="cajasombrainterior" id="cambiocajasombrainterior">cajasombraInterior</div>
+
+                            <script> 
+                                let cambiocajasombra = document.getElementById("cambiocajasombra"); 
+                                let ej6cajasombrachange = "ej6cajasombrachange";
+                                let ej6cajasombra = "ej6cajasombra";
+
+                                cambiocajasombra.addEventListener("mouseenter", function () {
+                                    cambiocajasombra.classList.remove(ej6cajasombra);
+                                    cambiocajasombra.classList.add(ej6cajasombrachange);
+                                });
+
+                                cambiocajasombra.addEventListener("mouseleave", function () {
+                                    cambiocajasombra.classList.remove(ej6cajasombrachange);
+                                    cambiocajasombra.classList.add(ej6cajasombra);
+                                });
+
+                                
+                                let cambiocajasombra2 = document.getElementById("cambiocajasombra2"); 
+                                let ej6cajasombra2change = "ej6cajasombrachange";
+                                let ej6cajasombra2 = "ej6cajasombra2";
+
+                                cambiocajasombra2.addEventListener("mouseenter", function () {
+                                    cambiocajasombra2.classList.remove(ej6cajasombra2);
+                                    cambiocajasombra2.classList.add(ej6cajasombra2change);
+                                });
+
+                                cambiocajasombra2.addEventListener("mouseleave", function () {
+                                    cambiocajasombra2.classList.remove(ej6cajasombra2change);
+                                    cambiocajasombra2.classList.add(ej6cajasombra2);
+                                });
+                            </script>
 
                         </article>
                     </section>
