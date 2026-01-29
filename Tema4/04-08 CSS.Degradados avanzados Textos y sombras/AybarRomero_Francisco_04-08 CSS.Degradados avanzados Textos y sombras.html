@@ -16,23 +16,148 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        
-        <section class="container my-3 py-3 rounded shadow bg-info-subtle">
-            <div class="text-center mb-3">
-                <h1>Ejercicio 1</h1>
-                <hr class="border border-primary w-25 mx-auto">
+
+        <div class="container my-3">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+
+                    <section class="my-3 pt-3 rounded shadow bg-info-subtle">
+                        <div class="text-center mb-3">
+                            <h1>Ejercicio 1</h1>
+                            <hr class="border border-primary w-25 mx-auto">
+                        </div>
+                        <article class="bg-primary-subtle p-5 rounded">
+
+                            <div class="ej1">
+                                <p class="text1">Texto 1</p>
+                                <p class="text2">Texto 2</p>
+                                <p class="text3">Texto 3</p>
+                            </div>
+
+                        </article>
+                    </section>
+
+
+
+                    <section class="my-3 pt-3 rounded shadow bg-info-subtle">
+                        <div class="text-center mb-3">
+                            <h1>Ejercicio 2</h1>
+                            <hr class="border border-primary w-25 mx-auto">
+                        </div>
+                        <article class="bg-primary-subtle p-5 rounded">
+
+                            <div class="ej1">
+                                <p class="sombra">Sombra</p>
+                                <p class="sombranegativa">Sombra negativa</p>
+                                <p class="sombraroja">Sombra roja</p>
+                                <p class="sombrarojanegativa">Sombra roja negativa</p>
+                                <p class="verde">Verde con blur</p>
+                                <p class="purpura">Púrpura con blur</p>
+                                <p class="azulrojo">Azul y rojo</p>
+                            </div>
+
+                        </article>
+                    </section>
+
+
+
+                    <section class="my-3 pt-3 rounded shadow bg-info-subtle">
+                        <div class="text-center mb-3">
+                            <h1>Ejercicio 3</h1>
+                            <hr class="border border-primary w-25 mx-auto">
+                        </div>
+                        <article class="bg-primary-subtle p-5 rounded">
+
+                            <div class="ej3">
+                                <p class="texto5" id="cambio">
+                                    !!! Azul y rojo con hover¡¡¡ 
+                                </p> 
+                            </div>
+                            <script> 
+                                let ej3 = document.getElementById("cambio"); 
+                                let texto5 = "texto5";
+                                let texto6 = "texto6";
+
+                                ej3.addEventListener("mouseenter", function () {
+                                    ej3.classList.remove(texto5);
+                                    ej3.classList.add(texto6);
+                                });
+
+                                ej3.addEventListener("mouseleave", function () {
+                                    ej3.classList.remove(texto6);
+                                    ej3.classList.add(texto5);
+                                });
+                            </script>
+
+                        </article>
+                    </section>
+
+
+
+                    <section class="my-3 pt-3 rounded shadow bg-info-subtle">
+                        <div class="text-center mb-3">
+                            <h1>Ejercicio 4</h1>
+                            <hr class="border border-primary w-25 mx-auto">
+                        </div>
+                        <article class="bg-primary-subtle p-5 rounded">
+
+                            <p class="ej4">HOLA</p>
+
+                        </article>
+                    </section>
+
+
+
+                    <section class="my-3 pt-3 rounded shadow bg-info-subtle">
+                        <div class="text-center mb-3">
+                            <h1>Ejercicio 5</h1>
+                            <hr class="border border-primary w-25 mx-auto">
+                        </div>
+                        <article class="bg-primary-subtle p-5 rounded">
+
+                            
+
+                        </article>
+                    </section>
+
+
+
+                    <section class="my-3 pt-3 rounded shadow bg-info-subtle">
+                        <div class="text-center mb-3">
+                            <h1>Ejercicio 6</h1>
+                            <hr class="border border-primary w-25 mx-auto">
+                        </div>
+                        <article class="bg-primary-subtle p-5 rounded">
+
+                            
+
+                        </article>
+                    </section>
+
+
+
+                    <section class="my-3 pt-3 rounded shadow bg-info-subtle">
+                        <div class="text-center mb-3">
+                            <h1>Ejercicio 7</h1>
+                            <hr class="border border-primary w-25 mx-auto">
+                        </div>
+                        <article class="bg-primary-subtle p-5 rounded">
+
+                            
+
+                        </article>
+                    </section>
+
+                </div>
             </div>
-            <article class="bg-primary-subtle py-5 rounded px-5">
-
-                <p>HOLA</p>
-                <p>Adios</p>
-                <p>TEST</p>
-
-            </article>
-        </section>
+        </div>
+        
+        
         
         <!-- Bootstrap JavaScript Libraries -->
         <script

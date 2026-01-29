@@ -1,0 +1,126 @@
+/* Ejercicio 1 */
+.ej1 > *
+{
+    font-family:Georgia;  
+    font-size:20px;
+    text-align:center;
+    text-decoration: none;
+}
+
+.text1 
+{
+    text-align:center;
+    text-shadow:10px 5px 1px #ccc; 
+    line-height:1.5em;
+}
+
+.text2 
+{
+    text-align:center;
+    text-shadow:1px 10px 1px  #f00; 
+    line-height:2em;
+}
+
+.text3
+{
+    text-align:center;
+    text-shadow: #f00 10px 10px 5px , -10px -10px 5px #00f; 
+}
+
+
+
+/* Ejercicio 2 */
+.ej2 > *
+{
+    font-family:Georgia;  
+    font-size:20px;
+    text-align:center;
+    text-decoration: none;
+}
+
+.sombra
+{
+    text-shadow:10px 5px 1px #ccc; 
+    line-height:1.5em;
+}
+
+.sombranegativa
+{
+    text-shadow:-10px 5px 1px #ccc; 
+    line-height:1.5em;
+}
+
+.sombraroja
+{
+    text-shadow:1px 10px 1px  red; 
+    line-height:2em;
+}
+
+.sombrarojanegativa
+{
+    text-shadow:1px -10px 1px  red; 
+    line-height:2em;
+}
+
+.verde
+{
+    text-shadow:1px 10px 3px  green; 
+    line-height:2em;
+}
+
+.purpura
+{
+    text-shadow:1px 10px 3px  purple; 
+    line-height:2em;    
+}
+
+.azulrojo
+{
+    text-align:center;text-shadow: #f00 10px 10px 3px , -10px -10px 3px #00f; 
+    line-height:2em;  
+}
+
+
+
+/* Ejercicio 3 */
+.ej3 > *
+{
+    font-family:Georgia;  
+    font-size:20px;
+    text-align:center;
+    text-decoration: none;
+}
+
+.texto5
+{
+    text-shadow:1px 10px 1px  red; 
+    line-height:2em;
+}
+
+.texto6
+{
+    text-shadow:1px -10px 1px  blue; 
+    line-height:2em;
+}
+
+
+
+/* Ejercicio 4 */
+.ej4
+{
+    font-family:Georgia;  
+    font-size:20px;
+    text-align:center;
+    text-shadow:
+    /*relieve*/
+    0 1px 0 rgb(1, 100, 1),
+    0 2px 0 rgb(1, 125, 1),
+    0 3px 0 rgb(1, 150, 1),
+    0 4px 0 rgb(1, 175, 1),
+    0 5px 0 rgb(1, 200, 1),
+    0 6px 0 rgb(1, 225, 1);
+}
+
+
+
+/* Ejercicio 5 */
