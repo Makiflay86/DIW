@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Entender flexbox, probablemente uno de los más completos y eficaces módulos de maquetación.">
+<meta name="keywords" content="flexbox, flex-direction, flex-wrap, align-items, justify-content, align-content, align-self, flex, flex-grow, flex-shrink, flex-basis, order">
+<meta name="author" content="enxaneta.info">
+<meta property="og:title" content="Entender flexbox"> 
+<meta property="og:type" content="website"> 
+<meta property="og:image" content="http://w3.unpocodetodo.info/images/w3_og.png"> 
+<meta property="og:url" content="w3.unpocodetodo.info/css3/ejemplos/flexbox-playground.html"> 
+<meta property="og:site_name" content="w3.unpocodetodo.info"> 
+<meta property="og:description" content="Entender flexbox, probablemente uno de los más completos y eficaces módulos de maquetación."> 
+
+<title>Entender Flexbox</title>
+<link rel="icon" type="image/png" href="http://w3.unpocodetodo.info/images/w3.png">
+<link rel="stylesheet" href="09-Flexbox_files/flex.css">
+<style>
+html,body{ width:100%; min-height:100%; margin:0; padding:0; color:#ddd; font-size:14px; font-family:Verdana, Geneva, sans-serif;background-color:#333;}
+*{
+	box-sizing : border-box; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+}
+.principal{ width:calc(50% - 40px); min-width:525px; margin:0 20px 20px 20px; float:left;}
+.radio{ margin-bottom:20px;}
+label{ line-height:200%;}
+input[type=radio] { color:white; }
+input[type=radio]:checked + label { color:orange; }
+input[type=number]{ width:40px; margin-right:.5em;}
+h1{ font-size:200%;margin:20px;}
+h2{ font-size:180%;margin:0px;}
+h4 a{ font-variant:small-caps; font-size:120%; color:#ddd; text-decoration:none;}
+h4 small{font-variant: normal; font-size:80%; font-weight:normal; color:#57bcdb;}
+table{ width:100%; margin-bottom:1em;}
+table td{ width:50%; padding:3px;}
+.principal:last-of-type h4 small{ color:#ff8080;}
+.flex-container {
+ border: 1px solid #555;
+ display : -webkit-flex;
+ display : -ms-flexbox;
+ display : flex;
+ padding:20px;
+ width:100%; 
+ }
+.item{
+	margin:0; 
+    display : inherit;
+	padding:10px; 
+	width:100px; 
+	height:100px;
+	-webkit-align-items: center;
+	-ms-flex-align:center;
+	align-items: center;
+	}
+.item p{width:100%; text-align:center; color:#fff;}
+#direction .item{flex-wrap:wrap;}
+/*#wrap .item{ height:auto;}*/
+#wrap{ width:400px;}
+#align .item{height:auto; height:auto;flex-wrap:wrap;}	
+#align{ height:300px;}
+#justify{ margin:20px 0; padding:20px 0;}
+#alignContent{flex-wrap:wrap; height:600px;}
+#alignContent .item{ height:auto;} 
+#FCI1{ height:300px;}
+#FCI1 .item{ height:auto;}
+#FCI3 .item{ width:25%;}
+#FCI4 .item{ width:50%;}
+#FCI5 .item{ width:20%;}
+.nbsp{white-space: nowrap;}
+
+@media only screen and (max-width:1100px){.principal{ width:calc(100% - 40px);}}
+@media only screen and (max-width:580px) {
+.item{ width:50px;height:50px;}
+.principal{ width:calc(100% - 40px); min-width:initial;}
+.flex-container{width:100%; min-width:initial;}	
+#wrap{ width:200px;}
+}
+
+</style>
+</head>
+
+<body>
+<h1> Practica 12 Introduccion a Flexbox </h1>
+<div class="principal">
+<h2>Propiedades del contenedor flex</h2>
+<div class="control">
+<h4><a href="http://w3.unpocodetodo.info/css3/flex-direction.php">flex-direction</a> <small>( una propiedad del contenedor flex )</small></h4><!--flex-direction: row | row-reverse | column | column-reverse;-->
+<div class="radio">
+<input name="flex-direction" type="radio" class="flex-direction" id="R11" value="row" checked="checked"><label for="R11">row:</label>
+<input name="flex-direction" type="radio" class="flex-direction" id="R12" value="row-reverse"><label for="R12">row-reverse:</label>
+<input name="flex-direction" type="radio" class="flex-direction" id="R13" value="column"><label for="R13">column:</label>
+<input name="flex-direction" type="radio" class="flex-direction" id="R14" value="column-reverse"><label for="R14">column-reverse:</label>
+</div></div>
+<div class="flex-container" id="direction">
+<div class="item" data-color="2a80b9" style="background-color: rgb(42, 128, 185);"><p>1</p></div>
+<div class="item" data-color="8f44ad" style="background-color: rgb(143, 68, 173);"><p>2</p></div>
+<div class="item" data-color="16a086" style="background-color: rgb(22, 160, 134);"><p>3</p></div>
+<div class="item" data-color="f1c40f" style="background-color: rgb(241, 196, 15);"><p>4</p></div>
+<div class="item" data-color="e77e23" style="background-color: rgb(231, 126, 35);"><p>5</p></div>
+</div>
+
+<div class="control">
+<h4><a href="http://w3.unpocodetodo.info/css3/flex-wrap.php">flex-wrap</a> <small>( una propiedad del contenedor flex )</small></h4><!--nowrap | wrap | wrap-reverse;-->
+<div class="radio">
+<input name="flex-wrap" type="radio" class="flex-wrap" id="R21" value="nowrap" checked="checked"><label for="R21">nowrap:</label>
+<input name="flex-wrap" type="radio" class="flex-wrap" id="R22" value="wrap"><label for="R22">wrap:</label>
+<input name="flex-wrap" type="radio" class="flex-wrap" id="R23" value="wrap-reverse"><label for="R23">wrap-reverse:</label>
+</div></div>
+
+<div class="flex-container" id="wrap">
+<div class="item" data-color="2a80b9" style="background-color: rgb(42, 128, 185);"><p>1</p></div>
+<div class="item" data-color="8f44ad" style="background-color: rgb(143, 68, 173);"><p>2</p></div>
+<div class="item" data-color="16a086" style="background-color: rgb(22, 160, 134);"><p>3</p></div>
+<div class="item" data-color="f1c40f" style="background-color: rgb(241, 196, 15);"><p>4</p></div>
+<div class="item" data-color="e77e23" style="background-color: rgb(231, 126, 35);"><p>5</p></div>
+</div>
+
+<script src="09-Flexbox_files/flexbox.js"></script>
+
+
+</body></html>

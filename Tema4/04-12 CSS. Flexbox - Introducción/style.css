@@ -1,0 +1,187 @@
+/* ***** Ejercicio 1 ***** */
+/* Ejemplo 1 */
+.contenedor-flex
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-flex div
+{
+    flex-basis:33%;
+    padding: 10px 0;
+    text-align:center;
+}
+
+@media (max-width:500px)
+{
+    .contenedor-flex div 
+    {
+        flex-basis:100%;
+    }
+}
+
+#e1, #e3
+{
+    background-color: red;
+}
+
+#e2
+{
+    background-color: yellow;
+}
+
+/* Ejemplo 2 */
+.contenedor-flex2
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    width: 400px;
+    height: 400px;
+}
+
+/* Ejemplo 3 */
+.caja
+{
+    display:flex;
+    flex-flow: column-reverse wrap;
+    border: 1px solid blue;
+    width:256px;
+    height: 256px;
+}
+
+.item
+{
+    width:64px;
+    height: 64px;
+}
+
+#box1, #box5
+{
+    background-color: red;
+}
+
+#box2, #box6
+{
+    background-color: yellow;
+}
+
+#box3, #box4
+{
+    background-color: green;
+}
+
+
+
+/* ***** Ejercicio 2 ***** */
+.ej2-caja
+{
+    width: 128px;
+    height: 64px;
+    margin: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.ej2-contenedor-row
+{
+    display:flex;
+    flex-flow: row wrap;
+    background-color: rgb(18, 70, 120);
+}
+
+.ej2-contenedor-row-reverse
+{
+    display:flex;
+    flex-flow: row-reverse wrap;
+    background-color: rgb(18, 70, 120);
+}
+
+.ej2-contenedor-column
+{
+    display:flex;
+    flex-flow: column wrap;
+    background-color: rgb(18, 70, 120);
+}
+
+.ej2-contenedor-column-reverse
+{
+    display:flex;
+    flex-flow: column-reverse wrap;
+    background-color: rgb(18, 70, 120);
+}
+
+
+
+/* ***** Ejercicio 3 ***** */
+.ej3-caja
+{
+    width: 128px;
+    height: 64px;
+    margin: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.ej3-contenedor-nowrap
+{
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: rgb(70, 120, 18);
+}
+
+.ej3-contenedor-wrap
+{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(120, 18, 70);
+}
+
+.ej3-contenedor-wrap-reverse
+{
+    display:flex;
+    flex-wrap: wrap-reverse;
+    background-color: rgb(18, 120, 70);
+}
+
+
+
+/* ***** Ejercicio 4 ***** */
+.ej4-caja
+{
+    width: 128px;
+    height: 64px;
+    margin: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.ej4-contenedor1
+{
+    display:flex;
+    flex-flow: row-reverse nowrap;
+    background-color: rgb(18, 120, 70);
+}
+
+.ej4-contenedor2
+{
+    display:flex;
+    flex-flow: column wrap-reverse;
+    background-color: rgb(18, 70, 120);
+}
+
+.ej4-contenedor3
+{
+    display:flex;
+    flex-flow: row wrap;
+    background-color: rgb(120, 18, 70);
+}
+
+.ej4-contenedor4
+{
+    display:flex;
+    flex-flow: column-reverse wrap;
+    background-color: rgb(70, 120, 18);
+}
