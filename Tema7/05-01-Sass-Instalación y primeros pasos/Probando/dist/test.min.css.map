@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.scss"],"names":[],"mappings":"AAAA,EACE,MAAO,MACP,MAAO,KAGT,KACE,YAAa,yBAA0B,eAAgB,MAAO","file":"test.min.css","sourcesContent":["p \r\n{\r\n    width: 500px; \r\n    color: #000; \r\n}\r\n\r\nbody\r\n{\r\n    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\r\n}\r\n"]}
