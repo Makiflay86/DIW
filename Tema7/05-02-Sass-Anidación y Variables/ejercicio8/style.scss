@@ -1,0 +1,25 @@
+$border_width: 10px;
+
+div > .clase1, .clase2, .clase3
+{
+    $border_color: #fea;
+
+    border-width: $border_width; /* variable global */
+    border-color: $border_color; /* variable local */
+}
+
+div > .clase4, .clase5
+{
+    $border_color: #aef;
+
+    border-width: $border_width; /* variable global */
+    border-color: $border_color; /* variable local */
+}
+
+body > .clase6, .clase7, .clase8
+{
+    $border_color: #efa;
+
+    border-width: $border_width; /* variable global */
+    border-color: $border_color; /* variable local */
+}

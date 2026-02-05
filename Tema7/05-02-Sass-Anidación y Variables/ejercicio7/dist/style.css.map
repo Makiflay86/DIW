@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["style.scss"],"sourcesContent":["$border_width: 10px;\r\n$border_color: #fea;\r\n\r\n.clase1, .clase2, .clase3, .clase4, .clase5, .clase6, .clase7, .clase8\r\n{\r\n\r\n    border-width: $border_width;\r\n    border-color: $border_color;\r\n}\r\n"],"file":"style.css"}

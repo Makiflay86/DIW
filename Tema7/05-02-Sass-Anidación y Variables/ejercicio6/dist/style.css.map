@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["style.scss"],"sourcesContent":["$color_link: blue;\r\n$default_border: 1px solid black;\r\n$std_margin: 5px;\r\n\r\na \r\n{\r\n    color: $color_link;\r\n    border: $default_border;\r\n    margin: $std_margin 0px $std_margin 0px;\r\n}"],"file":"style.css"}

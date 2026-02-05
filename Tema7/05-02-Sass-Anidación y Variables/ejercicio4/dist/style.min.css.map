@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,YACE,OAAQ,IACM,MAGhB,2BACE,MAAO","file":"style.min.css","sourcesContent":[".clase2\r\n{\r\n    > div \r\n    {\r\n        border: 1px;\r\n        border-color: green;\r\n    }\r\n    \r\n    > .clase21 \r\n    {\r\n        > .clase211\r\n        {\r\n            color: red;\r\n        }\r\n    }\r\n}\r\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,QAAS,QAAS,QAAS,QAAS,QAAS,QAAS,QAAS,QAC7D,aAAc,KACd,aAAc","file":"style.min.css","sourcesContent":["$border_width: 10px;\r\n$border_color: #fea;\r\n\r\n.clase1, .clase2, .clase3, .clase4, .clase5, .clase6, .clase7, .clase8\r\n{\r\n\r\n    border-width: $border_width;\r\n    border-color: $border_color;\r\n}\r\n"]}
