@@ -1,0 +1,30 @@
+/* Insertar .blog entre .post y p */
+.blog {
+.post & p { 
+			em {
+		color: #fff;
+			}
+		}
+	}
+
+/* Insertar el padre al final */
+.blog {
+.post p {
+	em & {
+color: #fff;
+}
+}
+}
+
+
+
+
+/* Pseudoclase :hover en p */
+.blog {
+.post p { 
+      &:hover
+       em {
+     color: #fff;
+}
+}
+}

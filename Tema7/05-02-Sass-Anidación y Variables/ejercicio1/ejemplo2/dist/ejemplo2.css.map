@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["ejemplo2.scss"],"sourcesContent":["#content {\r\n\tborder: 1px solid black; \r\n\tp.info {  \r\n\t\tcolor: #fff;\r\n\t\ta { text-decoration:none;}\r\n\t\t}\r\n\t}\r\n"],"file":"ejemplo2.css"}

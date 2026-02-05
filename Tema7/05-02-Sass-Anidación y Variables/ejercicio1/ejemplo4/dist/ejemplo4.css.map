@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["ejemplo4.scss"],"sourcesContent":["/* SCSS */\r\n.blog >{\r\n.post {\r\nwidth: 800px; >.title{\r\nfont-weight: bold;\r\n}\r\n}\r\n.comments{\r\nmargin-left: 20px;\r\n}\r\n}\r\n"],"file":"ejemplo4.css"}

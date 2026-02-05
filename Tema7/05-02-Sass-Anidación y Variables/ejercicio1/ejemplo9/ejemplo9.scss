@@ -1,0 +1,11 @@
+$color_link: blue;
+p {
+a {
+color: $color_link;
+$var_local: white;
+
+&.link {
+    color: $var_local;
+}
+}
+}

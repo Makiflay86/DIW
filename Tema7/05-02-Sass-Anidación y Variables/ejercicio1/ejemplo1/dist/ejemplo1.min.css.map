@@ -1,0 +1,1 @@
+{"version":3,"sources":["ejemplo1.scss"],"names":[],"mappings":"AAAA,SACE,OAAQ,IAAI,MAAM,KAGpB,gBACE,MAAO,KAGT,kBACE,gBAAiB","file":"ejemplo1.min.css","sourcesContent":["#content{ border: 1px solid black; }\r\n#content p.info{ color: #fff; }\r\n#content p.info a{ text-decoration: none; }"]}

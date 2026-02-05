@@ -1,0 +1,1 @@
+{"version":3,"sources":["ejemplo9.scss"],"names":[],"mappings":"AAAA,IACE,MAAO,KAGT,SACE,MAAO","file":"ejemplo9.min.css","sourcesContent":["$color_link: blue;\r\np {\r\na {\r\ncolor: $color_link;\r\n$var_local: white;\r\n\r\n&.link {\r\n    color: $var_local;\r\n}\r\n}\r\n}"]}

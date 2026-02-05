@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["ejemplo3.scss"],"sourcesContent":["/* SCSS */\r\n.bordemolon {\r\n\tborder: { style: solid; \r\n\t\t   left: { \r\n\t\t\twidth: 4px;\r\n\t\t\tcolor: #888;\r\n\t\t\t}\r\n\t\tright: { \r\n\t\t\twidth: 2px; \r\n\t\t\tcolor: #ccc;\r\n\t\t\t}\r\n\t }\r\n    }"],"file":"ejemplo3.css"}

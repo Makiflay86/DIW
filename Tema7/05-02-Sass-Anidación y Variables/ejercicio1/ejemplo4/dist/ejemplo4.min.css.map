@@ -1,0 +1,1 @@
+{"version":3,"sources":["ejemplo4.scss"],"names":[],"mappings":"AACA,YACE,MAAO,MAGT,mBACE,YAAa,IAGf,gBACE,YAAa","file":"ejemplo4.min.css","sourcesContent":["/* SCSS */\r\n.blog >{\r\n.post {\r\nwidth: 800px; >.title{\r\nfont-weight: bold;\r\n}\r\n}\r\n.comments{\r\nmargin-left: 20px;\r\n}\r\n}\r\n"]}

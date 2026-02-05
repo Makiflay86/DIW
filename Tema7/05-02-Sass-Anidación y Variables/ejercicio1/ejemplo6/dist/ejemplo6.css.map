@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["ejemplo6.scss"],"sourcesContent":["/* v. 1: & implícito */\r\n.blog {\r\n.post p { em {\r\ncolor: #fff;\r\n}\r\n}\r\n}\r\n\r\n/* v. 2: & explícito */\r\n.blog {\r\n     & .post p { & em {\r\ncolor: #fff;\r\n   }   }\r\n      }\r\n"],"file":"ejemplo6.css"}

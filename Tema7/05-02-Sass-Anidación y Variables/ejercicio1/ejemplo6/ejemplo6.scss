@@ -1,0 +1,14 @@
+/* v. 1: & implícito */
+.blog {
+.post p { em {
+color: #fff;
+}
+}
+}
+
+/* v. 2: & explícito */
+.blog {
+     & .post p { & em {
+color: #fff;
+   }   }
+      }

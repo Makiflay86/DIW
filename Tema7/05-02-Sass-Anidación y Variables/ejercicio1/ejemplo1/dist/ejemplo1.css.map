@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["ejemplo1.scss"],"sourcesContent":["#content{ border: 1px solid black; }\r\n#content p.info{ color: #fff; }\r\n#content p.info a{ text-decoration: none; }"],"file":"ejemplo1.css"}

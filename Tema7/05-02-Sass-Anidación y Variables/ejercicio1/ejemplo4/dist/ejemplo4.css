@@ -1,0 +1,14 @@
+/* SCSS */
+.blog > .post {
+  width: 800px;
+}
+
+.blog > .post > .title {
+  font-weight: bold;
+}
+
+.blog > .comments {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=ejemplo4.css.map */

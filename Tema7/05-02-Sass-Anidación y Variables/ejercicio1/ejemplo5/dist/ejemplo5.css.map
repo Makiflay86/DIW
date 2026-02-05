@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["ejemplo5.scss"],"sourcesContent":["/* SCSS */ \r\n.blog { \r\n\t.post  {\r\n\t\tp{ \r\n\t\t\tem{ \r\n\t\t\t\tborder: #fff;   \r\n\t\t\t\tcolor: #fff; \r\n\t}\t } \t}   }"],"file":"ejemplo5.css"}
