@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["style.scss"],"sourcesContent":[".hola \r\n{\r\n\tp \r\n    { \r\n\t\tcolor:red; \r\n\t\tborder-color:blue;\r\n\t}\r\n\ttd\r\n\t{\r\n\t\twidth: 50px;\r\n\t\tcolor: green;\r\n\t}\r\n\ttr \r\n\t{\r\n\t\theight: 50px;\r\n\t\tfont-size: 10px;\r\n\t}\r\n}\r\n"],"file":"style.css"}

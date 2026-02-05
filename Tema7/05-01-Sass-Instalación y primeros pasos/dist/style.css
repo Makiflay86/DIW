@@ -1,0 +1,16 @@
+.hola p {
+  color: red;
+  border-color: blue;
+}
+
+.hola td {
+  width: 50px;
+  color: green;
+}
+
+.hola tr {
+  height: 50px;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
