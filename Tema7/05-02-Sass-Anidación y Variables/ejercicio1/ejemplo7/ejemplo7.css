@@ -1,0 +1,14 @@
+/* Insertar .blog entre .post y p */
+.post .blog p em {
+  color: #fff;
+}
+
+/* Insertar el padre al final */
+em .blog .post p {
+  color: #fff;
+}
+
+/* Pseudoclase :hover en p */
+.blog .post p:hover em {
+  color: #fff;
+}/*# sourceMappingURL=ejemplo7.css.map */
