@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AybarRomero_Francisco_07-02 Clases Tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-200 text-red-500">
+
+    <div class="container mx-auto p-4">
+
+        <div class="mb-5">
+            <h1 class="text-4xl">Ejemplo</h1><br>
+            <!-- Ocultar en pantallas pequeñas -->
+            <div class="hidden sm:block">
+                <!-- Contenido para pantallas pequeñas y más grandes -->
+                <p>- Ocultar en pantallas pequeñas </p>
+            </div>
+            <br>
+            <!-- Ancho completo en pantallas pequeñas, la mitad en pantallas grandes -->
+            <div class="w-full lg:w-1/2">
+
+                <!-- Contenido adaptable en ancho -->
+                <p>- Ancho completo en pantallas pequeñas, la mitad en pantallas grandes </p>
+            </div>
+            <!-- Márgenes responsivos -->
+            <div class="mt-4 lg:ml-8">
+                <!-- Contenido con margen superior y margen izquierdo en pantallas grandes -->
+                <p>- Márgenes responsivos </p </div>
+                <br>
+                <!-- Cambiar orden en pantallas grandes -->
+                <div class="order-2 lg:order-1">
+                    <!-- Contenido con orden cambiado en pantallas grandes -->
+                    <p>- Cambiar orden en pantallas grandes </p>
+                </div>
+                <br>
+                <!-- Diseño flexible con flexbox -->
+                <div class="flex justify-center items-center">
+                    <!-- Contenido centrado horizontal y verticalmente -->
+                    <p>- Diseño flexible con flexbox </p>
+                </div>
+                <br>
+            </div>
+
+
+            <hr class="w-48 h-1 mx-auto my-4 bg-neutral-quaternary border-0 rounded-sm md:my-10">
+
+            
+            <h1 class="text-4xl font-bold text-indigo-700">Mi Página Web con Tailwind CSS</h1>
+            <p class="text-lg text-gray-800">¡Bienvenido! Esta es una página de ejemplo.</p>
+            <div class="mt-8">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Botón de Ejemplo
+                </button>
+
+                <img src="./img/logo-tailwind.png" alt="logo de tailwind" class="w-1/2">
+                <img src="./img/logo-tailwind.png" alt="logo de tailwind" class="w-1/4">
+            </div>
+        </div>
+
+</body>
+
+</html>
