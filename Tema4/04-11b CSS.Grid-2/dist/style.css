@@ -275,7 +275,7 @@
 /* Ejercicio 10 */
 .ej10 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
   width: 100%;
@@ -284,26 +284,40 @@
 }
 
 .ej10 div {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background-color: #6a7c88;
   color: white;
 }
 
-.ej10 div:nth-child(4) {
+.ej10 #celda4 {
   grid-row: span 2;
+  padding: 20px;
 }
 
-.ej10 div#celda4 {
+.ej101 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 350px;
+  height: 150px;
+  background-color: azure !important;
+}
+
+.ej101 div {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background-color: #006cb4;
-  color: white;
-  /* Sin acabar */
+  background-color: #dadaf6;
+  color: black;
+  width: 100%;
+  height: 40px;
+}
+
+.ej101 div:first-child {
+  grid-column: span 2;
 }
 
 /*# sourceMappingURL=style.css.map */
