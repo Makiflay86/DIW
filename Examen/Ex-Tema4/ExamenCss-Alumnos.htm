@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen CSS 04 </title>
+    <!-- Ejercicio 11 -->
+    <link rel="stylesheet" href="examencss.css">
+    <link rel="stylesheet" href="ejercicio8/foundation-icons.css">
+
+    <style type="text/css">
+        /* ejercicio1  pseudoclases links */
+        .ejercicio1 {
+            color: blue;
+        }
+        .ejercicio1:link
+        {
+            color: green;
+        }
+        .ejercicio1:visited
+        {
+            color: rgb(161, 203, 99);
+        }
+        .ejercicio1:hover
+        {
+            color: red;
+        }
+        .ejercicio1:active
+        {
+            color: blue;
+        }
+
+
+        /* ejercicio2 pseudo clases
+            la primera Letra en Azul y grande
+            la primera linea en rojo
+            Se debe insertar tras la ultima linea : EJERCICIO2DESPUES
+            Se debe insertar antes de la primera linea : EJERCICIO2ANTES
+        */
+        .ejercicio2 {
+            color: purple;
+        }
+
+        .ejercicio2:first-letter
+        {
+            color: blue;
+            font-size: xx-large;
+        }
+
+        .ejercicio2:first-line
+        {
+            color: red;
+        }
+
+        .ejercicio2:before 
+        {
+            content: " EJERCICIO2ANTES ";
+        }
+        .ejercicio2:after 
+        {
+            content: " EJERCICIO2DESPUES ";
+        }
+
+
+        /* ejercicio3 
+        ejemplo
+        Una tabla dentro de un p dentro de un div
+         div p table { color red}
+        */
+        div > p.Ejercicio31 > span.Ejercicio31
+        {
+            color: red ;
+        }
+
+
+        main#Ejercicio32 > div.Ejercicio32 > p, aside#Ejercicio32 > div.Ejercicio32 > span
+        {
+            color: green;
+        }
+
+        /* Ejercicio33 */
+        div > p.Ejercicio33 + a
+        {
+            color: orange;
+        }
+
+
+
+        /* ejercicio4*/
+        .ejercicio4 {
+            color: blue;
+            background-image: url('./img/04-fondo.jpg'); 
+            background-repeat: repeat-x; 
+            height: 128px; 
+            background-size: contain;
+        }
+
+        /* ejercicio5 colores*/
+        .ejercicio51 {
+            color: cyan;
+        }
+
+        .ejercicio52 {
+            color: rgb(36, 255, 255);
+        }
+
+        .ejercicio53 {
+            color: #24ffff;
+        }
+
+        .ejercicio54 {
+            color: hsl(180, 100%, 57%);
+        }
+
+        .ejercicio55 {
+            color: hwb(180 14% 0%);
+        }
+
+        .ejercicio56 {
+            color: lab(91.29% -46.96 -13.87);
+        }
+
+        .ejercicio57 {
+            color: lch(91.29% 48.96 196.45);
+        }
+
+        .ejercicio58 {
+            color: oklab(90.729% -0.14593 -0.03872);
+        }
+
+        .ejercicio59 {
+            color: oklch(90.729% 0.15098 194.86);
+        }
+
+        .ejercicio510 {
+            color: cyan;
+        }
+
+
+        /* ejercicio6 */
+        .ejercicio61 {
+            color: red;
+            font-weight: lighter;
+            font-size: 20px;
+        }
+
+        .ejercicio62 {
+            color: blue;
+            font-variant: small-caps;
+            font-size: 20pt;
+        }
+
+        .ejercicio63 {
+            color: cyan;
+            text-transform: uppercase;
+            font-size: 10mm;
+        }
+
+        .ejercicio64 {
+            color: orange;
+            text-transform: capitalize;
+            font-size: 1cm;
+        }
+
+        .ejercicio65 {
+            color: green;
+            text-decoration: underline;
+            font-size: 2em;
+        }
+
+        .ejercicio66 {
+            color: magenta;
+            text-decoration: line-through;
+            font-size: 150%;
+        }
+
+
+
+
+
+
+
+        /* ejercicio 8 animation y keyframes */
+        @keyframes mover {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(300px);
+            }
+        }
+
+        /* @keyframes_name | duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+        .cajain {
+            color: blue;
+            background-color: cyan;
+            width: 100px;
+            height: 50px;
+            animation: mover 3s infinite alternate ease-in;
+        }
+        
+
+        .cajaout {
+            color: blue;
+            background-color: cyan;
+            width: 100px;
+            height: 50px;
+            animation: mover 3s infinite alternate ease-out;
+        }
+
+
+
+
+        @keyframes parpadeo {
+            0% {
+                background-color: red;
+                opacity: 0.25;
+            }
+
+            0% {
+                background-color: blue;
+            }
+            50% {
+                background-color: red;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+
+
+
+        .boton {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: parpadeo 2s infinite;
+
+        }
+
+
+        /* ejercicio9 regiones*/
+
+        #ejercicio91 {
+            width: 100px;
+            height: 100px;
+            background-color: peru;
+            border: solid 1px black;
+            margin: 10px;
+            float: left;
+            clear: left;
+
+        }
+
+        #ejercicio92 {
+            width: 130px;
+            height: 130px;
+            background-color: purple;
+            border: solid 1px black;
+            margin: 10px;
+            float: left;
+            clear: right;
+        }
+
+        #ejercicio93 {
+            width: 160px;
+            height: 160px;
+            background-color: #0000FF;
+            border: solid 1px black;
+            margin: 10px;
+            float: left;
+            clear: left;
+        }
+
+        #ejercicio94 {
+            width: 150px;
+            height: 150px;
+            background-color: olive;
+            border: solid 1px black;
+            margin: 10px;
+            clear: left;
+            float: left;
+        }
+
+        #ejercicio95 {
+            width: 130px;
+            height: 130px;
+            background-color: lime;
+            border: solid 1px black;
+            margin: 10px;
+            clear: right;
+            float: right;
+        }
+
+        #ejercicio96 {
+            width: 160px;
+            height: 160px;
+            background-color: yellow;
+            border: solid 1px black;
+            margin: 10px;
+            clear: none;
+            float: right;
+        }
+
+        #ejercicio97 {
+            width: 160px;
+            height: 160px;
+            background-color: cyan;
+            border: solid 1px black;
+            margin: 10px;
+            clear: left;
+            float: left;
+        }
+
+        #ejercicio98 {
+            width: 160px;
+            height: 160px;
+            background-color: lightpink;
+            border: solid 1px black;
+            margin: 10px;
+            clear: right;
+            float: left;
+        }
+
+
+        /*Ejercicio 10  hover y transition*/
+
+
+        .contenedor {
+            display: grid;
+            width: 90%;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .item {
+            border: 1px solid;
+            height: 250px;
+            background-color: red;
+            transition: filter 1s ease, opacity 1s ease, background-color 1s ease, height 1s ease;
+        }
+
+
+        .item:not(:hover) {
+            background-color: blue;
+            opacity: 0.5;
+            height: 200px;
+            filter: blur(3px);
+            transition: filter 1s ease, opacity 1s ease, background-color 1s ease, height 1s ease;
+        }
+
+
+
+
+        /*Ejercicio 11 */
+        /* Añade los valores correctos de  bordes redondeados (pista son multiplos de 10),
+ de color (pista son colores con nombre) y bordes y espaciado de bordes que quede igual que la imagen.
+Las filas de la tabla deben tener un atributo que cuando se pase por encima se pongan amarillas
+ */
+
+        table {
+            font: normal 14px verdana, arial, helvetica, sans-serif;
+            color: black;
+            margin: auto;
+            border-collapse: separate;
+            width: 600px;
+
+            border-spacing: 10px;
+            background: lavender;
+            border: 5px double orange;
+            border-radius: 30px;
+        }
+
+        caption {
+            text-align: center;
+            font: bold 14px arial, helvetica, sans-serif;
+            background: transparent;
+            padding: 6px 4px 8px 0px;
+            color: red;
+                text-transform: uppercase;
+            caption-side: bottom;
+        }
+
+        td,
+        th {
+            padding: .4em;
+            color: black;
+            text-align: center;
+        }
+
+        thead th {
+            font: bold 11px verdana, arial, helvetica, sans-serif;
+            color: #FFFFFF;
+            padding-top: 3px;
+            text-align: center;
+
+            background-color: red;
+            border-radius: 50px;
+            border: 5px inset greenyellow;
+        }
+
+        tfoot td {
+            text-align: left;
+            color: #FFFFFF;
+            padding-top: 3px;
+
+            background-color: blue;
+            border-radius: 50px;
+            border-style: ridge;
+            border-color: greenyellow;
+
+        }
+
+        tbody td {
+            vertical-align: top;
+        }
+
+        tr.fimpar td {
+            background-color: green;
+            border-radius: 20px 50px 20px 50px;
+        }
+
+        tr.fpar td {
+            background-color: salmon;
+            border-radius: 20px 50px 20px 50px;
+        }
+
+        tbody tr:hover td {
+            /**/
+            color: #FFF;
+            border: 1px solid rgb(174, 174, 0);
+            background-color: yellow;
+        }
+
+        tbody td a:link,
+        tbody td a:visited {
+            background: transparent;
+            text-decoration: none;
+            color: black;
+        }
+
+        tbody td a:hover,
+        tbody td a:active {
+            color: black;
+            background: blue
+        }
+
+
+        /* Ejercicio12 degradados */
+        .ejercicio12-1 {
+            width: 700px;
+            height: 200px;
+            /* background: red; */
+            background: linear-gradient(to right,
+            yellow 10%,
+            green 10% 40%,
+            greenyellow 40% 60%,
+            blue 60% 90%,
+            red 90%);
+        }
+
+        .ejercicio12-2 {
+            width: 700px;
+            height: 200px;
+            /* background: blue; */
+            background: radial-gradient(circle, 
+                rgba(32,69,251) 15%, 
+                rgba(34,193,195) 22%,
+                rgba(34,193,195) 35%,
+                rgba(0, 42, 255) 70%,
+                rgba(34,193,195) 88%,
+                rgba(34,193,195) 90%,
+                rgb(0, 42, 255) 100%
+            ); 
+        }
+
+
+
+        /* Ejercicio13 text-shadow */
+
+        .ejercicio13-1 {
+            text-align: center;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 45px;
+            text-shadow: #00f 15px 15px 3px; 
+        }
+
+        .ejercicio13-2 {
+            text-align: center;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 45px;
+            color: lime;
+            text-shadow: green -5px -5px 5px; 
+        }
+
+        .ejercicio13-3 {
+            text-align: center;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 45px;
+            color: red;
+            text-shadow: orange -10px 10px 3px , 10px -10px 3px yellow; 
+        }
+
+
+        .ejercicio13-4 {
+            display: block;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 45px;
+            text-align: center;
+            text-shadow:
+                0 1px 0 rgb(81, 250, 250),
+                0 2px 0 rgba(81, 250, 250),
+                0 3px 0 rgba(81, 250, 250),
+                0 4px 0 rgba(81, 250, 250),
+                0 5px 0 rgba(81, 250, 250),
+                0 6px 0 rgba(81, 250, 250),
+                0 7px 0 rgba(81, 250, 250),
+                0 8px 0 rgba(81, 250, 250),
+                0 9px 0 rgba(81, 250, 250),
+                0 10px 0 rgba(81, 250, 250);
+            ;
+
+            color: rgba(200, 255, 255);
+
+        }
+
+
+        /* Ejercicio14 filter*/
+        .ejercicio14-1 {
+            filter: contrast(0.25);
+        }
+
+        .ejercicio14-1:hover {
+            filter: contrast(1);
+        }
+
+        .ejercicio14-2 {
+            filter: sepia(1);
+        }
+
+        .ejercicio14-2:hover {
+            filter: sepia(0);
+        }
+
+        .ejercicio14-3 {
+            filter: hue-rotate(0);
+        }
+
+        .ejercicio14-3:hover {
+            filter: hue-rotate(60);
+        }
+
+
+        #nombre
+        {
+            text-align: center;
+            background: linear-gradient(to right, white 10%, green 40%, yellowgreen 60%, white 90%);
+            background-size: 200% auto;
+            color: #000;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 2s linear infinite;
+        }
+        @keyframes shine 
+        {
+            to 
+            {
+                background-position: 200% center;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="contenido">
+        <h1> Examen Css 2026 </h1>
+        <h1> Nombre: <span id="nombre">Francisco Aybar Romero</span></h1>
+        <img src="img/00-puntos.jpg" width="100%">
+
+        <h1> Ejercicio 1 pseudoclases links </h1>
+        <p> Crea una regla CSS que me decore los links de la clase ejercicio1 con las propiedades de visitado, activo,
+            encima y enlace con colores distintos. Pon un ejemplo que se vea</p>
+
+        <h3>Titulo 3</h3>
+        
+        <a class="ejercicio1" href="https://www.wordreference.com/es/" target="_blank">Enlace 1</a>
+        <a class="ejercicio1" href="https://www.wordreference.com/es/" target="_blank">Enlace 2</a>
+        <a class="ejercicio1" href="https://www.wordreference.com/es/" target="_blank">Enlace 3</a>
+        <!-- -->
+        <!-- --><!-- -->
+        <h1> Ejercicio 2 pseudoclases posicion </h1>
+        <p> Crea reglas CSS que me ponga los párrafos de la clase ejercicio2 </p>
+        <ul>
+            <li> la primera Letra en Azul y grande </li>
+            <li> la primera linea en rojo
+            <li> Se debe insertar tras la ultima linea : EJERCICIO2DESPUES
+            <li> Se debe insertar antes de la primera linea : EJERCICIO2ANTES
+            <li> Crea un un ejemplo que se vea
+        </ul>
+        <p class="ejercicio2">Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2
+            Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2</p>
+        <p class="ejercicio2">Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2
+            Ejercicio 2 Ejercicio 2 Ejercicio 2 Ejercicio 2</p>
+
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <h1> Ejercicio3 Selectores</h1>
+        <ol>
+            <li><b> Ejercicio31)</b> Los textos en un span de la clase Ejercicio31 <br>
+                que hallen dentro de un p de la clase Ejercicio31 <br>
+                y que esten dentro de un div anterior deben tener color rojo
+                <br><br>
+                <div>
+                    <p class="Ejercicio31"> Ejercicio31 NO Rojo </p>
+                    <p class="Ejercicio31">
+                        <span class="Ejercicio31"> Ejercicio31 Rojo </span>
+                    </p>
+                    <span> Ejercicio31 NO Rojo </span>
+                </div>
+
+            </li>
+            <br><br>
+
+            <li><b> Ejercicio32)</b> En una misma regla los Span y los p <br>
+                que se hallen inmediatamente dentro de un div de la clase Ejercicio32<br>
+                que se halle dentro de una etiqueta cuyo identificador sea Ejercicio32<br>
+                deben ser de color verde.
+                <br><br>
+                <main id="Ejercicio32">
+                    <div class="Ejercicio32">
+                        <p> Ejercicio32 Verde </p>
+                        <b>
+                            <p> Ejercicio32 NO Verde </p>
+                        </b>
+                    </div>
+                </main>
+                <br><br>
+                <aside id="Ejercicio32">
+                    <div class="Ejercicio32">
+                        <span> Ejercicio32 Verde </span>
+                        <b> <span> Ejercicio32 NO Verde </span> </b>
+                    </div>
+                </aside>
+                <br><br>
+            </li>
+            <br><br>
+            </li>
+
+            <li>
+                <b> Ejercicio33)</b> En una misma regla los enlaces que siguen un p con clase Ejercicio33
+                dentro inmediata de un div son naranjas
+
+                <div>
+                    <p class="Ejercicio33"> Ejercicio33 NO naranjas </p>
+                    <a href="#"> Ejercicio33 naranja </a> <br>
+                    <a href="#"> Ejercicio33 NO naranja </a>
+                    <p class="Ejercicio33"> Ejercicio33 NO naranjas </p>
+                </div>
+
+            </li>
+        </ol>
+
+
+
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <h1> Ejercicio 4 imagen fondo</h1>
+        <p> Crea un div con un fondo con la imagen gana.jpg que se repita indefinidamente solo hacia la derecha</p>
+        <div class="ejercicio4">
+            La imagen se debe ver de fondo
+            <br> <br> <br> <br> <br>
+            La imagen se debe ver de fondo
+        </div>
+
+        <h1> Ejercicio 5 Colores </h1>
+        <p> Crea una regla css para párrafos de la clase clase51 …
+            clase56 con el color azul claro definido de 10 maneras distintas </p>
+        <ol>
+            <li class="ejercicio51"> Azul Claro 1</li>
+            <li class="ejercicio52"> Azul Claro 2</li>
+            <li class="ejercicio53"> Azul Claro 3</li>
+            <li class="ejercicio54"> Azul Claro 4</li>
+            <li class="ejercicio55"> Azul Claro 5</li>
+            <li class="ejercicio56"> Azul Claro 6</li>
+            <li class="ejercicio57"> Azul Claro 7</li>
+            <li class="ejercicio58"> Azul Claro 8</li>
+            <li class="ejercicio59"> Azul Claro 9</li>
+            <li class="ejercicio510"> Azul Claro 10</li>
+        </ol>
+
+        <h1> Ejercicio 6 unidades y estilos</h1>
+        <p>Ejercicio 6 Crea una regla css para párrafos de la clase clase61 … clase66 con el
+            tamaño de las fuentes definido en 6 unidades distintas
+            y con los estilos de texto solicitados </p>
+        <ol>
+            <li class="ejercicio61"> Tamaño 1 y espesor más ligero posible </li>
+            <li class="ejercicio62"> Tamaño 2 Versalitas</li>
+            <li class="ejercicio63"> Tamaño 3 Mayusculas</li>
+            <li class="ejercicio64"> Tamaño 4 primera letra mayúscula cada palabra</li>
+            <li class="ejercicio65"> Tamaño 5 y Subrayado</li>
+            <li class="ejercicio66"> Tamaño 6 y tachado</li>
+        </ol>
+
+    </div>
+
+    <br>
+    <div class="contenido">
+
+        <h1> Ejercicio 8 Keyframes </h1>
+
+        <br> <br>
+        <video src="ejercicios8y10.mp4" width="500px" controls></video>
+
+        <p>a) Crea los key frames necesarios para que la caja se anime moviendose hasta el final, <br>
+            de manera progresiva mas rapido antes y mas lento al final y la segunda al reves segun se ve en la animación
+        </p>
+        <div class="cajain">cajain</div>
+        <div class="cajaout">cajaout</div>
+
+        <p> B) Crea los key frames necesarios para que la caja se anime con un degradado de azul rojo y verde <br>
+            y que aparezca y desaparezca con un retraso de 2 segundo según empiece a cargarse la pagina
+        </p>
+        <div class="boton">boton</div>
+    </div>
+
+    <div class="contenido">
+
+        <h1> Ejercicio 10 pseudo clase hover y transitions </h1>
+        <p>Edita los estilos necesarios con la pseudo clase hover y transitions para que se vea igual que en la
+            animación
+
+        <div class="contenedor">
+            <div class="item"> </div>
+            <div class="item"> </div>
+            <div class="item"> </div>
+            <div class="item"> </div>
+        </div>
+
+    </div>
+
+    <br>
+    <div class="contenido">
+        <h1> Ejercicio 9 float y clear</h1>
+        <p> Modifica las clases necesarias con los valores float y clear para que las cajas queden asi </p>
+        <img src="img/09-regiones.jpg" style="border: 1px solid black;"><br>
+
+        <div id="ejercicio91"> Caja 1 </div>
+        <div id="ejercicio92"> Caja 2 </div>
+        <div id="ejercicio93"> Caja 3 </div>
+        <div id="ejercicio94"> Caja 4 </div>
+        <div id="ejercicio95"> Caja 5 </div>
+        <div id="ejercicio96"> Caja 6 </div>
+        <div id="ejercicio97"> Caja 7 </div>
+        <div id="ejercicio98"> Caja 8 </div>
+    </div>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="contenido3">
+
+        <h1> Ejercicio 11 table</h1>
+
+        <img src="img/11-tabla-examen.jpg" style="margin: auto;display: block;">
+        <table>
+            <caption>Tabla de Buscadores</caption>
+            <thead>
+                <tr>
+                    <th>Empresa </th>
+                    <th>% de Uso</th>
+                    <th>Web</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Buscadores Más Usados </td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr class="fimpar">
+                    <td>Google</td>
+                    <td>79,51% de usuarios </td>
+                    <td><a href="http://Google.com">Web Google</a></td>
+                </tr>
+                <tr class="fpar">
+                    <td>Yahoo! Search </td>
+                    <td>(1,45%) de usuarios </td>
+                    <td><a href="http://Yahoo.com)">Web Yahoo</a></td>
+                </tr>
+                <tr class="fimpar">
+                    <td>Bing</td>
+                    <td> 6,98% de usuarios </td>
+                    <td><a href="http://Bing.com">Web Bing</a></td>
+                </tr>
+                <tr class="fpar">
+                    <td> Baidu ()</td>
+                    <td>9,16% de usuarios </td>
+                    <td><a href="http://Baidu.cn">Web Baidu</a></td>
+                </tr>
+                <tr class="fimpar">
+                    <td>Naver </td>
+                    <td> (0,15) de usuarios Mundiales</td>
+                    <td><a href="http://Naver.com">Web Naver</a></td>
+                </tr>
+
+                <tr class="fpar">
+                    <td> DuckDuckGo ()</td>
+                    <td>(0,65%) de usuarios Mundiales</td>
+                    <td><a href="http://DuckDuckGo.com">Web DuckDuckGo</a></td>
+                </tr>
+                <tr class="fimpar">
+                    <td>Yandex </td>
+                    <td> (1,93%) de usuarios </td>
+                    <td><a href="http://Yandex.ru">Web Yandex</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="contenido">
+        <h1> Ejercicio 12 degradados</h1>
+        <img src="img/12-degradados.jpg" style="margin: auto;display: block;">
+        <div class="ejercicio12-1"> </div>
+        <div class="ejercicio12-2"> </div>
+
+    </div>
+    <br>
+    <div class="contenido3">
+        <h1> Ejercicio 13 sombras </h1>
+        <p> Crea los siguientes Estilos de sombras (pista: las unidades de las sombras son multiplos de 2.5px )</p>
+        <img src="img/13-fuentes.jpg" style="margin: auto;display: block;">
+
+        <h2 class="ejercicio13-1">Estilo 1 </h2> <br>
+        <h2 class="ejercicio13-2">Estilo 2</h2> <br>
+        <h2 class="ejercicio13-3">Estilo 3 </h2> <br>
+        <h2 class="ejercicio13-4">Estilo 4 </h2> <br>
+    </div>
+
+
+    <div class="contenido">
+        <h1> Ejercicio 14 filtros</h1>
+        <p> Crea los siguientes filtros </p>
+        <img class="ejercicio14-1" src="img/14-filtros.jpg">
+        <p> Contraste al 25% cd se pase el raton se debe quedar a 100% </p>
+        <img class="ejercicio14-2" src="img/14-filtros.jpg">
+        <p> Sepia al 100% cd se pase el raton se debe quedar a 0 </p>
+        <img class="ejercicio14-3" src="img/14-filtros.jpg">
+        <p> Rotacion de hue 60º cd se pase el raton se debe quedar a 0 </p>
+    </div>
+
+
+</body>
+
+</html>
