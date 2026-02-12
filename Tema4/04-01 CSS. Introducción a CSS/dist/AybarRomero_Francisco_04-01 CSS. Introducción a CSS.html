@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>AybarRomero_Francisco_04-01 CSS. Introducción a CSS</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            #ej-1-h2
+            {
+                color: green;
+            }
+
+            #ej-1-p
+            {
+                color: blue;
+            }
+
+            #ej-4-h4
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif; /* Luego iría a este la prioridad - 2 */
+                text-align: center;
+            }
+        </style>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="container-fluid w-75">
+        
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                1º Crea un documento htm en el que pongas los tres tipos de 
+                insertar css (linea, incrustado, link y @import)  para poner 
+                los h1 en rojo , h2 en verde y p en azul
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <h1 style="color: red;">
+                            rojo
+                        </h1>
+                        <h2 id="ej-1-h2">
+                            verde
+                        </h2>
+                        <p id="ej-1-p">
+                            azul
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                2º Incrusta esta imagen en la pagina y Crea esta tabla 
+                en css con los conceptos
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <img src="./src/04-01 CSS-ej-2.jpg" alt="margenes, padding, border, content" class="mb-3">
+                        <table class="table table-bordered table-success">
+                            <tr class="table-active">
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                            </tr>
+                            <tr>
+                                <td>margin</td>
+                                <td>border</td>
+                                <td>padding</td>
+                                <td>content</td>
+                                <td>height</td>
+                                <td>width</td>
+                                <td>total height</td>
+                                <td>total width</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                3º Copia esta tabla en el html. Señala verdadero o falso
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <table class="table table-bordered table-light">
+                            <tr class="table-active">
+                                <th>Afirmación</th>
+                                <th>Verdadero / Falso</th>
+                            </tr>
+                            <tr>
+                                <th>El content va fuera del padding</th>
+                                <td>Falso</td>
+                            </tr>
+                            <tr>
+                                <th>El padding va dentro del margin</th>
+                                <td>Verdadero</td>
+                            </tr>
+                            <tr>
+                                <th>El border va entre el margin y el padding</th>
+                                <td>Verdadero</td>
+                            </tr>
+                            <tr>
+                                <th>El margin va entre el padding y el content</th>
+                                <td>Falso</td>
+                            </tr>
+                            <tr>
+                                <th>El border va fuera del padding</th>
+                                <td>Verdadero</td>
+                            </tr>
+                            <tr>
+                                <th>width total = width + paddings left right + borders r l</th>
+                                <td>Verdadero</td>
+                            </tr>
+                            <tr>
+                                <th>height total = height + paddings + borders + margins</th>
+                                <td>Falso</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                4º Usa el anterior ejemplo Crea un CSS que muestre la Estructura 
+                y herencia y  Especificidad del selector y Orden de las reglas. 
+                Se debe ver estas prioridades 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <h3 id="ej-4-h3">
+                            Bienvenido al <span id="ej-4-span">IES PLAYAMAR</span>
+                        </h3>
+                        <h4 id="ej-4-h4">FAKE</h4>
+                        <p id="ej-4-p">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Labore, minima. Corrupti, ad tenetur rerum illum reiciendis 
+                            repellendus incidunt quidem <span style="color: green; font-size: 25px;" !important>itaque</span> 
+                            aperiam neque autem soluta ipsum consequatur a magni aspernatur. Placeat
+                            <span style="color: red; color: green; color: orange;">?</span>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                5º Inserta Comentarios en el anterior para ver que tiene 
+                mas o menos prioridad.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <h3 id="ej-4-h3">
+                            Bienvenido al <span id="ej-4-span">IES PLAYAMAR</span>
+                        </h3>
+                        <h4 id="ej-4-h4">FAKE</h4>
+                        <p id="ej-4-p">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Labore, minima. Corrupti, ad tenetur rerum illum reiciendis 
+                            repellendus incidunt quidem <span style="color: green; font-size: 25px;" !important>itaque</span> <!-- Este es el que tiene la prioridad más alta - 3 -->
+                            aperiam neque autem soluta ipsum consequatur a magni aspernatur. Placeat
+                            <span style="color: red; color: green; color: orange;">?</span>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                6º Crea los siguientes bordes usando css puedes usar esta estructura 
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <div class="uno mb-3">
+                            <h3>Bordes 1.</h3>
+                        </div>
+
+                        <div class="dos mb-3">
+                            <h3>Bordes 2. </h3>
+                        </div>
+
+                        <div class="tres mb-3">
+                            <h3>Bordes 3. dashed</h3>
+                        </div>
+
+                        <div class="cuatro mb-3">
+                            <h3>Bordes 4. ridge</h3>
+                        </div>
+
+                        <div class="seis mb-3">
+                            <h3>Bordes 6. dotted</h3>
+                        </div>
+
+                        <div class="siete mb-3">
+                            <h3>Bordes 7. dashed</h3>
+                        </div>
+
+                        <div class="ocho mb-3">
+                            <h3>Bordes 8. outset</h3>
+                        </div>
+
+                        <div class="nueve mb-3">
+                            <h3>Bordes 9.  7px inset.</h3>
+                        </div>
+
+                        <div class="diez mb-3">
+                            <h3>Bordes 10. 10px groove;</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                7º Modifica el anterior ejercicio para que los ejercicios 
+                1 a 4 queden con estos margenes (usa auto)
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <div class="ej_7_1 mb-3">
+                            <h3>Bordes 1.</h3>
+                        </div>
+
+                        <div class="ej_7_2 mb-3">
+                            <h3>Bordes 2. </h3>
+                        </div>
+
+                        <div class="ej_7_3 mb-3">
+                            <h3>Bordes 3. dashed</h3>
+                        </div>
+
+                        <div class="ej_7_4 mb-3">
+                            <h3>Bordes 4. ridge</h3>
+                        </div>
+
+                        <div class="seis mb-3">
+                            <h3>Bordes 6. dotted</h3>
+                        </div>
+
+                        <div class="siete mb-3">
+                            <h3>Bordes 7. dashed</h3>
+                        </div>
+
+                        <div class="ocho mb-3">
+                            <h3>Bordes 8. outset</h3>
+                        </div>
+
+                        <div class="nueve mb-3">
+                            <h3>Bordes 9.  7px inset.</h3>
+                        </div>
+
+                        <div class="diez mb-3">
+                            <h3>Bordes 10. 10px groove;</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                8º Modifica el anterior ejercicio para que los ejercicios 
+                1 a 4 queden con estos paddings
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <div class="ej_7_1 mb-3">
+                            <h3>Bordes 1.</h3>
+                        </div>
+
+                        <div class="ej_7_2 mb-3">
+                            <h3>Bordes 2. </h3>
+                        </div>
+
+                        <div class="ej_7_3 mb-3">
+                            <h3>Bordes 3. dashed</h3>
+                        </div>
+
+                        <div class="ej_7_4 mb-3">
+                            <h3>Bordes 4. ridge</h3>
+                        </div>
+
+                        <div class="ej_8_6 mb-3">
+                            <h3>Bordes 6. dotted</h3>
+                        </div>
+
+                        <div class="ej_8_7 mb-3">
+                            <h3>Bordes 7. dashed</h3>
+                        </div>
+
+                        <div class="ocho mb-3">
+                            <h3>Bordes 8. outset</h3>
+                        </div>
+
+                        <div class="nueve mb-3">
+                            <h3>Bordes 9.  7px inset.</h3>
+                        </div>
+
+                        <div class="diez mb-3">
+                            <h3>Bordes 10. 10px groove;</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="bg-primary bg-opacity-50 my-5 p-5 rounded shadow">
+            <h1 class="text-center">
+                9º Modifica el ejemplo de @media para crear un estilo 
+                diferente cuando sea movil, por pantalla y para imprimir.
+            </h1>
+            <article class="bg-primary-subtle p-5 mt-5 rounded shadow">     
+                <div class="row g-1 justify-content-center">
+                    <div class="col-auto">
+                        <h4>
+                            En pantalla el p debe verse verde móvil el p debe verse rojo y en print debe verse azul.
+                        </h4>
+
+                        <p id="ej_9_1">
+                            Esto es verde, pantalla.
+                        </p>
+                        <p id="ej_9_2">
+                            Esto es es rojo, móvil.
+                        </p>
+                        <p id="ej_9_3">
+                            En print debe verse azul.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
